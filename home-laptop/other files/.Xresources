@@ -1,0 +1,56 @@
+! Xft settings ---------------------------------------------------------------
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      chromium
+URxvt.matcher.button:   1
+
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select,matcher
+URxvt.url-select.launcher:  chromium
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
+URxvt*matcher.button: 1
+URxvt*matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+URxvt.urgentOnBell:	  	true
+
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+##test
+#URxvt.perl-ext-common : default,matcher,tabbed,keyboard-select,url-select,clipboard
+#URxvt.urlLauncher     : /usr/bin/chromium
+#URxvt.matcher.button  : 1
+#URxvt.tabbed.tabbar-fg: 5
+#URxvt.tabbed.tabbar-bg: 0
+#URxvt.tabbed.tab-fg:    14
+#URxvt.tabbed.tab-bg:    0
+#URxvt.keysym.M-Escape: perl:keyboard-select:activate
+#URxvt.keysym.M-s: perl:keyboard-select:search
+#URxvt.keysym.M-u: perl:url-select:select_next
+#URxvt.url-select.autocopy: True
+#URvxt.url-select.button: 2
+#URxvt.url-select.launcher: /usr/bin/chromium
+#URxvt.url-select.underline: True
+#URxvt.keysym.M-c:   perl:clipboard:copy
+#URxvt.keysym.M-v:   perl:clipboard:paste
+#URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+##test2
+#URxvt*perl-lib: /usr/lib/urxvt/perl
+#URxvt*perl-ext-common: default,matcher,keyboard-select
+#URxvt.keysym.M-Escape: perl:keyboard-select:activate
+#URxvt.keysym.M-s: perl:keyboard-select:search
+#urxvt*urlLauncher: /usr/bin/chromium
+#urxvt.underlineURLs: true
+#urxvt*matcher.button: 1
+#URxvt*matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
+#URxvt*matcher.rend.0: fg15
