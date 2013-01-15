@@ -1,0 +1,55 @@
+######################
+# - Conky settings - #
+######################
+#default_color 0F0F0F
+et_avg_samples 1
+cpu_avg_samples 1
+
+out_to_console yes
+out_to_x no
+background no
+update_interval 1
+total_run_times 0
+use_spacer none
+
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+
+format_human_readable
+
+#####################
+# - Text settings - #
+#####################
+use_xft yes
+xftfont Droid Sans:size=8
+override_utf8_locale yes
+text_buffer_size 2048
+
+#############################
+# - Window specifications - #
+#############################
+#own_window_class Conky
+#own_window yes
+#own_window_type override
+#own_window_argb_visual yes
+#own_window_argb_value 180
+#own_window_transparent yes
+#own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+#alignment top_right
+#gap_x 10
+#gap_y 25
+#minimum_size 200 0
+#maximum_width 180
+
+#default_bar_size 60 8
+
+#########################
+# - Graphics settings - #
+#########################
+draw_shades no
+
+TEXT
+## $$mpd_smart < ${cpu cpu1}% / ${cpu cpu2}% < ${loadavg 1} ${loadavg 2 3} < ${acpitemp}c < $memperc% ($mem) :: DL ${downspeed eth0}K/s UP ${upspeed eth0}K/s < ${time %a %b %d %I:%M%P}
+:: cpu ${cpu cpu1}% / ${cpu cpu2}% :: load ${loadavg 1} ${loadavg 2 3} :: ram $memperc% ($mem) :: ${time %A, %d %B %Y | %H:%M%P}

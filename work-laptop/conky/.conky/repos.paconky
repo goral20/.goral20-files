@@ -1,0 +1,6 @@
+#SET MSG_0 up to date
+#SET MSG_1 1 new pkg
+#SET MSG_N %N% new pkgs
+#
+${alignr}%MSG%${voffset 5}
+%PKG_NAME% ${alignr}v%PKG_VER%
