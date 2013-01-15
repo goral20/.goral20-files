@@ -1,0 +1,51 @@
+######################
+# - Conky settings - #
+######################
+#default_color 0F0F0F
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+
+format_human_readable
+
+#####################
+# - Text settings - #
+#####################
+use_xft yes
+xftfont Droid Sans:size=8
+override_utf8_locale yes
+text_buffer_size 2048
+
+#############################
+# - Window specifications - #
+#############################
+#own_window_class Conky
+own_window yes
+own_window_type override
+#own_window_argb_visual yes
+#own_window_argb_value 180
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+#alignment top_right
+gap_x 900
+gap_y 40
+minimum_size 200 0
+maximum_width 465
+
+default_bar_size 60 8
+
+#########################
+# - Graphics settings - #
+#########################
+draw_shades no
+
+TEXT
+${color #90A8BC}[ ${color}pacman -Syu ${color #90A8BC}]${alignr}${color #90A8BC}Ostatnia aktualizacja systemu odbyła się dnia ${color}${execi 100 grep "starting full system upgrade" /var/log/pacman.log | tail -n1| cut --bytes=2-17}${color #90A8BC}.
+${color #90A8BC}[ ${color}pacman -Su ${color #90A8BC}]${alignr}${if_match ${execi 100 pacman -Qu | wc -l}!=0}${color #AE4747}Dostępne są ${color #90A8BC}pakiety przeznaczone do aktualizacji [ ${color #AE4747}${execi 100 pacman -Qu | wc -l}${color #90A8BC} | ${color}${execi 100 pacman -Q | wc -l}${color #90A8BC} ].${else}${color #90A8BC}Na chwilę obecną ${color #68823A}nie wykryto ${color #90A8BC}pakietów przeznaczonych do aktualizacji [ ${color}${execi 100 pacman -Qu | wc -l}${color #90A8BC} | ${color}${execi 100 pacman -Q | wc -l}${color #90A8BC} ].${endif}
+${color #90A8BC}[ ${color}pacman -Qdt ${color #90A8BC}]${alignr}${if_match ${execi 100 pacman -Qdt | wc -l}!=0}${color #AE4747}Wykryto ${color #90A8BC}osierocone pakiety [ ${color #AE4747}${execi 100 pacman -Qdt | wc -l}${color #90A8BC} ].${else}${color #68823A}Nie wykryto ${color #90A8BC}osieroconych pakietów${color #90A8BC}.${endif}

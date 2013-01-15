@@ -1,0 +1,89 @@
+######################
+# - Conky settings - #
+######################
+#default_color 0F0F0F
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+
+format_human_readable
+
+#####################
+# - Text settings - #
+#####################
+use_xft yes
+xftfont Droid Sans:size=8
+override_utf8_locale yes
+text_buffer_size 2048
+
+#############################
+# - Window specifications - #
+#############################
+#own_window_class Conky
+own_window yes
+own_window_type override
+#own_window_argb_visual yes
+#own_window_argb_value 180
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+alignment top_right
+gap_x 10
+gap_y 10
+minimum_size 200 0
+maximum_width 180
+
+default_bar_size 60 8
+
+#########################
+# - Graphics settings - #
+#########################
+draw_shades no
+
+TEXT
+${voffset -24}${goto 100}${time %H:%M:%S}
+${font size=14}${font}Kernel: ${alignr}${kernel}
+${font size=14}${font}Nvidia: ${alignr}${execi 30 nvidia-settings -v | grep 'version' | cut -c27-32}
+${font size=14}${font}Host: $alignr$nodename
+${font size=14}${font}Uptime: $alignr$uptime
+${font size=14}${font}Power:$alignr${acpiacadapter}
+${font size=14}${font}Bat:	   ${battery_time BAT1} ${alignr}(${battery BAT1})
+${font size=14}${font}ACPI: $alignr$acpitemp°
+${font size=14}${font}LOAD: $alignr$loadavg
+${font size=14}${font}Last Update: $alignr${execi 300 grep "starting full system upgrade" /var/log/pacman.log | tail -n1| cut --bytes=2-17}
+${font size=14}${font}Packages:  $alignr${execi 100 pacman -Qu | wc -l} to update | ${execi 100 pacman -Q | wc -l} 
+${font size=14}${font}Core1: ${cpu cpu1}% - ${hwmon 0 temp 1}° ${alignr}${cpubar cpu1 4,60}
+${font size=14}${font}Core2: ${cpu cpu2}% - ${hwmon 1 temp 2}° ${alignr}${cpubar cpu2 4,60}
+${font size=14}${font}RAM: $memperc% ${alignr}${membar    4,60}
+${font size=14}${font}SWAP: $swapperc% ${alignr}${swapbar    4,60}
+${font size=14}${font}GPU: ${execi 30 nvidia-settings -q [gpu:0]/GPUCoreTemp | grep '):' | awk '{print $4}' | sed 's/\.//'}° ${alignr}HDD Temp: ${execi 300 sudo hddtemp /dev/sda | cut -c34-35}°
+${font size=14}${font}/root: ${fs_free /root}${alignr}${fs_bar 4,60 /root}
+${font size=14}${font}/home: ${fs_free /home}${alignr}${fs_bar 4,60 /home}
+${font size=14}${font}/Dane: ${fs_free /media/Dane}${alignr}${fs_bar 4,60 /media/Dane}
+
+${font StyleBats:size=14}n${font} WiFi ${alignr}IP: ${addr wlan0}
+${font StyleBats:size=14}t${font}${downspeedf wlan0}Kb/sec${goto 110} ${voffset -4}${font StyleBats:size=14}t${font}${upspeedf wlan0}Kb/sec
+${font StyleBats:size=14}x${font} Quality: ${wireless_link_qual_perc wlan0}% ${alignr}Bitrate: ${wireless_bitrate wlan0}
+${font PizzaDude Bullets:size=14}r${font}${totaldown wlan0}${goto 110} ${voffset -4}${font PizzaDude Bullets:size=14}v${font}${totalup wlan0}
+
+${font StyleBats:size=14}n${font} LAN ${alignr}IP: ${addr eth0}
+${font StyleBats:size=14}t${font}${downspeedf eth0}Kb/sec${goto 110} ${voffset -4}${font StyleBats:size=14}t${font}${upspeedf eth0}Kb/sec
+${font PizzaDude Bullets:size=14}r${font}${totaldown eth0}${goto 110} ${voffset -4}${font PizzaDude Bullets:size=14}v${font}${totalup eth0}
+
+${font size=14}${font}AP Mode: ${alignr}${wireless_mode wlan0}
+${font size=14}${font}AP MAC: ${alignr}${wireless_ap wlan0}
+${font size=14}${font}IP PUBLIC: ${alignr}${execi 600 ~/.conky/ip.sh}
+${font size=14}${font}IP Router: ${alignr}${gw_ip}
+
+${font size=14}${font}PROCESSES: $processes ${alignr}Running: $running_processes
+${font size=14}${font}Highest $alignr   CPU   MEM
+${font size=14}${font}${top name 1}$alignr ${top cpu 1} ${top mem 1}
+${font size=14}${font}${top name 2}$alignr ${top cpu 2} ${top mem 2}
+${font size=14}${font}${top name 3}$alignr ${top cpu 3} ${top mem 3}
+${font size=14}${font}${top name 4}$alignr ${top cpu 4} ${top mem 4}
+${font size=14}${font}${top name 5}$alignr ${top cpu 5} ${top mem 5}

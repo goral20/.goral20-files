@@ -1,0 +1,64 @@
+######################
+# - Conky settings - #
+######################
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+
+format_human_readable
+
+#####################
+# - Text settings - #
+#####################
+use_xft yes
+xftfont Droid Sans:size=9
+font Sans:size=8
+override_utf8_locale yes
+text_buffer_size 2048
+xftalpha 1.0
+
+#############################
+# - Window specifications - #
+#############################
+#own_window_class Conky
+own_window yes
+own_window_type override
+#own_window_argb_visual yes
+#own_window_argb_value 180
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+gap_x 5
+gap_y 5 
+minimum_size 200 0
+#maximum_width 200
+
+default_bar_size 60 8
+
+#########################
+# - Graphics settings - #
+#########################
+draw_shades no
+uppercase no
+override_utf8_locale yes
+mpd_host localhost
+mpd_port 6666
+imlib_cache_size 0
+
+TEXT
+${if_match "$mpd_status" == "Playing"}${image ~/.conky/okładka/as.png -p -2,6 -s 700x87}
+${voffset 1}${font TakaoPGothic:size=9}${goto 90}${mpd_artist}${font}
+${font TakaoPGothic:size=8}${goto 90}${mpd_title}
+${font GE Inspira:size=8:italic}${goto 90}${mpd_album}${font}
+${font GE Inspira:size=7}${goto 90}${mpd_elapsed} / ${mpd_length} - ${mpd_bitrate} kbps
+${goto 90} ${mpd_bar 2,119}
+${endif}
+${if_match "$mpd_status" == "Playing"}${execi 1 ~/.conky/okładka/sonata.sh }${image ~/.conky/okładka/currentcover.jpg -p 4,10 -s 80x80}
+$else${image ~/.conky/okładka/currentcover.jpg -p 24,24 -s 120x120}
+$else${image ~/.conky/okładka/be.png -p 0,-5}
+$endif$endif

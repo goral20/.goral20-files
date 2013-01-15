@@ -1,0 +1,85 @@
+spis kopmuterów w lanie
+nmap -sP -oG /tmp/nmap.out 192.168.0.1/24 >>/dev/null && grep Up /tmp/nmap.out
+
+------------------------------------------------------------------------------
+
+łączna ilość komputerów w lan
+echo "`nmap -sP -oG /tmp/nmap.out 192.168.0.1/24 >>/dev/null && grep -c Up /tmp/nmap.out` hosts are up"
+
+------------------------------------------------------------------------------
+
+inna wersja tego samego co wyżej
+echo "`nmap -sP 192.168.0.1/24 | grep -c 'is up' ` hosts up"
+
+------------------------------------------------------------------------------
+
+inna wersja tego samego co wyżej
+
+#!/usr/bin/perl
+#use:    write ${execi 100 ~/.conky/nmap.pl wlan0} in your ~/.conkyrc
+
+$retval = `nmap -sP -T4 192.168.0.1/24`;
+$ctr=0;
+$_=$retval;
+    while (/([0-9]+\.){3}[0-9]+/g) {
+		$ctr++;
+	}
+print "$ctr hosts up";
+
+------------------------------------------------------------------------------
+
+nmap -sP 192.168.0.0/24 | grep '192' | cut -b 6-37
+
+------------------------------------------------------------------------------
+
+#!/usr/bin/python
+# Quick and dirty script to output hosts ip via nmap by ikex <ikex@orioncode.org>
+
+# change this to change you output! :)
+nohost = "(No Hostname)"
+output = "%s %s Appears to be up!" # IP, Hostname
+nip= "10.1.1.0/24"
+
+import os, socket, types
+fp = os.popen("nmap -sP %s" % nip)
+dat=fp.read()
+dat=dat.split('\n')
+for line in dat:
+    try: dummy = int(line[5:6])
+		except (ValueError): continue
+		if line[:4] == "Host":
+				ip=line.split(' ')[1]
+				try:
+						host="("+socket.gethostbyaddr(ip)[0]+")"
+				except:
+						host=nohost
+				print output % (ip, host)
+
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------
+
+
+
