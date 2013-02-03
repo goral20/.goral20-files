@@ -87,7 +87,7 @@ ${font size=14}${font}AP MAC: ${alignr}${wireless_ap wlan0}
 ${font size=14}${font}IP PUBLIC: ${alignr}${execi 600 ~/.conky/ip.sh}
 ${font size=14}${font}IP Router: ${alignr}${gw_ip}
 
-${font size=14}${font}${execi 100 nmap -sP -oG /tmp/nmap.out 192.168.1.1/24 | grep Up /tmp/nmap.out}
+#${font size=14}${font}${execi 100 nmap -sP -oG /tmp/nmap.out 192.168.1.1/24 | grep Up /tmp/nmap.out}
 
 ${font size=14}${font}Dyndns is ${execi 1800 ~/.conky/pcinlan.sh sebas87.dyndns.org} ${alignr}No-IP is ${execi 1800 ~/.conky/pcinlan.sh goral20.no-ip.org}
 
