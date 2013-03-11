@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="candy-mod-v1_by_zse1"
-ZSH_THEME="steeefv4"
+ZSH_THEME="steeefv5"
 #ZSH_THEME="aussiegeek"
 #ZSH_THEME="candy"
 #ZSH_THEME="frisk" dobre ale trzeba przerobic
