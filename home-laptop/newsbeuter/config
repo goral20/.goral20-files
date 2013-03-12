@@ -1,12 +1,20 @@
 # Newsbeuter config file.
 # To be placed in ~/.newsbeuter or ~/.config/newsbeuter
 always-display-description	true
-auto-reload			yes
-#cleanup-on-quit			yes
-download-retries		10
-download-timeout		20
-refresh-on-startup		yes
-reload-time			10
-download-path			~/Pobrane
-max-downloads			2
-browser /usr/bin/chromium
+auto-reload	yes
+#cleanup-on-quit	yes
+download-retries	10
+download-timeout	20
+refresh-on-startup	yes
+reload-time	10
+download-path	~/Pobrane
+max-downloads	2
+browser	/usr/bin/chromium
+confirm-exit	yes
+display-article-progress	yes
+keep-articles-days	30
+#notify-format "newsbeuter: finished reload, %f unread feeds (%n unread articles total)"
+notify-xterm	no
+notify-beep	no
+reload-only-visible-feeds	no
+max-items	1000
