@@ -58,4 +58,10 @@
 	m:0x0 + c:225
 	XF86Search
 
+#Easytag
+"keepassx"
+	m:0x0 + c:163
+	XF86Mail
+
+
 #End of configuration file
