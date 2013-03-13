@@ -1,20 +1,67 @@
 # Newsbeuter config file.
 # To be placed in ~/.newsbeuter or ~/.config/newsbeuter
-always-display-description	true
+
+# Update
 auto-reload	yes
-#cleanup-on-quit	yes
-download-retries	10
-download-timeout	20
 refresh-on-startup	yes
 reload-time	10
+reload-only-visible-feeds	no
+reload-threads 4
+
+# History
+max-items	1000
+#cleanup-on-quit	yes
+keep-articles-days	30
+cache-file "~/.newsbeuter/cache.db"
+mark-as-read-on-hover yes
+error-log "~/.newsbeuter/error.log"
+
+# Download
+download-retries	10
+download-timeout	20
 download-path	~/Pobrane
 max-downloads	2
-browser	/usr/bin/chromium
+
+# Notify
 confirm-exit	yes
-display-article-progress	yes
-keep-articles-days	30
-#notify-format "newsbeuter: finished reload, %f unread feeds (%n unread articles total)"
-notify-xterm	no
+notify-xterm	yes
 notify-beep	no
-reload-only-visible-feeds	no
-max-items	1000
+#notify-format "newsbeuter: finished reload, %f unread feeds (%n unread articles total)"
+
+# Sort
+#article-sort-order date
+article-sort-order date-asc
+#articlelist-format "%4i %f %D %6L %?T?;%-17T; ?%t"
+articlelist-format "| %2i | %f | %D | %6L |> %t"
+#feedlist-format "%4i %n %11u %t"
+#feedlist-format "%n %4i - %11u -%> %t"
+feedlist-format "| %2i | %n | %10u |> %t"
+#datetime-format %b %d
+#datetime-format "%a %b %d, %Y at %R %Z %Z %D %R"
+#datetime-format "%a %A %D %R"
+datetime-format "%a %D o %R"
+
+# Others
+always-display-description	true
+browser	/usr/bin/chromium
+display-article-progress	yes
+show-keymap-hint no 
+
+# Key binding
+# moving
+unbind-key j
+unbind-key k
+unbind-key ^U
+
+bind-key j down
+bind-key k up
+bind-key ^U pageup
+bind-key ^D pagedown
+bind-key ^H toggle-source-view
+
+# Colors
+#color background   color247   default
+#color listnormal   color247   default    bold
+#color listfocus    color247   color24    bold
+#color info         color45    color235
+#color article      color252   color16
