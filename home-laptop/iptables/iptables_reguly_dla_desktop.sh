@@ -11,8 +11,9 @@ iptables -X -t filter
 # USTAWIENIE POLITYKI DZIAŁANIA
 iptables -P INPUT DROP
 iptables -P FORWARD DROP
-iptables -P OUTPUT ACCEPT
-iptables -A OUTPUT -m state -p icmp --state INVALID -j DROP
+iptables -P OUTPUT DROP
+#iptables -P OUTPUT ACCEPT
+#iptables -A OUTPUT -m state -p icmp --state INVALID -j DROP
 
 # Odblokowanie / Dopuszczenie localhostu
 iptables -A INPUT -i lo -j ACCEPT
@@ -24,6 +25,41 @@ iptables -A OUTPUT -o lo -j ACCEPT
 iptables -A INPUT -j ACCEPT -m state --state ESTABLISHED,RELATED
 iptables -A FORWARD -j ACCEPT -m state --state ESTABLISHED,RELATED
 
+## Regułki
+# FTP
+# FTP tryb aktywny
+iptables -A OUTPUT -p tcp --dport 20 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 21 -j ACCEPT
+
+# FTP tryb pasywny
+iptables -A OUTPUT -p tcp --dport 1024 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 1025 -j ACCEPT
+
+# SSH
+iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 10025 -j ACCEPT
+
+# DNS
+iptables -A OUTPUT -p udp --dport 53 -j ACCEPT
+
+# WWW
+iptables -A OUTPUT -p tcp --dport 80 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
+
+# Poczta
+iptables -A OUTPUT -p tcp --dport 143 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 993 -j ACCEPT
+
+# Samba
+iptables -A OUTPUT -p tcp --dport 137 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 138 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 139 -j ACCEPT
+iptables -A OUTPUT -p tcp --dport 445 -j ACCEPT
+
+
+
+
+## Stare
 # SSH
 #/sbin/iptables -A INPUT -s 0/0 -p tcp --dport 10025 -j ACCEPT
 #/sbin/iptables -A INPUT -s 0/0 -p udp --dport 10025 -j ACCEPT
