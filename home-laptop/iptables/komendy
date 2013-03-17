@@ -1,0 +1,5 @@
+vim iptables_reguly.sh
+sudo sh ~/iptables_reguly.sh
+sudo sh -c "iptables-save > /etc/iptables/iptables.rules"
+sudo iptables-restore < /etc/iptables/iptables.rules
+sudo systemctl restart iptable
