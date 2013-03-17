@@ -31,10 +31,14 @@ iptables -A FORWARD -j ACCEPT -m state --state ESTABLISHED,RELATED
 # FTP tryb aktywny
 iptables -A OUTPUT -p tcp --dport 20:21 -j ACCEPT
 iptables -A OUTPUT -p tcp --dport 20:21 -j ACCEPT
+#iptables -A INPUT -p tcp --dport 20:21 -j ACCEPT
+#iptables -A INPUT -p tcp --dport 20:21 -j ACCEPT
 
 # FTP tryb pasywny
 iptables -A OUTPUT -p tcp --dport 1024:65535 -j ACCEPT
 iptables -A OUTPUT -p tcp --dport 1024:65535 -j ACCEPT
+#iptables -A INPUT -p tcp --dport 1024:65535 -j ACCEPT
+#iptables -A INPUT -p tcp --dport 1024:65535 -j ACCEPT
 
 # SSH
 iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT
@@ -139,6 +143,39 @@ iptables -A INPUT -p tcp --syn -m limit --limit 1/s -j ACCEPT
 iptables -A INPUT -p tcp --tcp-flags SYN,ACK,FIN,RST RST -m limit --limit 1/s -j ACCEPT
 
 # Blokowanie www
-#iptables -A OUTPUT -p tcp -m string --string "onet.pl" --algo kmp -j DROP
+iptables -A OUTPUT -p tcp -m string --string "onet.pl" --algo kmp -j DROP
+
+# SYN flood protection
+#echo "1" > /proc/sys/net/ipv4/tcp_syncookies
+# echo 1 > /proc/sys/net/ipv4/tcp_syncookies
+#
+# Wyłączamy odpowiedzi na pingi
+#echo "1" > /proc/sys/net/ipv4/icmp_echo_ignore_all
+#
+# Ochrona przed atakami typu Smurf
+#echo "1" > /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
+# echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_broadcasts
+#
+# Włączamy ochronę przed komunikacją ICMP error (błędne pakiety ICMP)
+#echo "1" > /proc/sys/net/ipv4/icmp_ignore_bogus_error_responses
+#
+# Włącza logowanie dźiwnych pakietów (spoofed. source routed. redirects):
+#echo "0" > /proc/sys/net/ipv4/conf/all/log_martians
+# echo 1 > /proc/sys/net/ipv4/conf/all/log_martians
+#
+# Nie akceptujemy datagramu IP z opcją “source route” // nie akceptujemy pakietow "source route" (zmieniaja tablice routingu)
+#echo "0" > /proc/sys/net/ipv4/conf/all/accept_source_route
+# echo 0 > /proc/sys/net/ipv4/conf/all/accept_source_route
+#
+# Nie przyjmujemy pakietów ICMP redict, które mogą zmienić naszą tablicę routingu:
+#echo "0" /proc/sys/net/ipv4/conf/all/accept_redirects
+# echo 0 > /proc/sys/net/ipv4/conf/all/accept_redirects
+#
+# Wszystkie karty nie bedą przyjmowały pakietów z sieci innych niż te z tablicy routingu
+#echo "0" /proc/sys/net/ipv4/conf/all/rp_filter
+#
+# ochrona przed spoofingiem -kazdy interfejs sieciowy bedzie przyjmowal (stare)
+# tylko te pakiety ktore znajduja sie w tablicy routingu
+# echo 1 > /proc/sys/net/ipv4/conf/all/rp_filter
 
 echo "Reguły dla IPtables zostały załadowane"
