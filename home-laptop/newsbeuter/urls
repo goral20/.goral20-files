@@ -6,7 +6,7 @@ http://animesub.info/rss.php "~Animesub.info" "napisy anime"
 # 4Clubbers #
 http://www.4clubbers.com.pl/external.php?type=RSS2&forumids=83 "~4Clubbers.com.pl" "uplifting"
 "query:4Clubbers.com.pl tylko Uplifting Trance:tags =~ \"uplifting\" and title =~ \"Uplifting\"" \"uplifting"
-"query:4Clubbers.com.pl tylko najlepsi:tags =~ \"uplifting\" and title =~ \"Ahmed Romel\" or title =~ \"LTN\" or title =~ \"Arctic Moon\" or title =~ \"Illitheas\" or title =~ \"Andrew Rayel\" or title =~ \"Simon O’Shine\" or title =~ \"Matt Bukovski\" or title =~ \"Cymatics\" or title =~ \"Nery\"" \"uplifting"
+"query:4Clubbers.com.pl tylko najlepsi:tags =~ \"uplifting\" and content =~ \"Binary Finary\" or content =~ \"LTN\" or content =~ \"Neev Kennedy\" or content =~ \"Ahmed Romel\" or content =~ \"Armin van Buuren\" or content =~ \"Gaia\" or content =~ \"LTN\" or content =~ \"Sunlounger\" or content =~ \"Shane 54\" or content =~ \"Myon & Shane 54\" or content =~ \"John O'Callaghan\" or content =~ \"Emma Hewitt\" or content =~ \"Tritonal\" or content =~ \"Suncatcher\" or content =~ \"Vast Vision\" or content =~ \"Pedro Del Mar\" or content =~ \"Rank 1\" or content =~ \"Imperfect Hope\" or content =~ \"Arctic Moon\" or content =~ \"Paul van Dyk\" or content =~ \"Aly & Fila\" or content =~ \"Andy Blueman\" or content =~ \"Bryan Kearney\" or content =~ \"Ferry Tayle\" or content =~ \"Dan Stone\" or content =~ \"Sean Tyas\" or content =~ \"SoundLift\" or content =~ \"Simon Patterson\" or content =~ \"Markus Schulz\" or content =~ \"Ferry Corsten\" or content =~ \"Temple One\" or content =~ \"Meridian\" or content =~ \"Corderoy\" or content =~ \"Andrew Rayel\" or content =~ \"Simon O’Shine\" or content =~ \"Running Man\" or content =~ \"Philippe El Sisi\" or content =~ \"Touchstone\" or content =~ \"Matt Bukovski\" or content =~ \"Dreamy\" or content =~ \"Giuseppe Ottaviani\" or content =~ \"Cymatics\" or content =~ \"Kaimo K\" or content =~ \"Illitheas\"" \"uplifting"
 
 # Nipponsei #
 https://nipponsei.minglong.org/tracker/rss.php "~Nipponsei Tracker" "Nipponsei"
@@ -58,7 +58,7 @@ http://btgigs.info/rss.php?cats=4,5,6,10,19,20,27,31,32,34&language=0&free=0&tra
 "query:BTGigs.info grupa inTGrity:tags =~ \"inTGrity\" and title =~ \"inTGrity\"" \"inTGrity"
 
 # TL #
-https://torrentleech.pl/rss.php?cat=28,58,33,64,61,36,39,40,63,46,59,47,53&passkey=1e4981a493762a616f71ac95ca81e98d "~Torrentlech.pl" "WiZARDS"
+https://torrentleech.pl/rss.php?cat=28,58,33,64,61,36,39,40,63,46,59,47,53&passkey=1e4981a493762a616f71ac95ca81e98d "~Torrentleech.pl" "WiZARDS"
 "query:Torrentleech.pl grupa WiZARDS:tags =~ \"WiZARDS\" and title =~ \"WiZARDS\"" \"WiZARDS"
 
 ## Youtube ##
