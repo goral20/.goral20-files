@@ -15,7 +15,7 @@ iptables -P FORWARD DROP
 iptables -P OUTPUT DROP
 #iptables -P OUTPUT ACCEPT
 #iptables -A OUTPUT -m state -p icmp --state INVALID -j DROP
-#iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+##iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 # Odblokowanie / Dopuszczenie localhostu
 iptables -A INPUT -i lo -j ACCEPT
