@@ -1,5 +1,6 @@
 #!/bin/sh
 echo "Dodaje Reguły dla IPtables"
+echo "Czyszczenie starych reguł"
 
 # CZYSZCZENIE STARYCH REGUŁ
 iptables -F
