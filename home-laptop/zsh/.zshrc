@@ -141,3 +141,4 @@ alias lt='ls -lhrt --color=auto'        #sort by date
 alias lr='ls -lhR --color=auto'                    # recursive ls
 alias lm='la | more'
 alias skrypt='sh "/home/sebastian/.skrypty/Inne/Przydatne narzędzia 2.0.sh"'
+alias rss='newsbeuter'
