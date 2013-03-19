@@ -19,6 +19,9 @@ iptables -P OUTPUT DROP
 #iptables -A OUTPUT -m state -p icmp --state INVALID -j DROP
 ##iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
+## zezwolenie na inicjowanie połączeń przy polityce DROP dla łańcucha OUTPUT bez wyszczególniania reguł
+## iptables -A OUTPUT -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT
+
 echo "Dopuszczenie localhostu"
 # Odblokowanie / Dopuszczenie localhostu
 iptables -A INPUT -i lo -j ACCEPT
