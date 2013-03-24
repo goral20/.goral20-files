@@ -116,7 +116,7 @@ echo "Blokowanie Telnetu"
 $f -A OUTPUT -p tcp --dport telnet -j REJECT
 $f -A INPUT -p tcp --dport telnet -j REJECT
 
-echo "Ochrona przed atakami"
+echo "Ochrona przed skanowaniem"
 # Ochrona przed skanowaniem
 
 echo "Ochrona przez skanowaniem SYN"
