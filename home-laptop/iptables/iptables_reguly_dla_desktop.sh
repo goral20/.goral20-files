@@ -75,34 +75,6 @@ $f -A OUTPUT -p tcp --dport 138 -j ACCEPT
 $f -A OUTPUT -p tcp --dport 139 -j ACCEPT
 $f -A OUTPUT -p tcp --dport 445 -j ACCEPT
 
-## Dla serwera 
-# SSH
-#/sbin/iptables -A INPUT -s 0/0 -p tcp --dport 10025 -j ACCEPT
-#/sbin/iptables -A INPUT -s 0/0 -p udp --dport 10025 -j ACCEPT
-
-# FTP TRYB AKTYWNY
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.4 -p tcp --dport 20:21 -j ACCEPT
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.4 -p udp --dport 20:21 -j ACCEPT
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.4 -p tcp --dport 21 -j ACCEPT
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.4 -p tcp --dport 21 -j ACCEPT
-
-# FTP TRYB PASYWNY
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.4 -p tcp --dport 1024:1025 -j ACCEPT
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.4 -p udp --dport 1024:1025 -j ACCEPT
-##/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.4 -p tcp --dport 1025 -j ACCEPT
-##/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.4 -p udp --dport 1025 -j ACCEPT
-
-# SAMBA
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.9 -p udp --dport 137 -j ACCEPT
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.9 -p udp --dport 138 -j ACCEPT
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.9 -p tcp --dport 139 -j ACCEPT
-#/sbin/iptables -A INPUT -m iprange --src-range 192.168.1.2-192.168.1.9 -p tcp --dport 445 -j ACCEPT
-
-# odblokowanie uPnP
-#/sbin/iptables -A INPUT -i eth0 -p udp --dport 1900 -j ACCEPT
-#/sbin/iptables -A OUTPUT -o eth0 -p udp --sport 1900 -j ACCEPT
-## KONIEC
-
 echo "Dopuszczenie PING"
 # PING (dopuszczenie)
 $f -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
