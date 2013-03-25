@@ -1,0 +1,74 @@
+#======
+# Wydajność
+#======
+# Wątki dekodowania
+lavdopts=threads=2
+
+#======
+# Wideo
+#======
+# Sterownik obrazu
+vo=xv
+# Buforowanie
+double=yes
+dr=yes
+
+#======
+# Dźwięk
+#======
+# Audio
+alang=jpn,eng,pl
+# Sterownik dzwieku
+#ao=alsa
+ao=alsa:device=ch51dup
+#ao=alsa
+#6kanałowy dźwięk
+##channels=6
+# Mixer
+mixer-channel=Master
+
+#==========
+# Napisy
+#==========
+# Napisy
+slang=eng,pl
+# Kodowanie
+# Kodowanie dla filmów z txt
+subcp=cp1250
+# Kodowanie dla anime z ass
+#subcp=UTF-8
+#subfont-encoding=unicode
+#unicode=yes
+#utf8=yes
+# Wczytywanie napisów o tej samej nazwie
+sub-fuzziness=1
+
+vf-add=ass
+ass=yes
+embeddedfonts=yes
+#ass-use-margins=yes
+#ass-color=FFFFFF00 # RRGGBBAA - plain white (no alpha)
+#ass-border-color=00000000
+#ass-font-scale=0.7
+#ass-hinting=1
+
+#==========
+# Wygląd
+#==========
+# Uruchamianie filmu na pełnym ekranie
+#fs=yes
+
+# Wyłaczenie wygaszacza
+stop-xscreensaver=yes
+
+# Set autoscale coefficient. (default: 6)
+subfont-osd-scale=2
+
+# Position window. (50%:50%: center of screen)
+#geometry=50%:50%
+
+#==========
+# Inne
+#==========
+# Menu
+#menu=yes
