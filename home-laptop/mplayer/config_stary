@@ -19,7 +19,11 @@ dr=yes
 # Audio
 alang=jpn,eng,pl
 # Sterownik dzwieku
-ao=alsa
+#ao=alsa
+ao=alsa:device=ch51dup
+#ao=alsa
+#6kanałowy dźwięk
+##channels=6
 # Mixer
 mixer-channel=Master
 
