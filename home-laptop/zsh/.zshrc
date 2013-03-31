@@ -142,3 +142,6 @@ alias lr='ls -lhR --color=auto'                    # recursive ls
 alias lm='la | more'
 alias skrypt='sh "/home/sebastian/.skrypty/Inne/Przydatne narzędzia 2.0.sh"'
 alias rss='newsbeuter'
+alias sshserwerdom='ssh -i /home/sebastian/.ssh/id_rsa_serwer_dom zse1@192.168.1.5 -p 10025'
+alias sshmydevil='ssh -i /home/sebastian/.ssh/id_rsa_shell_mydevil sebas87@ssh.mydevil.net'
+alias sshendomedk='ssh -i /home/sebastian/.ssh/id_rsa_serwer_endomedk mareczekg@IP -p 10025'
