@@ -64,8 +64,8 @@ $f -A OUTPUT -p tcp --dport 80 -j ACCEPT
 $f -A OUTPUT -p tcp --dport 443 -j ACCEPT
 
 echo "Reguła Poczta"
-# Poczta tylko imap
-$f -A OUTPUT -p tcp --dport 587 -j ACCEPT
+# Poczta
+$f -A OUTPUT -p tcp --dport 143 -j ACCEPT
 $f -A OUTPUT -p tcp --dport 993 -j ACCEPT
 
 echo "Reguła Samba"
