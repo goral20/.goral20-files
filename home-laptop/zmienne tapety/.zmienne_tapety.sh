@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# ścieżki
+#d="/home/sebastian/Obrazy/# Wybrane Tapety pod system #/nge_zmienne_tapety/"
+d="/home/sebastian/Obrazy/# Wybrane Tapety pod system #/metro_zmienne_tapety"
 shopt -s nullglob
-cd "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/nge_zmienne_tapety/" 
+cd $d 
 	
 while true; do
 		files=()
