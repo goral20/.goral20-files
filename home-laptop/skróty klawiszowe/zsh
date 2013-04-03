@@ -4,3 +4,5 @@ ctrl+l - clear
 ctrl+t - poprawa czeskich bledow
 ^1^2 - zamiana fraz w komendach z 1 na 2
 ctrl+x(puszczamy tylko x)+e - domyślny edytor pod polecenia
+polecenie + strzałka - wywołanie z historii pasującego polecenia
+
