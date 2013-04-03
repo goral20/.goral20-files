@@ -1,0 +1,6 @@
+ctrl+u - kopiuje napisana linijke
+ctrl+y - wkleja skopiowana linijke
+ctrl+l - clear
+ctrl+t - poprawa czeskich bledow
+^1^2 - zamiana fraz w komendach z 1 na 2
+ctrl+x(puszczamy tylko x)+e - domyślny edytor pod polecenia
