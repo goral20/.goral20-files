@@ -14,7 +14,8 @@ set shiftwidth=2
 set tabstop=2 
 set gfn=Courier\ 12
 set t_Co=256
-"colorscheme oceandeep
+
+colorscheme codesweets 
 set ofu=syntaxcomplete#Complete
 setglobal spell spelllang=pl_pl
 
