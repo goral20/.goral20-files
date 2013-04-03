@@ -2,9 +2,9 @@
 
 # ścieżki
 #d="/home/sebastian/Obrazy/# Wybrane Tapety pod system #/nge_zmienne_tapety/"
-d="/home/sebastian/Obrazy/# Wybrane Tapety pod system #/metro_zmienne_tapety"
+d="/home/sebastian/Obrazy/# Wybrane Tapety pod system #/metro_zmienne_tapety/"
 shopt -s nullglob
-cd $d 
+cd "$d" 
 	
 while true; do
 		files=()
