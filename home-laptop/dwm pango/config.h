@@ -25,7 +25,7 @@ static const Rule rules[] = {
 	{ "Chromium", NULL, NULL,       1 << 5,       False,       -1 },
 	{ "Keepassx", NULL, NULL,       1 << 5,       False,       -1 },
 	{ "Pcmanfm", NULL, NULL,       1 << 6,       False,       -1 },
-	{ "Thunar", NULL, "sebastian - Menedżer plików",       1 << 5,       False,       -1 },
+	{ "Thunar", NULL, "sebastian - Menedżer plików",       1 << 6,       False,       -1 },
 	{ "mplayer2", NULL, NULL,       1 << 6,       False,       -1 },
 	{ "Easytag", NULL, NULL,       1 << 6,       False,       -1 },
 	{ "GQview", NULL, NULL,       1 << 6,       False,       -1 },
