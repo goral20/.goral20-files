@@ -37,9 +37,11 @@ ZSH_THEME="steeefv5"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git wakeonlan extract)
 
+# Plugin odpowiadający za historię
 source $ZSH/oh-my-zsh.sh
+source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
@@ -113,8 +115,10 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 
 # Bind the up and down arrows to history search.
-bindkey '\e[A' history-beginning-search-backward-end
-bindkey '\e[B' history-beginning-search-forward-end
+#bindkey '\e[A' history-beginning-search-backward-end
+#bindkey '\e[B' history-beginning-search-forward-end
+bindkey ‘\e[A’ history-substring-search-up
+bindkey ‘\e[B’ history-substring-search-down
 
 ## Aliasy
 
