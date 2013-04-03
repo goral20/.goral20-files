@@ -1,0 +1,47 @@
+Legenda:
+[CM] = command mode = tryb poleceń
+[EM] = editor mode = tryb edycji
+[VM] = visual mode = tryb wizualny
+[NM] = normal mode = tryb normalny
+
+Polecenia:
+ESC lub CTRL+[ - wyjście z modu [EM]
+:e nazwa_pliku - oiwiera plik [CM]
+:e! - reload pliku (przywrócenie pliku przed zapisem)
+:q - wyjście bez zmian w pliku [CM]
+:q! - wyjście z zapisaniem [CM]
+:w - zapisanie pliku [CM]
+h - w lewo [NM]
+j - w dół [NM]
+k - do góry [NM]
+l - w prawo [NM]
+shift+6 - home [NM]
+shift+4 - end [NM]
+shift+0 - poczatek linii [NM]
+CTRL+D - page down [NM]
+CTRL+U - page up [NM]
+a text - pisanie  za kursorem [CM]
+i lub insert text - pisanie przed kursorem [CM]
+gg - przejscie na samą górę dokumentu [CM]
+shift+G - przejscie na koniec dokumentu [NM]
+w - przejscie do następnego słowa [CM]
+e - przejscie na koniec następnego słowa [CM]
+b - przejscie do poprzedniego słowa na poczatek [CM]
+x - usuwanie znaków pod kursorem (blokiem) [NM]
+$ - przechodzi na koniec linii
+v + h/j/k/l/w/e/b/$ + y - zaznacza w [VM] i kopiuje zaznaczony tekst
+y + w/e/b/$  - zaznacza
+yy - zaznacza cała linijke
+p - wkleja
+c + h/j/k/l/w/e/b/$ - wycina zaznaczony tekst
+d - usuwa fraze
+d + h/j/k/l/w/e/b/$ - usuwanie fraz/znakow itp
+/<text> - text do znalezienia
+* - znajdz następny
+** - znajdz następny itd
+:split - dzielenie ekranu poziomo [CM]
+:vsp  - dzielenie ekranu pionowo [CM]
+CTRL+W+ /w/b/h/j/k/l - przejscie do nastepnego okna w splicie
+
+autowprowadzanie
+:set omnifunc=htmlcomplete#CompleteTagslink -> http://docs.oseems.com/application/vim/auto-complete-htm
