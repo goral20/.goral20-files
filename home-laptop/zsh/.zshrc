@@ -117,6 +117,8 @@ zle -N history-beginning-search-forward-end history-search-end
 # Bind the up and down arrows to history search.
 #bindkey '\e[A' history-beginning-search-backward-end
 #bindkey '\e[B' history-beginning-search-forward-end
+
+# Zaawansowana historia
 bindkey '\e[A' history-substring-search-up
 bindkey '\e[B' history-substring-search-down
 
