@@ -9,9 +9,9 @@ reload-only-visible-feeds	no
 reload-threads 4
 
 # History
-max-items	1000
+max-items 300	
 #cleanup-on-quit	yes
-keep-articles-days	30
+keep-articles-days	14
 cache-file "~/.newsbeuter/cache.db"
 mark-as-read-on-hover yes
 error-log "~/.newsbeuter/error.log"
@@ -32,7 +32,7 @@ notify-beep	no
 #article-sort-order date
 article-sort-order date-asc
 #articlelist-format "%4i %f %D %6L %?T?;%-17T; ?%t"
-articlelist-format "| %2i | %f | %D | %6L |> %t"
+articlelist-format "| %3i | %f | %D | %6L |> %t"
 #feedlist-format "%4i %n %11u %t"
 #feedlist-format "%n %4i - %11u -%> %t"
 feedlist-format "| %2i | %n | %10u |> %t"
@@ -65,3 +65,6 @@ bind-key ^H toggle-source-view
 #color listfocus    color247   color24    bold
 #color info         color45    color235
 #color article      color252   color16
+
+# Ignorowanie artkułów
+ignore-article "http://www.4clubbers.com.pl/external.php?type=RSS2&forumids=83" "title =~ \"Psy\" or title =~ \"Hard\" or title =~ \"Chillout\""
