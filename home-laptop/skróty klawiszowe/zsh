@@ -1,8 +1,100 @@
+# Sprawdzone
 ctrl+u - kopiuje napisana linijke
 ctrl+y - wkleja skopiowana linijke
 ctrl+l - clear
 ctrl+t - poprawa czeskich bledow
+ctrl+a - przechodzi na początek linijki
+ctrl+e - przechodzi na konieć linijki
+ctrl+f - przechodzi o jedną pozycję do przodu
+ctrl+b - przechodzi o jedną pozycję do tyłu
+ctrl+k - usuwa wszystko do kursora
 ^1^2 - zamiana fraz w komendach z 1 na 2
 ctrl+x(puszczamy tylko x)+e - domyślny edytor pod polecenia
+ctrl+r - historia
 polecenie + strzałka - wywołanie z historii pasującego polecenia
+alt+U(shift+u) - cały wyraz z dużej litery
+alt+L(shift+l) - cały wyraz z małej litery
+alt+C(shift+u) - tylko pierwsza litera z dużej
 
+# testowe
+A few shortcuts with the Ctrl key.
+
+Ctrl + a – jump to the beginning of line (Cisco, csh, zsh)
+
+Ctrl + b – move one character backwards (Cisco, csh, zsh)
+
+Ctrl + c – send SIGINT signal to the current job.  Usually interrupts the running task (csh, zsh)
+
+Ctrl + d – delete character at cursor position (exactly like Delete key) (Cisco, csh, zsh)
+
+Ctrl + e – jump to the end of line (Cisco, csh, zsh)
+
+Ctrl + f – move one character forward (Cisco, csh, zsh)
+
+Ctrl + k – delete everything to the end of line (EOL, not the screen edge) (Cisco, csh, zsh)
+
+Ctrl + l – clear screen (exactly like clear command) (csh, zsh)
+
+Ctrl + r – search through history. Repeated search (search results listing).  Incremental search. (zsh)
+
+Ctrl + j – stop search and allow to edit found command.  If there was no prior search, then behave exactly like Enter key (in zsh runs the command)
+
+Ctrl + t – change character at cursor position to the one before. Or move previous character towards the end of line, if you will. (Cisco, csh, zsh)
+
+Ctrl + u – delete all characters from position to the left of the cursor to the end of line (Cisco, in csh and zsh deletes the whole line)
+
+Ctrl + w – delete all characters from position to the left of the cursor to the beginning of the word (Cisco, csh, zsh)
+
+Ctrl + xx – jump between current cursor position to the beginning of the line and back. In Cisco works exactly like Ctrl + u (csh)
+
+Ctrl + x @ – shows hostname completion matches (hostnames are taken from /etc/hosts)
+
+Ctrl + z – suspend current task (csh, zsh)
+
+Ctrl +x ; Ctrl + e – open $EDITOR for editing of the current command line. After changes are saved, the command is executed.
+
+Now a few shortcuts with the Alt key
+
+Alt + < – jump to the first command in history (zsh)
+
+Alt + > – jump to the last command in history
+
+Alt + ? – shows possible matches for the command completion (similar to Tab – Tab) (in csh, zsh works exactly like which string)
+
+Alt + * – inserts all possible completion matches into the command line
+
+Alt + / – attempts to complete the filename (similar to Tab)
+
+Alt + . – inserts the last parameter of the previous command (like !$, but you don’t need to do :p to check)
+
+Alt + b – moves the cursor backwards by one word (Cisco, csh, zsh)
+
+Alt + c – converts character under the cursor to upper case, and the rest of the characters in the word to lowercase (Cisco, csh, zsh)
+
+Alt + d – deletes characters from current cursor position to the end of the word (Cisco, csh, zsh)
+
+Alt + f – moves cursor forwards by one word (Cisco, csh, zsh)
+
+Alt + l – converts all characters from current position to the end of the word to lower case (Cisco, csh, zsh)
+
+Alt + t – swaps the word at cursor position with the next one (zsh)
+
+Alt + u – convers all characters from current position to the end of the word to upper case (Cisco, csh, zsh)
+
+Alt + Backspace – deletes characters from current cursor position to the beginning of the word (Cisco, csh, zsh)
+
+In the next listing, I will use “2T” for a double tabulation (Tab-Tab).
+
+2T – command completion.  If done on an empty line, will show the listing of all possible commands
+
+(string)2T – list completion matches
+
+(dir)2T – list subdirectories of dir
+
+*2T – list subdirectories, omitting hidden ones (those that start with a .)
+
+~2T – list users from /etc/passwd.  You can go directly to user’s home directory after the username completion.
+
+$2T – list all environment and system variables
+
+@2T – list hostname completion matches, using /etc/hosts
