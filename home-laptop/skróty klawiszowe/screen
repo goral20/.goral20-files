@@ -1,0 +1,12 @@
+Obs³uga programu mo¿liwa jest poprzez naciœniêcie kombinacji klawiszy Ctrl + A, a nastêpnie jednego z klawiszy:
+c - utworzenie nowego okna,
+p - przechodzi do poprzedniego okna,
+n - przejœcie do nastêpnego okna,
+0-9 - przejœcie do okna o podanym numerze,
+A - nadanie nazwy oknu,
+x - zablokowanie okna has³em,
+" - wyœwietlenie listy okien,
+d - prze³¹czenie okna w tryb dzia³ania „w tle” („od³¹czenie ekranu od terminala”)
+K - zamkniêcie okna (sygna³ kill)
+
+http://ubuntu-tutorials.com/2009/10/09/screenrc/
