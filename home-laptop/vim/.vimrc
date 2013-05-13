@@ -19,6 +19,6 @@ colorscheme codesweets
 set ofu=syntaxcomplete#Complete
 setglobal spell spelllang=pl_pl
 
-set enc=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8,latin2
+scriptencoding utf-8
+set encoding=utf-8
+set fileencodings=utf-8
