@@ -1,0 +1,19 @@
+/connect [nazwa.serwera] (/connect test.pl) - połączenie z serwerem
+
+/disconnect – rozłączenie z serwerem
+
+/join #[nazwa.kanału] (/join #kanal) – połączenie z kanałem
+
+/nick [nasza.nazwa] – wyświetlana nazwa pod jaką wystepujemy na serwerze (zmiana nicku)
+
+/away [jakiś.tekst] – status nieobecności, wyłącza się tą samą komendą bez tekstu
+
+/clear – czyszczenie okna
+
+/me [tekst] (/me słucha) – prezentacja danej czynności
+
+/window kill [numer okna] – zamyka okno o danym numerze
+
+/quit – wyjście z kanału
+
+/names #[nazwa kanału] – lista osób na zalogowanym kanale
