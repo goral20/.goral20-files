@@ -42,6 +42,8 @@ d + h/j/k/l/w/e/b/$ - usuwanie fraz/znakow itp
 :split - dzielenie ekranu poziomo [CM]
 :vsp  - dzielenie ekranu pionowo [CM]
 CTRL+W+ /w/b/h/j/k/l - przejscie do nastepnego okna w splicie
+:8,10 s/search/replace/g - zamiana w linijka 8-10 search na replace
+:%s/search/replace/g - zamiana w całym dokumencie search na replace
 
 autowprowadzanie
 :set omnifunc=htmlcomplete#CompleteTagslink -> http://docs.oseems.com/application/vim/auto-complete-htm
