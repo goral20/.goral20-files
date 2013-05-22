@@ -2,9 +2,9 @@
 ==============
 Vim files
 
-Vim files v1.0 - 22 Maja 2013<br>
-dodano:<br>
-Ustawienie ilości kolorów 
+Vim files v1.0 - 22 Maja 2013  
+dodano:  
+Ustawienie ilości kolorów  
 Ustawienie trybu rozszerzonego VIma, zamiast domyślnego, kompatybilnego z Vi 
 Ustawienie schematu kolorów 
 Włączenie kolorowania składni 
