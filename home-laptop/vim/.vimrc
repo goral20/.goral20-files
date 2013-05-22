@@ -1,18 +1,18 @@
 filetype plugin on
 
-"Ustawia ilosc kolorow
+"Ustawienie ilości kolorów
 set t_Co=256
 
-"Ustawia tryb rozszerzony VIma, zamiast domyślnego, kompatybilnego z Vi
+"Ustawienie trybu rozszerzonego VIma, zamiast domyślnego, kompatybilnego z Vi
 set nocompatible
 
-"Schemat kolorów
+"Ustawienie schemat kolorów
 colorscheme mustang
 
-"Włącza kolorowanie składni
+"Włączenie kolorowania składni
 syntax on
 
-"Automatycznie ustawiaj wcięcie nowej linii
+"Automatycznie ustawia wcięcie nowej linii
 set autoindent
 set smartindent
 set foldmethod=marker
@@ -23,7 +23,7 @@ set pastetoggle=<F11>
 "Podświetlnie wyszukiwania
 set hlsearch
 
-"Wyszukuje frazę podczas wpiwywania szukanego słowa
+"Wyszukuje frazę podczas wpisywania szukanego słowa
 set incsearch
 
 "Ignoruj wielkość znaków podczas wyszukiwania
@@ -39,7 +39,7 @@ set mouse=a
 "set mousehide
 "set linebreak
 
-"Zapisuj w widoku tylko pozycję kursora
+"Zapisuje w widoku tylko pozycję kursora
 set viewoptions=cursor
 
 "Konfiguracja informacji zapisywanych w pliku .viminfo
@@ -70,6 +70,12 @@ set ruler
 "Historia
 set history=100
 
+"Tworzy kopie zapasowe plików
+set backup
+
+"Określa katalog, w którym tworzone będą kopie zapasowe
+set backupdir=/media/Dane/Backup/Vim
+
 "Pokazuje tryb w jakim jesteśmy w lewym dolnym rogu
 set showmode
 
@@ -97,7 +103,7 @@ set nu
 "Podswietla linie, w ktorej znajduje sie kursor
 set cursorline
 
-"Pokaz otwierający nawias gdy wpisze zamykający
+"Pokaż otwierający nawias gdy wpisze zamykający
 set showmatch
 
 "Minimalna liczba wierszy zawsze widocznych nad i pod kursorem
