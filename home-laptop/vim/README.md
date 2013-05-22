@@ -2,15 +2,15 @@
 ==============
 Vim files
 
-Vim files v1.0 - 22 Maja 2013
-dodano:
-Ustawienie ilości kolorów
-Ustawienie trybu rozszerzonego VIma, zamiast domyślnego, kompatybilnego z Vi
-Ustawienie schematu kolorów
-Włączenie kolorowania składni
-Automatycznie ustawia wcięcie nowej linii
-Po wcisnieciu F11 wlaczanony jest tryb wklejeania bez autoformatowania
-Podświetlnie wyszukiwania
+Vim files v1.0 - 22 Maja 2013 
+dodano: 
+Ustawienie ilości kolorów 
+Ustawienie trybu rozszerzonego VIma, zamiast domyślnego, kompatybilnego z Vi 
+Ustawienie schematu kolorów 
+Włączenie kolorowania składni 
+Automatycznie ustawia wcięcie nowej linii 
+Po wcisnieciu F11 wlaczanony jest tryb wklejeania bez autoformatowania 
+Podświetlnie wyszukiwania 
 Wyszukuje frazę podczas wpisywania szukanego słowa
 Ignoruj wielkość znaków podczas wyszukiwania
 Wyłącz ignorowanie jeżeli w szukanej frazie występuje wielka litera
