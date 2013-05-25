@@ -61,6 +61,8 @@ n| – przejście do kolumny n linii
 % – przejście do otwarcia / zamknięcia nawiasu (),[],<>,{}
 G – przejście na koniec dokumentu
 nG – przejście do linii <n>
+shift+5 czyli % - przejście na koniec nawiasu
+shift+8 czyli * - zaznacza cały wyraz
 
 zapisywanie
 :x lub :wq – zapisywanie pliku i wyjście
@@ -91,6 +93,9 @@ a – rozpoczęcie edycji po kursorze
 A – rozpoczęcie edycji na końcu bieżącej linii
 cw – zastąpienie wyrazu (bieżący wyraz się kasuje, kursor ustawia się na jego początku)
 cc – zastąpienie linii (bieżąca linia się kasuje, kursor ustawia się na jej początku)
+np 30i- to polecenie wpisze nam 30 razy - (średnik)
+r - zmienia liter pod kursorem
+e - zaznaczenie całego słowa
 
 kopiowanie i wstawianie
 yw – kopiuj do schowka bieżący wyraz
@@ -102,6 +107,7 @@ P – wklej skopiowany tekst przed kursorem
 
 inne
 u – cofnięcie ostatniej zmiany
+R - ponawia cofniete zmiany
 U – cofnięcie wszystkich zmian w bieżącej linii
 . – powtórzenie ostatniej komendy
 SHIFT+# – wyszukiwanie wyrażeń pasujących do zaznaczonego
