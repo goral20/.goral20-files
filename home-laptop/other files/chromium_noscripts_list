@@ -1,5 +1,18 @@
 Lista dopuszczonych skryptów w noscripts
 
+----------------------------------------
+wersja 1.2 z dnia 26 Maja 2013
+dodano:
+192.168.1.5
+gamecreds.com
+cdn.last.fm
+googleapis.com
+dmcdn.net
+youtube.com
+ytimg.com
+google.com
+
+----------------------------------------
 wersja 1.1 z dnia 25 Maja 2013
 dodano:
 dailymotion.com
@@ -29,24 +42,35 @@ zarabianiebb.pl
 
 ========================================
 Pełna lista
-bannersbroker.com
-dotshare.it
-myanimelist.net
-evageeks.org
-joemonster.org
-anime-chronicle.pl
+# Ważne
+192.168.1.5
 4clubbers.com.pl
+anime-chronicle.pl
+bannersbroker.com
 dobreprogramy.pl
-lastfm.pl
-pozycja.promocjastronywww.pl
-zarabianiebb.pl
-dailymotion.com
 github.com
-sonyentertainmentnetwork.com
-zippyshare.com
-dotshare.it
-torrentmania.info
 google.pl
-metro2033.pl
-vpspanel.hitme.net.pl
+google.com
+googleapis.com
+joemonster.org
+lastfm.pl
+cdn.last.fm
+myanimelist.net
+pozycja.promocjastronywww.pl
 ps3site.pl
+sonyentertainmentnetwork.com
+youtube.com
+ytimg.com
+zarabianiebb.pl
+zippyshare.com
+
+# Mniej ważne
+dotshare.it
+dailymotion.com
+gamecreds.com
+dmcdn.net
+dotshare.it
+evageeks.org
+metro2033.pl
+torrentmania.info
+vpspanel.hitme.net.pl
