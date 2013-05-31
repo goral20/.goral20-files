@@ -17,7 +17,7 @@ set autoindent
 set smartindent
 set foldmethod=marker
 
-"Po wcisnieciu F11 wlaczanony jest tryb wklejeania bez autoformatowania
+"Po wcisnieciu F11 włączony jest tryb wklejeania bez autoformatowania
 set pastetoggle=<F11>
 
 "Podświetlnie wyszukiwania
@@ -113,7 +113,7 @@ set ignorecase
 set title
 
 "Nie zawija wierszy
-set nowrap
+"set nowrap
 
 "Minimalna liczba wierszy zawsze widocznych nad i pod kursorem
 set scrolloff=5
