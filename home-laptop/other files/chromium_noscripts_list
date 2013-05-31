@@ -1,6 +1,17 @@
 Lista dopuszczonych skryptów w noscripts
 
 ----------------------------------------
+wersja 1.3 z dnia 31 Maja 2013
+dodano:
+192.168.1.1
+torrentmania.info
+mbank.com.pl
+ipko.pl
+nazwa.pl
+netia.pl
+plus.pl
+
+----------------------------------------
 wersja 1.2 z dnia 26 Maja 2013
 dodano:
 192.168.1.5
@@ -43,6 +54,7 @@ zarabianiebb.pl
 ========================================
 Pełna lista
 # Ważne
+192.168.1.1
 192.168.1.5
 4clubbers.com.pl
 anime-chronicle.pl
@@ -52,10 +64,14 @@ github.com
 google.pl
 google.com
 googleapis.com
+ipko.pl
 joemonster.org
 lastfm.pl
 cdn.last.fm
+netia.pl
+mbank.com.pl
 myanimelist.net
+plus.pl
 pozycja.promocjastronywww.pl
 ps3site.pl
 sonyentertainmentnetwork.com
@@ -72,5 +88,6 @@ dmcdn.net
 dotshare.it
 evageeks.org
 metro2033.pl
+nazwa.pl
 torrentmania.info
 vpspanel.hitme.net.pl
