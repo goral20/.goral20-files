@@ -1,0 +1,3 @@
+# masowa zmiana rozdzielczości
+for i in *.jpg; do echo "$i"; convert "$i" -resize szerokość x wysokość "$i"; done
+np for i in *.jpg; do echo "$i"; convert "$i" -resize 100x50 "$i"; done
