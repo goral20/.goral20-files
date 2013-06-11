@@ -34,8 +34,11 @@ exec conky -c /home/sebastian/.conkyrc2 &
 exec conky -c /home/sebastian/.conkyrc3 &
 urxvt -title ncmpcpp -e ncmpcpp &
 urxvt -title shell-ekg2 -e tmux -S tmuxses attach &
+urxvt -class mutt -e irssi &
 urxvt -class mutt -e mutt &
 urxvt -class newsbeuter -e newsbeuter &
 sh ~/.zmienne_tapety.sh &
+udiskie &
 #feh --bg-fill "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/AKTUALNA TAPETA.png"
-exec ck-launch-session dbus-launch dwm
+#exec ck-launch-session dbus-launch dwm
+exec dwm
