@@ -153,3 +153,6 @@ alias sshmydevil='ssh -i /home/sebastian/.ssh/id_rsa_shell_mydevil sebas87@ssh.m
 alias sshendomedk='ssh -i /home/sebastian/.ssh/id_rsa_serwer_endomedk mareczekg@IP -p 10025'
 alias redshifton='redshift -l 51.3:21.2 -t 5600:4400 -b 0.8'
 alias redshiftoff='killall redshift'
+#alias gitup='cd .goral20-files && git init && git add . -A && git commit -v && git push -u goral20 master && cd ..'
+alias gitcom='cd .goral20-files && git init && git add . -A && git commit -v && cd ..'
+alias gitup='cd .goral20-files && git push -u goral20 master && cd ..'
