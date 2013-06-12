@@ -1,0 +1,22 @@
+Mutt skróty klawiszowe
+# Wątki
+ESC+V - zwiń/rozwiń wszystkie wątki
+ESC+v - zwiń/rozwiń bieżący wątek
+^D - usuwanie wątku
+ESC+d - usuwa wszsytkie listy z podwątku
+^R lub ^r - zaznacz obecny wątek jako przeczytany
+ESC+t - zaznaczanie bieżacego wątku
+
+# Flagi
+F - ustawia flagę dla wiadomości WAŻNE
+N - ustawia flagę dla wiadomosci NOWE
+W - usuwa flagę ze statusem dla wiadomości
+w - ustawia flagę dla statusu listu
+
+b - wyśli te samą wiadomość do innego użytkownika
+f - prześlij dalej tę wiadomość opatrując ją uwagami
+r - odpowiedz na list
+m - nowa wiadomośc
+^B - urlview {testing} 
+TAB - przechodzi do nowego lub nie przeczytanego listu
+
