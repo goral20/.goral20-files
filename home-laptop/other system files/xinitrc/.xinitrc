@@ -6,10 +6,6 @@ sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 xbindkeys
 
-#~/.setbg
-#~/.fehbg              # set wallpaper
-#unclutter -root &       # hide cursor when unused
-
 # hide cursor
 unclutter -noevents -idle 5 &
 
@@ -20,11 +16,6 @@ xmodmap -e "keycode 133 = XF86Launch1"
 xmodmap -e "clear lock" -e "keycode 66 = Control_R" -e "add Control = Control_R"
 
 conky | while read -r; do xsetroot -name "$REPLY"; done &
-
-#while :; do
-#    feh --bg-fill "$(find "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/nge_zmienne_tapety/" -type f | shuf -n1)"
-#		sleep 1m
-#done &
 
 # Launch system-wide stuff first, then dwm...
 exec /usr/bin/urxvt &
@@ -39,6 +30,4 @@ urxvt -class mutt -e mutt &
 urxvt -class newsbeuter -e newsbeuter &
 sh ~/.zmienne_tapety.sh &
 udiskie &
-#feh --bg-fill "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/AKTUALNA TAPETA.png"
-#exec ck-launch-session dbus-launch dwm
 exec dwm
