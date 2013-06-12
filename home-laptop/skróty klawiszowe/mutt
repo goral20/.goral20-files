@@ -13,10 +13,10 @@ N - ustawia flagę dla wiadomosci NOWE
 W - usuwa flagę ze statusem dla wiadomości
 w - ustawia flagę dla statusu listu
 
+# Wysyłanie
 b - wyśli te samą wiadomość do innego użytkownika
 f - prześlij dalej tę wiadomość opatrując ją uwagami
 r - odpowiedz na list
 m - nowa wiadomośc
 ^B - urlview {testing} 
 TAB - przechodzi do nowego lub nie przeczytanego listu
-
