@@ -1,0 +1,33 @@
+#defutf8 on
+#wylaczenie wiadomosci startowej
+startup_message off
+
+#wylaczenie graficznego dzwonka
+vbell off
+
+#domyslna ilosc linii historii
+defscrollback 1024
+
+#wlaczenie kodowania utf8 jako domyslne
+encoding UTF-8
+defencoding UTF-8
+defutf8 on
+
+#automatyczne odlaczenie screena po zerwaniu polaczenia
+autodetach on
+
+#limit bufora wejsciowego
+defobuflimit 4096
+
+# programy uruchamiane razem ze screenem
+screen -t ekg2 1 ekg2
+screen -t irssi 2 irssi
+#scrEEn -t terminal 1
+#screen -t top 2 top
+select 1
+
+#dolna belka ze statystykami
+hardstatus alwayslastline
+hardstatus string "%{gk}[ %{G}$USER:%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][ %{Y}load %l%{g} ]%{=b C}[ %d/%m/%y %c ]%{W}"
+#nawet nawet dodatkowo ma am/pm hardstatus string "%{gk}[ %{G}$USER:%H %{g}][%= %{w}%?%-w%?%{=b kR}(%{W}[%{Y}%n%{W}] %t%?(%u)%?%{=b kR})%{= kw}%?%+w%?%?%= %{g}][%{Y}load %{Y}%l%{g}]%{=b C}[ %D %d/%M/%Y %c ]%{W}"
+#hardstatus alwayslastline "%{= kb}[ %{B}%H:$USER %{b}][ %=%{w}%?%-Lw%?%{b}(%{W}%n*%f %t%?(%u)%?%{b})%{w}%?%+Lw%?%?%= %{b}][%{B} %l %{B}%{W}%d.%0m %{b}]"
