@@ -1,0 +1,9 @@
+grep
+
+grep wycinanie adresów mailowych z plików
+grep -E -o "\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+\b" filename.txt
+
+lub 
+egrep -o "\b[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+\b" filename.txt
+
+================================================================================
