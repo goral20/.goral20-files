@@ -1,4 +1,9 @@
 Lista dopuszczonych skryptów w noscripts
+________________________________________
+wersja 1.5 z dnia 14 lipiec 2013
+dodano:
+ajax.last.fm
+ermail.pl
 
 ----------------------------------------
 wersja 1.4 z dnia 14 Czerwiec 2013
@@ -63,7 +68,6 @@ Pełna lista
 192.168.1.5
 4clubbers.com.pl
 anime-chronicle.pl
-bannersbroker.com
 dobreprogramy.pl
 github.com
 google.pl
@@ -72,6 +76,7 @@ googleapis.com
 ipko.pl
 joemonster.org
 lastfm.pl
+ajax.last.fm
 cdn.last.fm
 netia.pl
 mbank.com.pl
@@ -84,6 +89,10 @@ youtube.com
 ytimg.com
 zarabianiebb.pl
 zippyshare.com
+
+# Zarabianie
+bannersbroker.com
+ermail.pl
 
 # Mniej ważne
 dotshare.it
