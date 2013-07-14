@@ -5,6 +5,8 @@ dodano:
 ajax.last.fm
 ermail.pl
 fastly.net
+ideabank.pl
+aliorbank.pl
 
 ----------------------------------------
 wersja 1.4 z dnia 14 Czerwiec 2013
@@ -75,13 +77,11 @@ fastly.net
 google.pl
 google.com
 googleapis.com
-ipko.pl
 joemonster.org
 lastfm.pl
 ajax.last.fm
 cdn.last.fm
 netia.pl
-mbank.com.pl
 myanimelist.net
 plus.pl
 pozycja.promocjastronywww.pl
@@ -91,6 +91,12 @@ youtube.com
 ytimg.com
 zarabianiebb.pl
 zippyshare.com
+
+# Bankowe
+aliorbank.pl
+ideabank.pl
+ipko.pl
+mbank.com.pl
 
 # Zarabianie
 bannersbroker.com
