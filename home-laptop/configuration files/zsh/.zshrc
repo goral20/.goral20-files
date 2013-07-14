@@ -6,11 +6,13 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="candy-mod-v1_by_zse1"
-ZSH_THEME="steeefv5"
+#ZSH_THEME="steeefv5"
 #ZSH_THEME="aussiegeek"
 #ZSH_THEME="candy"
 #ZSH_THEME="frisk" dobre ale trzeba przerobic
 #ZSH_THEME="xiong-chiamiov"
+#ZSH_THEME="af-magic v4 by zse1"
+ZSH_THEME="steeefv6b"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -154,5 +156,7 @@ alias sshendomedk='ssh -i /home/sebastian/.ssh/id_rsa_serwer_endomedk mareczekg@
 alias redshifton='redshift -l 51.3:21.2 -t 5600:4400 -b 0.8'
 alias redshiftoff='killall redshift'
 #alias gitup='cd .goral20-files && git init && git add . -A && git commit -v && git push -u goral20 master && cd ..'
-alias gitcom='cd .goral20-files && git init && git add . -A && git commit -v && cd ..'
-alias gitup='cd .goral20-files && git push -u goral20 master && cd ..'
+alias gitcom='cd ~ && cd .goral20-files && git init && git add . -A && git commit -v && cd ..'
+alias gitup='cd ~ && cd .goral20-files && git push -u goral20 master && cd ..'
+alias streamwonziu4='livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 480p'
+alias streamwonziu7='livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 720p'
