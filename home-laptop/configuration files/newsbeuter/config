@@ -15,6 +15,7 @@ keep-articles-days	14
 cache-file "~/.newsbeuter/cache.db"
 mark-as-read-on-hover yes
 error-log "~/.newsbeuter/error.log"
+#delete-read-articles-on-quit yes
 
 # Download
 download-retries	10
@@ -68,3 +69,6 @@ bind-key ^H toggle-source-view
 
 # Ignorowanie artkułów
 ignore-article "http://www.4clubbers.com.pl/external.php?type=RSS2&forumids=83" "title =~ \"Psy\" or title =~ \"Hard\" or title =~ \"Chillout\""
+ignore-article "http://popdll.com/category/language/feed/" "title =~ \"PV\" or title =~\"[PV]\""
+#define-filter "Najlepsi" "title =~ \"andrew\"" or "title =~ \"johan\"" or "title =~ \"sam\""
+define-filter "Najlepsi2" "title # \"Alan\"" and "title # \"Dan\"" and "title # \"Sam\"" and "title # \"Talla\""
