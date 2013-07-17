@@ -32,8 +32,14 @@ notify-beep	no
 # Sort
 #article-sort-order date
 article-sort-order date-asc
+#articlelist-format "%4i %f %D %6L %?T?;%-17T; ?%t"
 articlelist-format "| %3i | %f | %D | %6L |> %t"
+#feedlist-format "%4i %n %11u %t"
+#feedlist-format "%n %4i - %11u -%> %t"
 feedlist-format "| %2i | %n | %10u |> %t"
+#datetime-format %b %d
+#datetime-format "%a %b %d, %Y at %R %Z %Z %D %R"
+#datetime-format "%a %A %D %R"
 datetime-format "%a %D o %R"
 
 # Others
