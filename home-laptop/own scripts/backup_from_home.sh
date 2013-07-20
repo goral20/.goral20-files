@@ -17,28 +17,41 @@ while [ 1 ]
         read CHOICE
         case "$CHOICE" in
                 "1")
+                        d="/media/Dane/Backup/Domowe"
+                        echo -e
                         echo "Wybrałeś: Wykonaj kopię tylko plików i folderów z Moje Dokumenty"
-                        echo "Ostatnia kopia Dokumentów została zrobiona: $(stat "/media/Dane/Backup/Domowe/Moje Dokumenty" | grep Mod | cut -c 13-40 )"
-                        rsync -avz --delete ~/Dokumenty/ "/media/Dane/Backup/Domowe/Moje Dokumenty"
+                        echo "Ostatnia kopia Dokumentów została zrobiona: "$(stat "$d/Moje Dokumenty" | grep Mod | cut -c 13-40 )""
+                        echo -e
+                        rsync -avz --delete ~/Dokumenty/ "$d/Moje Dokumenty"
                         echo "Kopia/synchronizacja Dokumentów zrobiona"
+                        echo -e
                         ;;
                 "2")
+                        echo -e
                         echo "Wybrałeś: Wykonaj kopię tylko plików i folderów z Pobrane"
-                        echo "Ostatnia kopia Pobranych została zrobiona: $(stat "/media/Dane/Backup/Domowe/Pobrane" | grep Mod | cut -c 13-40 )"
-                        rsync -avz --delete ~/Pobrane/ "/media/Dane/Backup/Domowe/Pobrane"
+                        echo "Ostatnia kopia Pobranych została zrobiona: $(stat "$d/Pobrane" | grep Mod | cut -c 13-40 )"
+                        echo -e
+                        rsync -avz --delete ~/Pobrane/ "$d/Pobrane"
                         echo "Kopia/synchronizacja Pobranych zrobiona"
+                        echo -e
                         ;;
                 "3")
+                        echo -e
                         echo "Wybrałeś: Wykonaj kopię tylko plików i folderów z Wideo"
-                        echo "Ostatnia kopia Wideo została zrobiona: $(stat "/media/Dane/Backup/Domowe/Wideo" | grep Mod | cut -c 13-40 )"
-                        rsync -avz --delete ~/Wideo/ "/media/Dane/Backup/Domowe/Wideo"
+                        echo "Ostatnia kopia Wideo została zrobiona: $(stat "$d/Wideo" | grep Mod | cut -c 13-40 )"
+                        echo -e
+                        rsync -avz --delete ~/Wideo/ "$d/Wideo"
                         echo "Kopia/synchronizacja Wideo zrobiona"
+                        echo -e
                         ;;
                 "4")
+                        echo -e
                         echo "Wybrałeś: Wykonaj kopię tylko plików i folderów z Obrazy"
-                        echo "Ostatnia kopia Obrazów została zrobiona: $(stat "/media/Dane/Backup/Domowe/Obrazy" | grep Mod | cut -c 13-40 )"
-                        rsync -avz --delete ~/Obrazy/ "/media/Dane/Backup/Domowe/Obrazy"
+                        echo "Ostatnia kopia Obrazów została zrobiona: $(stat "$d/Obrazy" | grep Mod | cut -c 13-40 )"
+                        echo -e
+                        rsync -avz --delete ~/Obrazy/ "$d/Obrazy"
                         echo "Kopia/synchronizacja Obrazów zrobiona"
+                        echo -e
                         ;;
                 "5")
                         echo "Wybrałeś: Wykonaj kopię tylko plików i folderów ze wszystkich powyżej"
