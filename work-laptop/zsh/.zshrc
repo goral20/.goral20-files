@@ -1,3 +1,5 @@
+set -g default-terminal xterm
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -5,12 +7,14 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="candy-mod-v1_by_zse1"
-ZSH_THEME="steeefv4"
-#ZSH_THEME="aussiegeek"
-#ZSH_THEME="candy"
-#ZSH_THEME="frisk" dobre ale trzeba przerobic
-#ZSH_THEME="xiong-chiamiov"
+ZSH_THEME="steeefv6b"
+##ZSH_THEME="steeefv6"
+##ZSH_THEME="frisk" #dobre ale trzeba przerobic
+## testingi
+##ZSH_THEME="af-magic v4 by zse1"
+##ZSH_THEME="af-magic"
+#ZSH_THEME="tjkirchv2"
+#ZSH_THEME="smt"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -37,9 +41,11 @@ ZSH_THEME="steeefv4"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git wakeonlan extract screen)
 
+# Plugin odpowiadający za historię
 source $ZSH/oh-my-zsh.sh
+source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl
@@ -113,8 +119,12 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 
 # Bind the up and down arrows to history search.
-bindkey '\e[A' history-beginning-search-backward-end
-bindkey '\e[B' history-beginning-search-forward-end
+#bindkey '\e[A' history-beginning-search-backward-end
+#bindkey '\e[B' history-beginning-search-forward-end
+
+# Zaawansowana historia
+bindkey '\e[A' history-substring-search-up
+bindkey '\e[B' history-substring-search-down
 
 ## Aliasy
 
@@ -141,3 +151,15 @@ alias lt='ls -lhrt --color=auto'        #sort by date
 alias lr='ls -lhR --color=auto'                    # recursive ls
 alias lm='la | more'
 alias skrypt='sh "/home/sebastian/.skrypty/Inne/Przydatne narzędzia 2.0.sh"'
+alias rss='newsbeuter'
+alias sshserwerdom='ssh -i /home/sebastian/.ssh/id_rsa_serwer_dom zse1@192.168.1.5 -p 10025'
+alias sshmydevil='ssh -i /home/sebastian/.ssh/id_rsa_shell_mydevil sebas87@ssh.mydevil.net'
+alias sshendomedk='ssh -i /home/sebastian/.ssh/id_rsa_serwer_endomedk mareczekg@IP -p 10025'
+alias redshifton='redshift -l 51.3:21.2 -t 5600:4400 -b 0.8'
+alias redshiftoff='killall redshift'
+#alias gitup='cd .goral20-files && git init && git add . -A && git commit -v && git push -u goral20 master && cd ..'
+alias gitcom='cd .goral20-files && git init && git add . -A && git commit -v && cd ..'
+alias gitup='cd .goral20-files && git push -u goral20 master && cd ..'
+alias streamwonziu4='livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 480p'
+alias streamwonziu7='livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 720p'
+alias tmux='tmux -2'
