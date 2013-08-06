@@ -31,7 +31,8 @@ conky | while read -r; do xsetroot -name "$REPLY"; done &
 #done &
 
 # Launch system-wide stuff first, then dwm...
-exec /usr/bin/urxvt &
+#exec /usr/bin/urxvt &
+urxvt -title tmux -e tmux &
 exec mpd &
 exec mpdscribble &
 exec conky -c /home/sebastian/.conkyrc2 &
@@ -42,4 +43,5 @@ urxvt -title shell-ekg2 -e tmux -S tmuxses attach &
 sh ~/.zmienne_tapety.sh &
 #feh --bg-fill "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/AKTUALNA TAPETA.png"
 #exec ck-launch-sesion dbus-launch dwm
+udiskie &
 exec dwm
