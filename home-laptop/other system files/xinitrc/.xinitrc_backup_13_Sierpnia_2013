@@ -18,10 +18,7 @@ xmodmap -e "clear lock" -e "keycode 66 = Control_R" -e "add Control = Control_R"
 conky | while read -r; do xsetroot -name "$REPLY"; done &
 
 # Launch system-wide stuff first, then dwm...
-#only urxvt
-#exec /usr/bin/urxvt &
-# only tmux
-urxvt -title tmux -e tmux &
+exec /usr/bin/urxvt &
 exec mpd &
 exec mpdscribble &
 exec conky -c /home/sebastian/.conkyrc2 &
