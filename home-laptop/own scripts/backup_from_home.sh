@@ -11,13 +11,14 @@ showMenu () {
         echo -n "Wybierz jedną z opcji od 1..4 do 6 !! Opcja "
 }
 
+d="/media/Dane/Backup/Domowe"
+
 while [ 1 ]
         do
         showMenu
         read CHOICE
         case "$CHOICE" in
                 "1")
-                        d="/media/Dane/Backup/Domowe"
                         echo -e
                         echo "Wybrałeś: Wykonaj kopię tylko plików i folderów z Moje Dokumenty"
                         echo "Ostatnia kopia Dokumentów została zrobiona: "$(stat "$d/Moje Dokumenty" | grep Mod | cut -c 13-40 )""
@@ -55,8 +56,15 @@ while [ 1 ]
                         ;;
                 "5")
                         echo "Wybrałeś: Wykonaj kopię tylko plików i folderów ze wszystkich powyżej"
-                        echo "Ostatnia kopia Dokument została zrobiona: $(stat "/media/Dane/Backup/Domowe/Moje Dokumenty" | grep Mod | cut -c 13-40 )"
-                        rsync -avz --delete -e ~/Dokumenty/* '/media/Dane/Backup/Domowe/Moje Dokumenty'
+                        echo "Ostatnia kopia Dokumentów została zrobiona: $(stat "$d/Moje Dokumenty" | grep Mod | cut -c 13-40 )"
+                        rsync -avz --delete ~/Dokumenty/ "$d/Moje Dokumenty"
+                        echo "Ostatnia kopia Pobranych została zrobiona: $(stat "$d/Pobrane" | grep Mod | cut -c 13-40 )"
+                        rsync -avz --delete ~/Pobrane/ "$d/Pobrane"
+                        echo "Ostatnia kopia Wideo została zrobiona: $(stat "$d/Wideo" | grep Mod | cut -c 13-40 )"
+                        rsync -avz --delete ~/Wideo/ "$d/Wideo"
+                        echo "Ostatnia kopia Obrazów została zrobiona: $(stat "$d/Obrazy" | grep Mod | cut -c 13-40 )"
+                        rsync -avz --delete ~/Obrazy/ "$d/Obrazy"
+                        echo "Kopia/synchronizacja została zrobiona"
                         ;;
                 "6")
                         echo "Wybrałeś: Wyjście"
