@@ -62,7 +62,17 @@ bind-key ^H toggle-source-view
 #color article      color252   color16
 
 # Ignorowanie artkułów
+ignore-mode download
 ignore-article "http://www.4clubbers.com.pl/external.php?type=RSS2&forumids=83" "title =~ \"Psy\" or title =~ \"Hard\" or title =~ \"Chillout\""
-ignore-article "http://popdll.com/category/language/feed/" "title =~ \"PV\" or title =~\"[PV]\""
-#define-filter "Najlepsi" "title =~ \"andrew\"" or "title =~ \"johan\"" or "title =~ \"sam\""
-define-filter "Najlepsi2" "title # \"Alan\"" and "title # \"Dan\"" and "title # \"Sam\"" and "title # \"Talla\""
+ignore-article "http://jpddl.com/rss.xml" "title =~ \"PV\""
+ignore-article "http://jpddl.com/rss.xml" "title =~ \"[PV]\""
+ignore-article "http://jpddl.com/rss.xml" "title =~ \"Single\""
+ignore-article "http://jpddl.com/rss.xml" "title =~ \"[Single]\""
+ignore-article "http://jpddl.com/rss.xml" "title =~ \"Zero-Raws\""
+ignore-article "http://jpddl.com/music/rss.xml" "title =~ \"PV\""
+ignore-article "http://jpddl.com/music/rss.xml" "title =~ \"[PV]\""
+ignore-article "http://jpddl.com/music/rss.xml" "title =~ \"Single\""
+ignore-article "http://jpddl.com/music/rss.xml" "title =~ \"[Single]\""
+#ignore-article "http://popdll.com/category/language/feed/" "title =~ \"PV\" or title =~ \"[PV]\""
+#ignore-article "http://jpddl.com/music/rss.xml" "title =~ \"PV\" or title =~ \"[PV]\" or title =~ \"Single\" or title =~ \"[Single]\""
+#ignore-article "http://jpddl.com/rss.xml" "title =~ \"PV\" or title =~ \"[PV]\" or title =~ \"Single\" or title =~ \"[Single]\" or title =~ \"Zero-Raws\" or title =~ \"[Zero-Raws]\""
