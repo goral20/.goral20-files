@@ -13,7 +13,7 @@ $f -X -t nat
 $f -F -t filter
 $f -X -t filter
 
-echo "Ustawienie polityki działania" 
+echo "Ustawienie polityki działania"
 # USTAWIENIE POLITYKI DZIAŁANIA
 $f -P INPUT DROP
 $f -P FORWARD DROP
