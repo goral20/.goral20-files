@@ -21,7 +21,8 @@ alang=jpn,eng,pl
 # Sterownik dzwieku
 ao=alsa
 # Mixer
-mixer-channel=Master
+##mixer-channel=Master
+#channels=6
 
 #==========
 # Napisy
@@ -39,14 +40,17 @@ subcp=cp1250
 # Wczytywanie napisów o tej samej nazwie
 sub-fuzziness=1
 
-vf-add=ass
-ass=yes
-embeddedfonts=yes
+##vf-add=ass
+##ass=yes
+##embeddedfonts=yes
 #ass-use-margins=yes
 #ass-color=FFFFFF00 # RRGGBBAA - plain white (no alpha)
 #ass-border-color=00000000
 #ass-font-scale=0.7
 #ass-hinting=1
+
+## test
+prefer-ipv4 = yes
 
 #==========
 # Wygląd
