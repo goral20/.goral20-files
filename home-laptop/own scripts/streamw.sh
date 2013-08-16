@@ -4,9 +4,8 @@ showMenu () {
          echo "2) Ogladaj stream Wonzia w jakości 380p z gamecreads"
          echo "3) Ogladaj stream Wonzia w jakości 480p z gamecreads "
          echo "4) Ogladaj stream Wonzia w jakości 720p z gamecreads"
-         echo "5) Ogladaj stream Wonzia w jakości 240p z twitch"
-         echo "6) Wyjście"
-         echo -n "Wybierz jedną z opcji od 1..4 do 6 !! Opcja: "
+         echo "5) Wyjście"
+         echo -n "Wybierz jedną z opcji od 1..4 do 5 !! Opcja: "
 }
 
 while [ 1 ]
@@ -59,17 +58,6 @@ while [ 1 ]
                      continue
                     ;;
                 "5")
-                     echo -e
-                     echo "Wybrałeś: Ogladaj stream Wonzia w jakości 480p z gamecreads"
-                     n=1;
-                     while [ $n -le 5 ]
-                      do
-                      livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 480p
-                      n=$[n + 1]
-                     done
-                     continue
-                    ;;
-                "6")
                         echo "Wybrałeś: Wyjście"
                         exit
                         ;;
