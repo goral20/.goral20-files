@@ -13,7 +13,7 @@ $f -X -t nat
 $f -F -t filter
 $f -X -t filter
 
-echo "Ustawienie polityki działania"
+echo "Ustawienie polityki działania" 
 # USTAWIENIE POLITYKI DZIAŁANIA
 $f -P INPUT DROP
 $f -P FORWARD DROP
@@ -74,6 +74,11 @@ $f -A OUTPUT -p tcp --dport 137 -j ACCEPT
 $f -A OUTPUT -p tcp --dport 138 -j ACCEPT
 $f -A OUTPUT -p tcp --dport 139 -j ACCEPT
 $f -A OUTPUT -p tcp --dport 445 -j ACCEPT
+
+echo "VNC"
+# VNC
+$f -A OUTPUT -p tcp --dport 5901 -j ACCEPT
+$f -A OUTPUT -p udp --dport 5901 -j ACCEPT
 
 echo "Dopuszczenie PING"
 # PING (dopuszczenie)
