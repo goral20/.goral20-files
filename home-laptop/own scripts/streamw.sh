@@ -7,6 +7,7 @@ showMenu () {
          echo "5) Wyjście"
          echo -n "Wybierz jedną z opcji od 1..4 do 5 !! Opcja: "
 }
+
 while [ 1 ]
         do
         showMenu
