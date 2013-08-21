@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
         echo "Podaj liczbę powtórzeń i wybierz stream z podanych jakości"
         echo "Wpisz liczbę prób: "
         echo "Wpisz 0 aby wyjść"
@@ -21,7 +21,7 @@ showMenu () {
         echo "09) Ogladaj stream Wonzia w jakości 1080p z twitch"
         echo "Q) Wyjście"
 
-         echo -n "Opcja streamu: "
+        echo -n "Opcja streamu: "
 }
 
 while [ 1 ]
