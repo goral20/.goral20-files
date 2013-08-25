@@ -41,8 +41,8 @@ end
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt"
-editor = os.getenv("EDITOR") or "vim"
+terminal = "xterm"
+editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -70,20 +70,72 @@ local layouts =
 }
 -- }}}
 
+---- {{{ Wallpaper deafult
+--if beautiful.wallpaper then
+--    for s = 1, screen.count() do
+--        gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+--   end
+--end
+---- }}}
+
 -- {{{ Wallpaper
-if beautiful.wallpaper then
-    for s = 1, screen.count() do
-        gears.wallpaper.maximized(beautiful.wallpaper, s, true)
+-- {{{ Function definitions
+
+-- scan directory, and optionally filter outputs
+function scandir(directory, filter)
+    local i, t, popen = 0, {}, io.popen
+    if not filter then
+        filter = function(s) return true end
     end
+    print(filter)
+    for filename in popen('ls -a "'..directory..'"'):lines() do
+        if filter(filename) then
+            i = i + 1
+            t[i] = filename
+        end
+    end
+    return t
 end
+
+-- }}}
+
+-- configuration - edit to your liking
+wp_index = 1
+wp_timeout  = 10
+wp_path = "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/zmienne_tapety/"
+wp_filter = function(s) return string.match(s,"%.png$") or string.match(s,"%.jpg$") end
+wp_files = scandir(wp_path, wp_filter)
+ 
+-- setup the timer
+wp_timer = timer { timeout = wp_timeout }
+wp_timer:connect_signal("timeout", function()
+ 
+  -- set wallpaper to current index for all screens
+  for s = 1, screen.count() do
+    gears.wallpaper.maximized(wp_path .. wp_files[wp_index], s, true)
+  end
+ 
+  -- stop the timer (we don't need multiple instances running at the same time)
+  wp_timer:stop()
+ 
+  -- get next random index
+  wp_index = math.random( 1, #wp_files)
+ 
+  --restart the timer
+  wp_timer.timeout = wp_timeout
+  wp_timer:start()
+end)
+ 
+-- initial start when rc.lua is first run
+wp_timer:start()
 -- }}}
 
 -- {{{ Tags
--- Define a tag table which will hold all screen tags.
-tags = {
-   names  = { "pulpit", "urxvt", "ncmpcpp", "tmux", "mutt", "rss", "www", "files" },
+ -- Define a tag table which will hold all screen tags.
+ tags = {
+   names  = { "tmux", "music", "im", "mutt", "rss", "www", "office", "files", 9, 10 },
    layout = { layouts[1], layouts[2], layouts[3], layouts[4], layouts[5],
-              layouts[6], layouts[7], layouts[8]
+              layouts[6], layouts[7], layouts[8], layouts[9], layouts[10]
  }}
  for s = 1, screen.count() do
      -- Each screen has its own tag table.
@@ -344,29 +396,28 @@ root.keys(globalkeys)
 
 -- {{{ Rules
 awful.rules.rules = {
-
     -- All clients will match this rule.
     { rule = { },
       properties = { border_width = beautiful.border_width,
                      border_color = beautiful.border_normal,
-                     focus = true,
+                     focus = awful.client.focus.filter,
                      keys = clientkeys,
                      buttons = clientbuttons, 
                      size_hints_honor = false} },
-    { rule = { class = "MPlayer" },
-      properties = { floating = true } },
-    { rule = { class = "URxvt" },  properties = {tag = tags[1][2]}},
-    { rule = { name = "ncmpcpp:" },  properties = {tag = tags[1][3]}},
-    { rule = { name = "shell-ekg2 arch" },  properties = {tag = tags[1][4]}},
-    { rule = { name = "mutt" },  properties = {tag = tags[1][5]}},
-    { rule = { name = "newsbeuter" },  properties = {tag = tags[1][6]}},
-    { rule = { name = "chromium" },  properties = {tag = tags[1][7]}},
-    { rule = { name = "keepassx" },  properties = {tag = tags[1][7]}},
-    { rule = { class = "pcmanfm" },  properties = {tag = tags[1][8]}},
-    { rule = { class = "thunar" },  properties = {tag = tags[1][8]}},
-    { rule = { class = "mplayer" },  properties = {tag = tags[1][8]}},
-    { rule = { class = "easytag" },  properties = {tag = tags[1][8]}},
-    { rule = { class = "gqview" },  properties = {tag = tags[1][8]}},
+    { rule = { class = "MPlayer" }, properties = { floating = true } },
+    { rule = { class = "URxvt" }, properties = {tag = tags[1][1], floating = true}},
+    { rule = { class = "ncmpcpp", instance = "urxvt" }, properties = {tag = tags[1][2]}},
+    { rule = { name = "shell-ekg2 arch" }, properties = {tag = tags[1][3]}},
+    { rule = { name = "mutt" }, properties = {tag = tags[1][4]}},
+    { rule = { name = "newsbeuter" }, properties = {tag = tags[1][5]}},
+    { rule = { class = "Chromium", instance = "chromium" }, properties = {tag = tags[1][6]}},
+    { rule = { class = "Firefox" }, properties = {tag = tags[1][2]}},
+    { rule = { name = "keepassx" }, properties = {tag = tags[1][6]}},
+    { rule = { class = "Pcmanfm", instance = "pcmanfm" }, properties = {tag = tags[1][7]}},
+    { rule = { class = "Thunar", instance = "thunar" }, properties = {tag = tags[1][7]}},
+--    { rule = { class = "mplayer" }, properties = {tag = tags[1][7]}},
+    { rule = { class = "easytag" }, properties = {tag = tags[1][7]}},
+    { rule = { class = "gqview" }, properties = {tag = tags[1][7]}},
 }
 -- }}}
 
