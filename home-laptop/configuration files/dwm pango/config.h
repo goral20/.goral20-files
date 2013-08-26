@@ -14,7 +14,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "tmux", "music", "im", "mutt", "rss", "www", "files" };
+static const char *tags[] = { "tmux", "music", "im", "mutt", "rss", "www", "office", "files" };
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ NULL, NULL, "NULL",       1 << 0,       False,       -1 },
@@ -22,13 +22,16 @@ static const Rule rules[] = {
 	{ NULL, NULL, "shell-ekg2",       1 << 2,       False,       -1 },
 	{ NULL, NULL, "mutt",       1 << 3,       False,       -1 },
 	{ NULL, NULL, "newsbeuter",       1 << 4,       False,       -1 },
-	{ "Chromium", NULL, NULL,       1 << 5,       False,       -1 },
-	{ "Keepassx", NULL, NULL,       1 << 5,       False,       -1 },
-	{ "Pcmanfm", NULL, NULL,       1 << 6,       False,       -1 },
-	{ "Thunar", NULL, "sebastian - Menedżer plików",       1 << 6,       False,       -1 },
-	{ "mplayer2", NULL, NULL,       1 << 6,       False,       -1 },
-	{ "Easytag", NULL, NULL,       1 << 6,       False,       -1 },
-	{ "GQview", NULL, NULL,       1 << 6,       False,       -1 },
+	{ "Chromium", "chromium", NULL,       1 << 5,       False,       -1 },
+	{ "Keepassx", "keepassx", NULL,       1 << 5,       False,       -1 },
+	{ "libreoffice-writer", "VCLSalFrame", NULL,       1 << 6,       False,       -1 },
+	{ "libreoffice-calc", "VCLSalFrame.DocumentWindow", NULL,       1 << 6,       False,       -1 },
+	{ "libreoffice-impress", "VCLSalFrame.DocumentWindow", NULL,       1 << 6,       False,       -1 },
+	{ "Pcmanfm", "pcmanfm", NULL,       1 << 7,       False,       -1 },
+	{ "Thunar", "thunar", NULL,       1 << 7,       False,       -1 },
+	{ "mplayer2", "xv", NULL,       1 << 7,       False,       -1 },
+	{ "Easytag", "easytag", NULL,       1 << 7,       False,       -1 },
+	{ "GQview", "gqview", NULL,       1 << 7,       False,       -1 },
 };
 
 /*chcac ustawic aby kazdy terminal uruchamial sie tylko w jednym tagu trzeba wtedy w pierwszej linijce regul zamiast "NULL" ustawić "urxvt" */
