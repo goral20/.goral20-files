@@ -1,0 +1,7 @@
+polenie - jego znaczenie
+print ('tekst') - wypisze na ekranie frazę tekst
+print (polecenie) - wykona polecenie i wyświetli jego wynik na ekranie
+raw_input() - należy to dodać na końcu bo inaczej win$ mignie nam tylko okienko
+import sciezka/do/pliku - importuje
+reload (sciezka do pliku) - przeladowuje skrypt bez zatrzymania i uruchamiania ponownie
+execfile('skrypt.py') - inny sposób importowania
