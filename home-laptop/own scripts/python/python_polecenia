@@ -8,6 +8,9 @@ reload (sciezka do pliku) - przeladowuje skrypt bez zatrzymania i uruchamiania p
 execfile('skrypt.py') - inny sposób importowania
 
 = moduly =
+help('modules') - spis wszystkich modułów
+help('math') - spis funkcji z danego modułu
+
 import modul
 math
 math.pi - pi
