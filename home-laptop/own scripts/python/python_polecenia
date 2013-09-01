@@ -50,3 +50,23 @@ S - wynik zielonka
 ---
 S.find('ie') - odnalezienie przesunięcia podłańcucha (czyli znalezienie pierwszej litery)
 S.replace('ie', 'XYZ') - wynik MXYZlonka - zastąpienie wystąpień podlancucha innym
+---
+line - 'aaa,bbb,cccc,dd'
+line.split(',')
+['aaa','bbb','cccc','dd'] - wynik podzielenie na ogranicznikach na listę podłańcuchów
+---
+S = 'mielonka'
+S.upper() - konwersja na wielkie liter
+S.lower() - konwersja na małe litery
+S.capitalize() - konwersja na tylko dużą lierę z początku
+S.isalpha() - sprawdza czy jest alfanumeryczny
+S.isdigit() - liczbowy
+---
+line = 'aaa,bbb,cccc,dd\n'
+line = line.rstrip()
+line
+'aaa,bbb,cccc,dd' - wynik - usun→ecie białych znaków po prawej stronie
+---
+dir(S) - spi metod
+help(S.index) - wyświetlenie pomocy dla konkretnej metody
+
