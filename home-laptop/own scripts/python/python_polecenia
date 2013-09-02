@@ -1,5 +1,6 @@
 = Polecenia =
 polecenie - jego znaczenie
+# komentarz
 print ('tekst') - wypisze na ekranie frazę tekst
 print (polecenie) - wykona polecenie i wyświetli jego wynik na ekranie
 raw_input() - należy to dodać na końcu bo inaczej win$ mignie nam tylko okienko
@@ -8,6 +9,13 @@ reload (sciezka do pliku) - przeladowuje skrypt bez zatrzymania i uruchamiania p
 execfile('skrypt.py') - inny sposób importowania
 
 = moduly =
+liczby 1234,55,77,686
+łańcuchy znaków 'mielonka', "Brian"
+listy [1, [2, 'trzy'], 4]
+słowniki {'jedzenie': 'mielonka', 'smak': 'mniam'}
+krotki (1, 'mielonka', 4, U)
+pliki myfile = open('jajka', 'r')
+
 help('modules') - spis wszystkich modułów
 help('math') - spis funkcji z danego modułu
 
@@ -69,4 +77,59 @@ line
 ---
 dir(S) - spi metod
 help(S.index) - wyświetlenie pomocy dla konkretnej metody
+---
+S = 'A\nB\tC' - n to koniec wiersza, t to tabulator
+len(S) - kazde jest jednym znakiem
+5 - wynik
+---
+ord('\n')     #\n jest bajtem z wartosia binarna 10 w ASCI
+10 # wynik
+---
+S = 'A\0B\0C'     # \0, binarny bajt zerowy, nie kończy łańcucha znaków
+len(S)
+5
+
+Inne sposoby kodowania łańcuchów znaków
+---
+msg = """
+aaaa
+bbb'''bbbb""'bbbb
+cccccc"""
+'\naaaa\nbbb\'\'\'bbbbb""bb\'b\ncccccc' # wynik
+
+# Dopasowywanie wzorców #
+import re
+match = re.match('Witaj, [ \t]*(.*)Robinie', 'Witaj, sir Robinie')
+match.group(1)
+'sir '      #wynik
+
+match =re.match('/(.*)/(.*)/(.*)', '/usr/home/drwal')
+match.groups( )
+('usr', 'home', 'drwal')
+
+# LISTY #
+L = [123, 'mielonka', 1.23]     # trzyelementowa lista z elementami roznego typu
+len(L)      # liczba elementow listy
+3     # wynik
+
+L[0]
+123     # wynik (pokaż pierwszy wpis)
+
+L[:-1]
+[123, 'mielonka']     # wynik (pokaż wszystkie wpisy poza ostatnim)
+
+L + [4, 5, 6]
+[123, 'mielonka', 1.23, 4, 5, 6]      #wynik (dodanie do listy nowych wartosci)
+
+L.append('NI')      # dodanie obiektu na końcu listy
+L.pop(2)      # usun→ecie drugiego elementu z listy, del L(2) działa tak samo
+L.insert('NI')      # dodanie w dowolnym miejscu
+
+M = ['bb', 'aa', 'cc']
+M.sort( )
+M
+['aa', 'bb', 'cc']    # wynik - sortowanie A-Z
+
+M.reverse ( )   # sortowanie Z-A
+
 
