@@ -17,6 +17,27 @@ set autoindent
 set smartindent
 set foldmethod=marker
 
+"Wcięcia
+"set paste
+set nopaste
+
+"Domyślna długość znaku tabulacji
+set tabstop=8
+
+"Domyślna długość wcięcia/przesunięcia
+set shiftwidth=4
+
+"Zmieniaj wcięcie wyrównując do wartości zmiennej shiftwidth
+set shiftround
+
+"Automatycznie użyj spacji zamiast znaku tabulacji
+set expandtab
+
+set cmdheight=2 "command bar is 2 high
+set backspace=indent,eol,start "set backspace function
+set textwidth=0 
+set autoread "auto read when file is changed from outside
+
 "Po wcisnieciu F11 włączony jest tryb wklejeania bez autoformatowania
 set pastetoggle=<F11>
 
@@ -117,24 +138,6 @@ set title
 
 "Minimalna liczba wierszy zawsze widocznych nad i pod kursorem
 set scrolloff=5
-
-"Wcięcia
-set paste
-"set nopaste
-
-"Domyślna długość znaku tabulacji
-set tabstop=4
-
-"Domyślna długość wcięcia/przesunięcia
-set shiftwidth=4
-
-"Automatycznie użyj spacji zamiast znaku tabulacji
-set expandtab
-
-set cmdheight=2 "command bar is 2 high
-set backspace=indent,eol,start "set backspace function
-set textwidth=0 
-set autoread "auto read when file is changed from outside
 
 "Nie zapisuj plików backupu/writeback/swapfile
 "set nobackup
