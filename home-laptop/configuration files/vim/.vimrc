@@ -148,12 +148,12 @@ set scrolloff=5
 "set gfn=Courier\ 12
 
 "Opcje parametryczne
-set bs=2    " backspace jest rowny przesunieciu o 2 spacje
+"set bs=2    " backspace jest rowny przesunieciu o 2 spacje*
 set wm=0    " margines po ktorym tekst jest zawijany
 set tw=0    " szerokosc tekstu nieograniczona
-set ts=2    " dlugosc tabulatora w znakach
-set st=2    " dlugosc inteligentnego tabulatora
-set sw=2    " dlugosc przesuniecia po tab
+"set ts=2    " dlugosc tabulatora w znakach*
+"set st=2    " dlugosc inteligentnego tabulatora*
+"set sw=2    " dlugosc przesuniecia po tab*
 set so=2    " dwie linie przed i po ekranie powoduja juz przewijanie
 set ss=25   " wielkosc przewiniecia poziomego przy wyjsciu poza ekran
 set go=fc       " wylacza wszystkie dodatki gui
@@ -164,6 +164,7 @@ set fo=tcrqn2
 set hh=10       " wysokosc okna z helpem
 set mat=2       " dlugosc w n*0.1s pokazywania dopasowania nawiasow
 set mls=10  " ilosc linii od koncow ktora jest sprawdzana na #vim ...
+"* z czasem można usunąć te opcje
 
 set ofu=syntaxcomplete#Complete
 "Sprawdzanie pisowni
@@ -189,5 +190,5 @@ map <F7> :w! %<CR>
 map <F8> :wq %<CR>
 "Zapisz i wyjdź wymuszony F9
 map <F9> :wq! %<CR>
-" Wyjście F10
+" Wyjście
 map <F10> :q <CR>
