@@ -1,12 +1,12 @@
 = Polecenia =
-polecenie - jego znaczenie
+polecenie # jego znaczenie
 # komentarz
-print ('tekst') - wypisze na ekranie frazę tekst
-print (polecenie) - wykona polecenie i wyświetli jego wynik na ekranie
-raw_input() - należy to dodać na końcu bo inaczej win$ mignie nam tylko okienko
-import nazwa.skryptu.py - importuje skrypt tylko z jednego katalogu/folderu
-reload (sciezka do pliku) - przeladowuje skrypt bez zatrzymania i uruchamiania ponownie
-execfile('skrypt.py') - inny sposób importowania
+print ('tekst')     # wypisze na ekranie frazę tekst
+print (polecenie)     # wykona polecenie i wyświetli jego wynik na ekranie
+raw_input()     # należy to dodać na końcu bo inaczej win$ mignie nam tylko okienko
+import nazwa.skryptu.py     # importuje skrypt tylko z jednego katalogu/folderu
+reload (sciezka do pliku)     # przeladowuje skrypt bez zatrzymania i uruchamiania ponownie
+execfile('skrypt.py')     # inny sposób importowania
 
 = moduly =
 liczby 1234,55,77,686
@@ -16,81 +16,80 @@ słowniki {'jedzenie': 'mielonka', 'smak': 'mniam'}
 krotki (1, 'mielonka', 4, U)
 pliki myfile = open('jajka', 'r')
 
-help('modules') - spis wszystkich modułów
-help('math') - spis funkcji z danego modułu
+help('modules')     # spis wszystkich modułów
+help('math')      # spis funkcji z danego modułu
 
 import modul
 math
 math.pi - pi
-math.sqrt(liczba) - pierwiastek
+math.sqrt(liczba)     # pierwiastek
 
 import random
-random.random() - generowanie
-random.choice([1, 2, 3, 4]) - wybierze jedna z podanych w nawiasie
+random.random()     # generowanie
+random.choice([1, 2, 3, 4])     # wybierze jedna z podanych w nawiasie
 
 = Typy i operacje =
-3.1415 * 2 - mnożenie liczb całkowitych
-1.5 * 4 - mnożenie liczb zmiennoprzecinkowych
-2 ** 3 - 2 do potegi 3ciej
-print 3.1415 * 2 - działania z wynikiem w przyjazdnej postaci dla usera
----
+3.1415 * 2      # mnożenie liczb całkowitych
+1.5 * 4     # mnożenie liczb zmiennoprzecinkowych
+2 ** 3      # 2 do potegi 3ciej
+print 3.1415 * 2      # działania z wynikiem w przyjazdnej postaci dla usera
+
 S = 'Mielonka'
-len(S) - liczenie długości znaków
----
-S[0] - wynik M - pierwszy element (od poczatku) w S (indexowanie)
-S[1] - wynik i - drugi element (od poczatku) w S (indexowanie)
-S[-1] - wynik a - pierwszy element od konca
-S[-2] - wynik k - drugi element od konca
-S[len(S)-1] - index ujemny zapisany w trudniejszy sposob
-S[1:3] - wynik ie - wycinek z S z indexami od 1 do 2 (bez 3)
-S[1:] - wszystko poza 1 znakiem
-S[0:7] - wszystkie elementy bez ostatniego
-S[:7] - to samo co wyzej
-S[:-1] wszystkie elementy bez ostatniego w łatwiejszej postaci
-S[:] - calosc s jako kopia najwyzszego poziomu (0:len(S))
-S + 'xyz' - konkatenacja (dodanie do 'mielonki' liter xyz)
-S * 8 - powtorzenie mielonki 8 razy
----
+len(S)      # liczenie długości znaków
+
+S[0] - wynik M      # pierwszy element (od początku) w S (indexowanie)
+S[1] - wynik i      # drugi element (od początku) w S (indexowanie)
+S[-1] - wynik a     # pierwszy element od końca
+S[-2] - wynik k     # drugi element od końca
+S[len(S)-1]     # index ujemny zapisany w trudniejszy sposób
+S[1:3] - wynik ie     # wycinek z S z indexami od 1 do 2 (bez 3)
+S[1:]     # wszystko poza 1 znakiem
+S[0:7]      # wszystkie elementy bez ostatniego
+S[:7]     # to samo co wyzej
+S[:-1]      # wszystkie elementy bez ostatniego w łatwiejszej postaci
+S[:]      # calość s jako kopia najwyższego poziomu (0:len(S))
+S + 'xyz'     # konkatenacja (dodanie do 'mielonki' liter xyz)
+S * 8     # powtorzenie mielonki 8 razy
+
 S = 'mielonka'
-S[0] = 'z' - może pokazywać błedy
+S[0] = 'z'      # może pokazywać błedy
 S = 'z' + S[1:]
-S - wynik zielonka
----
-S.find('ie') - odnalezienie przesunięcia podłańcucha (czyli znalezienie pierwszej litery)
-S.replace('ie', 'XYZ') - wynik MXYZlonka - zastąpienie wystąpień podlancucha innym
----
+S     # wynik zielonka
+
+S.find('ie')      # odnalezienie przesunięcia podłańcucha (czyli znalezienie pierwszej litery)
+S.replace('ie', 'XYZ') - wynik MXYZlonka      # zastąpienie wystąpień podlancucha innym
+
 line - 'aaa,bbb,cccc,dd'
 line.split(',')
-['aaa','bbb','cccc','dd'] - wynik podzielenie na ogranicznikach na listę podłańcuchów
----
+['aaa','bbb','cccc','dd']     # wynik podzielenie na ogranicznikach na listę podłańcuchów
+
 S = 'mielonka'
-S.upper() - konwersja na wielkie liter
-S.lower() - konwersja na małe litery
-S.capitalize() - konwersja na tylko dużą lierę z początku
-S.isalpha() - sprawdza czy jest alfanumeryczny
-S.isdigit() - liczbowy
----
+S.upper()     # konwersja na wielkie liter
+S.lower()     # konwersja na małe litery
+S.capitalize()      # konwersja na tylko dużą lierę z początku
+S.isalpha()     # sprawdza czy jest alfanumeryczny
+S.isdigit()     # liczbowy
+
 line = 'aaa,bbb,cccc,dd\n'
 line = line.rstrip()
 line
-'aaa,bbb,cccc,dd' - wynik - usun→ecie białych znaków po prawej stronie
----
-dir(S) - spi metod
-help(S.index) - wyświetlenie pomocy dla konkretnej metody
----
-S = 'A\nB\tC' - n to koniec wiersza, t to tabulator
-len(S) - kazde jest jednym znakiem
+'aaa,bbb,cccc,dd' - wynik     # usunięecie białych znaków po prawej stronie
+
+dir(S)      # spis metod (modułów)
+help(S.index)     # wyświetlenie pomocy dla konkretnej metody
+
+S = 'A\nB\tC'     # n to koniec wiersza, t to tabulator
+len(S)      # kazde jest jednym znakiem
 5 - wynik
----
+
 ord('\n')     #\n jest bajtem z wartosia binarna 10 w ASCI
 10 # wynik
----
+
 S = 'A\0B\0C'     # \0, binarny bajt zerowy, nie kończy łańcucha znaków
 len(S)
 5
 
 Inne sposoby kodowania łańcuchów znaków
----
 msg = """
 aaaa
 bbb'''bbbb""'bbbb
@@ -158,4 +157,3 @@ diag
 doubles = [c * 2 for c in 'mielonka']     # powtórzenie znaków w łancuchu
 doubles
 ['mm', 'ii', 'ee', 'll', 'oo', 'nn', 'kk', 'aa']
-
