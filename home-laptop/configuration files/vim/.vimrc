@@ -173,3 +173,21 @@ setglobal spell spelllang=pl_pl
 scriptencoding utf-8
 set encoding=utf-8
 set fileencodings=utf-8
+
+"Zmapowane klawisze-funkcje
+"Uruchom skrypt w sh F2
+map <F2> :!sh %<CR>
+"Uruchom skrypt w pythonie F3
+map <F3> :!python -q %<CR>
+"Odświeżanie F5
+map <F5> :edit! %<CR>
+"Zapis F6
+map <F6> :w %<CR>
+"Zapis wymuszony F7
+map <F7> :w! %<CR>
+"Zapisz i wyjdź F8
+map <F8> :wq %<CR>
+"Zapisz i wyjdź wymuszony F9
+map <F9> :wq! %<CR>
+" Wyjście F10
+map <F10> :q <CR>
