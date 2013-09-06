@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# wersja v1.0.1
+# wersja v1.0.2
 import sys
 import platform
 import socket
