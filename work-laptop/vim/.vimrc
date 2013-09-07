@@ -171,9 +171,11 @@ set ofu=syntaxcomplete#Complete
 setglobal spell spelllang=pl_pl
 
 "Kodowanie
-scriptencoding utf-8
-set encoding=utf-8
-set fileencodings=utf-8
+" chwilo wyłączone bo sprawia to problemy przy edycji plików na serwerze
+" dwie ostatnie były dobrze
+""scriptencoding utf-8
+"set encoding=utf-8
+"set fileencodings=utf-8
 
 "Zmapowane klawisze-funkcje
 "Uruchom skrypt w sh F2
