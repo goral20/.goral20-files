@@ -1,0 +1,159 @@
+= Polecenia =
+polecenie # jego znaczenie
+# komentarz
+print ('tekst')     # wypisze na ekranie frazę tekst
+print (polecenie)     # wykona polecenie i wyświetli jego wynik na ekranie
+raw_input()     # należy to dodać na końcu bo inaczej win$ mignie nam tylko okienko
+import nazwa.skryptu.py     # importuje skrypt tylko z jednego katalogu/folderu
+reload (sciezka do pliku)     # przeladowuje skrypt bez zatrzymania i uruchamiania ponownie
+execfile('skrypt.py')     # inny sposób importowania
+
+= moduly =
+liczby 1234,55,77,686
+łańcuchy znaków 'mielonka', "Brian"
+listy [1, [2, 'trzy'], 4]
+słowniki {'jedzenie': 'mielonka', 'smak': 'mniam'}
+krotki (1, 'mielonka', 4, U)
+pliki myfile = open('jajka', 'r')
+
+help('modules')     # spis wszystkich modułów
+help('math')      # spis funkcji z danego modułu
+
+import modul
+math
+math.pi - pi
+math.sqrt(liczba)     # pierwiastek
+
+import random
+random.random()     # generowanie
+random.choice([1, 2, 3, 4])     # wybierze jedna z podanych w nawiasie
+
+= Typy i operacje =
+3.1415 * 2      # mnożenie liczb całkowitych
+1.5 * 4     # mnożenie liczb zmiennoprzecinkowych
+2 ** 3      # 2 do potegi 3ciej
+print 3.1415 * 2      # działania z wynikiem w przyjazdnej postaci dla usera
+
+S = 'Mielonka'
+len(S)      # liczenie długości znaków
+
+S[0] - wynik M      # pierwszy element (od początku) w S (indexowanie)
+S[1] - wynik i      # drugi element (od początku) w S (indexowanie)
+S[-1] - wynik a     # pierwszy element od końca
+S[-2] - wynik k     # drugi element od końca
+S[len(S)-1]     # index ujemny zapisany w trudniejszy sposób
+S[1:3] - wynik ie     # wycinek z S z indexami od 1 do 2 (bez 3)
+S[1:]     # wszystko poza 1 znakiem
+S[0:7]      # wszystkie elementy bez ostatniego
+S[:7]     # to samo co wyzej
+S[:-1]      # wszystkie elementy bez ostatniego w łatwiejszej postaci
+S[:]      # calość s jako kopia najwyższego poziomu (0:len(S))
+S + 'xyz'     # konkatenacja (dodanie do 'mielonki' liter xyz)
+S * 8     # powtorzenie mielonki 8 razy
+
+S = 'mielonka'
+S[0] = 'z'      # może pokazywać błedy
+S = 'z' + S[1:]
+S     # wynik zielonka
+
+S.find('ie')      # odnalezienie przesunięcia podłańcucha (czyli znalezienie pierwszej litery)
+S.replace('ie', 'XYZ') - wynik MXYZlonka      # zastąpienie wystąpień podlancucha innym
+
+line - 'aaa,bbb,cccc,dd'
+line.split(',')
+['aaa','bbb','cccc','dd']     # wynik podzielenie na ogranicznikach na listę podłańcuchów
+
+S = 'mielonka'
+S.upper()     # konwersja na wielkie liter
+S.lower()     # konwersja na małe litery
+S.capitalize()      # konwersja na tylko dużą lierę z początku
+S.isalpha()     # sprawdza czy jest alfanumeryczny
+S.isdigit()     # liczbowy
+
+line = 'aaa,bbb,cccc,dd\n'
+line = line.rstrip()
+line
+'aaa,bbb,cccc,dd' - wynik     # usunięecie białych znaków po prawej stronie
+
+dir(S)      # spis metod (modułów)
+help(S.index)     # wyświetlenie pomocy dla konkretnej metody
+
+S = 'A\nB\tC'     # n to koniec wiersza, t to tabulator
+len(S)      # kazde jest jednym znakiem
+5 - wynik
+
+ord('\n')     #\n jest bajtem z wartosia binarna 10 w ASCI
+10 # wynik
+
+S = 'A\0B\0C'     # \0, binarny bajt zerowy, nie kończy łańcucha znaków
+len(S)
+5
+
+Inne sposoby kodowania łańcuchów znaków
+msg = """
+aaaa
+bbb'''bbbb""'bbbb
+cccccc"""
+'\naaaa\nbbb\'\'\'bbbbb""bb\'b\ncccccc' # wynik
+
+# Dopasowywanie wzorców #
+import re
+match = re.match('Witaj, [ \t]*(.*)Robinie', 'Witaj, sir Robinie')
+match.group(1)
+'sir '      #wynik
+
+match =re.match('/(.*)/(.*)/(.*)', '/usr/home/drwal')
+match.groups( )
+('usr', 'home', 'drwal')
+
+# LISTY #
+L = [123, 'mielonka', 1.23]     # trzyelementowa lista z elementami roznego typu
+len(L)      # liczba elementow listy
+3     # wynik
+
+L[0]
+123     # wynik (pokaż pierwszy wpis)
+
+L[:-1]
+[123, 'mielonka']     # wynik (pokaż wszystkie wpisy poza ostatnim)
+
+L + [4, 5, 6]
+[123, 'mielonka', 1.23, 4, 5, 6]      #wynik (dodanie do listy nowych wartosci)
+
+L.append('NI')      # dodanie obiektu na końcu listy
+L.pop(2)      # usun→ecie drugiego elementu z listy, del L(2) działa tak samo
+L.insert('NI')      # dodanie w dowolnym miejscu
+
+M = ['bb', 'aa', 'cc']
+M.sort( )
+M
+['aa', 'bb', 'cc']    # wynik - sortowanie A-Z
+
+M.reverse ( )   # sortowanie Z-A
+
+M = [[1, 2, 3[,
+      [4, 5, 6],
+      [7, 8, 9]]      # macierze
+
+M[1]
+[4, 5, 6]     # pobieranie 1(drugiego wiersza)
+
+M[1][2]
+6     # pobieranie drugiego wiersza, a z niego trzeciego elementu
+
+col2 = [row[1] for row in M]
+col2      # zebranie elementów z drugiej kolumny
+
+[row[1] + 1 for row in M]     # dodanie 1 do kazdego elementu w drugiej kolumnie
+[3, 6, 9]
+
+[row[1] for row in M if row[1] % 2 == 0]    # odfiltrowanie elementów nieparzystych
+[2, 8]
+
+diag = [M[i][i] for i in [0, 1, 2]]     # pobranie przekątnej z macierzy
+diag
+[1, 5, 9]
+
+doubles = [c * 2 for c in 'mielonka']     # powtórzenie znaków w łancuchu
+doubles
+['mm', 'ii', 'ee', 'll', 'oo', 'nn', 'kk', 'aa']
