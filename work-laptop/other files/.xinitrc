@@ -37,6 +37,7 @@ exec mpd &
 exec mpdscribble &
 exec conky -c /home/sebastian/.conkyrc2 &
 exec conky -c /home/sebastian/.conkyrc3 &
+exec conky -c /home/sebastian/.conkyrc4 &
 urxvt -title ncmpcpp -e ncmpcpp &
 urxvt -title shell-ekg2 -e tmux -S tmuxses attach &
 #urxvt -class mutt -e mutt &
