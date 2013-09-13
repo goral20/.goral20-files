@@ -95,7 +95,7 @@ ${font size=14}${font}${top name 3}$alignr ${top cpu 3} ${top mem 3}
 #${font size=14}${font}${top name 4}$alignr ${top cpu 4} ${top mem 4}
 #${font size=14}${font}${top name 5}$alignr ${top cpu 5} ${top mem 5}
 
-${font size=14}${font}${execi 300 ~/.conky/ping_sebas87.dyndns.org.py}
-${font size=14}${font}${execi 300 ~/.conky/ping_goral20.no-ip.org.py}
-${font size=14}${font}${execi 300 ~/.conky/ping_sebas87.no-ip.org.py}
+${font size=14}${font}${execpi 300 ~/.conky/ping_sebas87.dyndns.org.py}
+${font size=14}${font}${execpi 300 ~/.conky/ping_goral20.no-ip.org.py}
+${font size=14}${font}${execpi 300 ~/.conky/ping_sebas87.no-ip.org.py}
 #${rss https://www.archlinux.org/feeds/news/ 1 item_titles 3 }
