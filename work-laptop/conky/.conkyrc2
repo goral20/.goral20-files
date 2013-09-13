@@ -48,7 +48,6 @@ draw_shades no
 TEXT
 ${voffset -24}${goto 100}${time %H:%M:%S}
 ${font size=14}${font}Kernel: ${alignr}${kernel}
-${font size=14}${font}Nvidia: ${alignr}${execi 30 nvidia-settings -v | grep 'version' | cut -c27-32}
 ${font size=14}${font}Host: $alignr$nodename
 ${font size=14}${font}Uptime: $alignr$uptime
 ${font size=14}${font}Power:$alignr${acpiacadapter}
@@ -61,14 +60,14 @@ ${font size=14}${font}Packages:  $alignr${execi 100 pacman -Qu | wc -l} to updat
 #${font size=14}${font}Core2: ${cpu cpu2}% - ${hwmon 1 temp 2}°C ${alignr}${cpubar cpu2 4,60}
 #
 ${font size=14}${font}Core1: ${cpu cpu1}% ${exec sensors | grep 'Core 0' | cut -c15-19}°C ${alignr}${cpubar cpu1 4,60}
-${font size=14}${font}Core2: ${cpu cpu2}% ${exec sensors | grep 'Core 1' | cut -c15-19}°C ${alignr}${cpubar cpu2 4,60}
+#${font size=14}${font}Core2: ${cpu cpu2}% ${exec sensors | grep 'Core 1' | cut -c15-19}°C ${alignr}${cpubar cpu2 4,60}
 #
 #${exec sensors | grep ""}C
 ## sensors | grep Core | cut -c15-19
 #
 ${font size=14}${font}RAM: $memperc% ${alignr}${membar    4,60}
 ${font size=14}${font}SWAP: $swapperc% ${alignr}${swapbar    4,60}
-${font size=14}${font}GPU: ${execi 30 nvidia-settings -q [gpu:0]/GPUCoreTemp | grep '):' | awk '{print $4}' | sed 's/\.//'}° ${alignr}HDD Temp: ${execi 300 sudo hddtemp /dev/sda | cut -c34-35}°
+#${font size=14}${font}HDD Temp: ${execi 300 sudo hddtemp /dev/sda | cut -c34-35}°
 ${font size=14}${font}/root: ${fs_free /root}${alignr}${fs_bar 4,60 /root}
 ${font size=14}${font}/home: ${fs_free /home}${alignr}${fs_bar 4,60 /home}
 ${font size=14}${font}/Dane: ${fs_free /media/Dane}${alignr}${fs_bar 4,60 /media/Dane}
@@ -87,11 +86,6 @@ ${font size=14}${font}AP MAC: ${alignr}${wireless_ap wlan0}
 ${font size=14}${font}IP PUBLIC: ${alignr}${execi 600 ~/.conky/ip.sh}
 ${font size=14}${font}IP Router: ${alignr}${gw_ip}
 
-#############
-## - NMAP -  #
-##############
-#${color0}${font Poky:size=16}z${goto 1100}${font}${color0}${execi 100 ~/.conky/nmap.pl eth0}
-
 ${font size=14}${font}PROCESSES: $processes ${alignr}Running: $running_processes
 ${font size=14}${font}Highest $alignr   CPU   MEM
 ${font size=14}${font}${top name 1}$alignr ${top cpu 1} ${top mem 1}
@@ -99,3 +93,8 @@ ${font size=14}${font}${top name 2}$alignr ${top cpu 2} ${top mem 2}
 ${font size=14}${font}${top name 3}$alignr ${top cpu 3} ${top mem 3}
 ${font size=14}${font}${top name 4}$alignr ${top cpu 4} ${top mem 4}
 ${font size=14}${font}${top name 5}$alignr ${top cpu 5} ${top mem 5}
+
+${font size=14}${font}${execpi 310 ~/.conky/ping_goral20.no-ip.org.py}
+${font size=14}${font}${execpi 315 ~/.conky/ping_sebas87.dyndns.org.py}
+${font size=14}${font}${execpi 320 ~/.conky/ping_sebas87.no-ip.org.py}
+#${rss https://www.archlinux.org/feeds/news/ 1 item_titles 3 }
