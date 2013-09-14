@@ -157,3 +157,20 @@ diag
 doubles = [c * 2 for c in 'mielonka']     # powtórzenie znaków w łancuchu
 doubles
 ['mm', 'ii', 'ee', 'll', 'oo', 'nn', 'kk', 'aa']
+
+=== Słowniki ===
+D = {'jedzenie': 'mielonka', 'ilość': 4, 'kolor': 'różowy'}     # przykładowy słownik
+
+D['jedzenie']   # pobranie wartosci klucza "jedzenie"
+
+D['ilosc'] += 1         # dodanie 1 do wartosc klucza "ilosc"
+
+D {}
+D['imie'] = 'Robert'
+D['zawod'] = 'programista'
+D['wiek'] = 40
+D
+('wiek': 40, 'zawod': 'programista', 'imie': 'Robert')          # wynik
+
+print D['imie']
+Robert  # wyswietlenie konkretnego klucza
