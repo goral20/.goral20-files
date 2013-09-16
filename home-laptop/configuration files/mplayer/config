@@ -41,8 +41,9 @@ subcp=cp1250
 sub-fuzziness=1
 
 ##vf-add=ass
-##ass=yes
-##embeddedfonts=yes
+# Wczytywanie czcionek ass z fontami
+ass=yes
+embeddedfonts=yes
 #ass-use-margins=yes
 #ass-color=FFFFFF00 # RRGGBBAA - plain white (no alpha)
 #ass-border-color=00000000
