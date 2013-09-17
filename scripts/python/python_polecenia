@@ -268,3 +268,4 @@ f = open('data.txt', 'w')       # utworzenie nowego pliku w trybie do zapisu
 f.write('Witaj,\n')             # zapisanie do niego łańcuchu bajtów
 f.write('Brian\n')              # to samo co wyżej
 f.close( )                      # zamknięcie pliku i wyczyszcznie bufora wyjściowego na dysku
+
