@@ -1,6 +1,7 @@
 #!/bin/sh
 #stała ścieżka iptables
 #f="/usr/sbin/iptables"
+#f="/sbin/iptables"
 f="iptables"
 echo "Dodaje Reguły dla IPtables"
 
