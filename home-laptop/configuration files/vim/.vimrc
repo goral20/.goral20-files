@@ -173,9 +173,11 @@ setglobal spell spelllang=pl_pl
 "Kodowanie
 " chwilo wyłączone bo sprawia to problemy przy edycji plików na serwerze
 " dwie ostatnie były dobrze
-""scriptencoding utf-8
-"set encoding=utf-8
-"set fileencodings=utf-8
+set scriptencoding=utf-8
+set termencoding=utf-8              " kodowanie terminala
+set fileencoding=utf-8              " kodowanie plików
+set encoding=utf-8                  " kodowanie·
+set fileencodings^=utf-8
 
 "Zmapowane klawisze-funkcje
 "Uruchom skrypt w sh F2
