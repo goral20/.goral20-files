@@ -173,7 +173,6 @@ setglobal spell spelllang=pl_pl
 "Kodowanie
 " chwilo wyłączone bo sprawia to problemy przy edycji plików na serwerze
 " dwie ostatnie były dobrze
-set scriptencoding=utf-8
 set termencoding=utf-8              " kodowanie terminala
 set fileencoding=utf-8              " kodowanie plików
 set encoding=utf-8                  " kodowanie·
