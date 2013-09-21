@@ -12,7 +12,8 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="frisk" dobre ale trzeba przerobic
 #ZSH_THEME="xiong-chiamiov"
 #ZSH_THEME="af-magic v4 by zse1"
-ZSH_THEME="steeefv6b"
+#ZSH_THEME="steeefv6b"
+ZSH_THEME="steeefv6a"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
