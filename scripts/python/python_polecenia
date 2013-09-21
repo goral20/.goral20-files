@@ -269,3 +269,28 @@ f.write('Witaj,\n')             # zapisanie do niego łańcuchu bajtów
 f.write('Brian\n')              # to samo co wyżej
 f.close( )                      # zamknięcie pliku i wyczyszcznie bufora wyjściowego na dysku
 
+f = open('data.txt')
+bytes = f.read( )
+bytes           # wczytanie zawartości pliku data
+
+print bytes             # ze znakami sterującymi
+bytes.split( )          # zawartość pliku zawsze jest łańcuchem znaków
+
+============================
+=== Inne typy podstawowe ===
+
+X = set('mielonka')
+Y = set[('s', 'z', 'y', 'n', 'k', 'a')] # Zbudowanie dwóch zbiorów z sekwencji
+X, Y
+(set(['a', 'e', 'i', 'k', 'm', 'l', 'o','n'])), set(['a', 'k', 'n', 's', 'y','z'])
+
+X & Y
+set(['a', 'l', 'n'])    # część wspólna zbiorów
+
+X | Y           # suma zbiorów
+set(['a', 'e', 'i', 'k', 'm', 'l', 'o', 'n', 's', 'y', 'z'])
+
+X - Y
+set(['i', 'm', 'e', 'l', 'o'])          # różnica
+
+
