@@ -7,10 +7,10 @@ URxvt*geometry: 120x20
 URxvt*foreground: White
 URxvt*background: Black
 URxvt*scrollBar: false
-URxvt*urlLauncher: opera
+URxvt*urlLauncher: chromium
 
 URxvt.perl-lib: /usr/lib/urxvt/perl/
 URxvt.perl-ext-common: default,url-select
 URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.urlLauncher: opera
+URxvt.urlLauncher: chromium
 URxvt.underlineURLs: true
