@@ -1,6 +1,10 @@
 Lista dopuszczonych skryptów w noscripts
 
 ________________________________________
+wersja 2.2 z dnia 24 Wrzesień 2013
+dodano:
+hashd.tv
+________________________________________
 wersja 2.1 z dnia 12 Wrzesień 2013
 dodano:
 netiaonline.pl
@@ -113,7 +117,6 @@ fastly.net
 google.pl
 google.com
 googleapis.com
-jadisco.pl
 joemonster.org
 lastfm.pl
 ajax.last.fm
@@ -128,12 +131,18 @@ sebas87.dyndns.org
 sonyentertainmentnetwork.com
 soundcloud.com
 sndcdn.com
-twitch.tv
-jtvnw.net
 youtube.com
 ytimg.com
 zarabianiebb.pl
 zippyshare.com
+
+# Streamy
+dailymotion.com
+gamecreds.com
+hashd.tv
+jadisco.pl
+twitch.tv
+jtvnw.net
 
 # Bankowe
 aliorbank.pl
@@ -147,9 +156,7 @@ ermail.pl
 
 # Mniej ważne
 dotshare.it
-dailymotion.com
 empik.com
-gamecreds.com
 dmcdn.net
 dotshare.it
 evageeks.org
