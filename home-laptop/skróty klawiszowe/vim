@@ -148,3 +148,10 @@ n gT – cofnięcie się do zakładki znajdującej się w odległości n od aktu
 :tabc – zamknięcie aktualnej zakładki, gdy jest jedna karta, to nie będzie zamknięta
 :tabo – zamknięcie wszystkich zakładek oprócz tej która jest aktualnie używana
 :tabd KOMENDA – wykonuje komendę na wszystkich otwartych zakładkach
+
+Zwijanie/Rozwijanie tekstu
+:set foldmethod=sposob - sposób zwijania dostępne opcje to: manual, marker, indent, syntax, expr, diff
+:set foldmarker=start,end - oznaczenie zwijania (dowolne [[[,]]] czy <<<,>>>
+zR - rozwinięcie wszystkich
+zM - zwinięcie wszystkich
+za - zwinięcie/rozwinięcie pojedyńczo w przypadku metody manual zf/za
