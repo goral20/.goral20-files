@@ -15,7 +15,12 @@ syntax on
 "Automatycznie ustawia wcięcie nowej linii
 set autoindent
 set smartindent
+
+"Zawijanie kodu
+"metoda
 set foldmethod=marker
+"znaki
+set foldmarker=[[[,]]]
 
 "Wcięcia
 "set paste
