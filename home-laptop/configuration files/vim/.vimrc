@@ -20,7 +20,7 @@ set smartindent
 "metoda
 set foldmethod=marker
 "znaki
-set foldmarker=[[[,]]]
+"set foldmarker=[[[,]]]
 
 "Wcięcia
 "set paste
