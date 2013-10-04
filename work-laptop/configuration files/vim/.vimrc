@@ -27,7 +27,7 @@ set foldmethod=marker
 set nopaste
 
 "Domyślna długość znaku tabulacji
-set tabstop=8
+set tabstop=4
 
 "Domyślna długość wcięcia/przesunięcia
 set shiftwidth=4
