@@ -22,20 +22,28 @@ set foldmethod=marker
 "znaki
 "set foldmarker=[[[,]]]
 
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
 "Wcięcia
 "set paste
 set nopaste
 
 "Domyślna długość znaku tabulacji
+"tabstop=ts
+"softtabstop=sts
 set tabstop=4
+set softtabstop=4
 
 "Domyślna długość wcięcia/przesunięcia
+"shiftwidt=sw
 set shiftwidth=4
 
 "Zmieniaj wcięcie wyrównując do wartości zmiennej shiftwidth
 set shiftround
 
 "Automatycznie użyj spacji zamiast znaku tabulacji
+"expandtab=ex
 set expandtab
 
 set cmdheight=2 "command bar is 2 high
