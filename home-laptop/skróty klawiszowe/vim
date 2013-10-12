@@ -152,17 +152,6 @@ n gT – cofnięcie się do zakładki znajdującej się w odległości n od aktu
 Zwijanie/Rozwijanie tekstu
 :set foldmethod=sposob - sposób zwijania dostępne opcje to: manual, marker, indent, syntax, expr, diff
 :set foldmarker=start,end - oznaczenie zwijania (dowolne [[[,]]] czy <<<,>>>
-dla manual
-zf - tworzy zwijanie
-zf#j - zwijanie w dół o # linijek
-zf#k - zwijanie w górę o # linijek
-za - rozwiniecie
-zR - rozwiniecie wszystkich
-
-dla marker
-zM - zwijanie wszystkich
-zR - rozwiniecie wszystkich
-za - zwijanie
 
 Vim folding commands
 ---------------------------------
