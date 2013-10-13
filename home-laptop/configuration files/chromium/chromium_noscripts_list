@@ -1,66 +1,77 @@
 Lista dopuszczonych skryptów w noscripts
 
 ________________________________________
-wersja 2.5 z dnia 02 Październik 2013
+wersja 2.6 z dnia 13 Październik 2013/*{{{*/
 dodano:
-wykop.pl
+libertagia.com
+liftago.com
+reddit.com
+redditstatic.com
+mbank.pl
+
+usunięto:
+mbank.com.pl*}}}*/
 ________________________________________
-wersja 2.4 z dnia 02 Październik 2013
+wersja 2.5 z dnia 02 Październik 2013/*{{{*/
 dodano:
-lubimyczytac.pl
+wykop.pl/*}}}*/
 ________________________________________
-wersja 2.3 z dnia 02 Październik 2013
+wersja 2.4 z dnia 02 Październik 2013/*{{{*/
 dodano:
-googleapis.com
+lubimyczytac.pl/*}}}*/
 ________________________________________
-wersja 2.2 z dnia 24 Wrzesień 2013
+wersja 2.3 z dnia 02 Październik 2013/*{{{*/
 dodano:
-hashd.tv
+googleapis.com/*}}}*/
 ________________________________________
-wersja 2.1 z dnia 12 Wrzesień 2013
+wersja 2.2 z dnia 24 Wrzesień 2013/*{{{*/
+dodano:
+hashd.tv/*}}}*/
+________________________________________
+wersja 2.1 z dnia 12 Wrzesień 2013/*{{{*/
 dodano:
 netiaonline.pl
 plusgsm.pl
 
 usunięto:
-netia.pl
+netia.pl/*}}}*/
 ________________________________________
-wersja 2.0 z dnia 08 Wrzesień 2013
+wersja 2.0 z dnia 08 Wrzesień 2013/*{{{*/
 dodano:
 empik.com
-sebas87.dyndns.org
+sebas87.dyndns.org/*}}}*/
 ________________________________________
-wersja 1.9 z dnia 23 Sierpień 2013
+wersja 1.9 z dnia 23 Sierpień 2013/*{{{*/
 dodano:
-emsc2.tv
+emsc2.tv/*}}}*/
 ________________________________________
-wersja 1.8 z dnia 04 Sierpień 2013
+wersja 1.8 z dnia 04 Sierpień 2013/*{{{*/
 dodano:
-jadisco.pl
+jadisco.pl/*}}}*/
 ________________________________________
-wersja 1.7 z dnia 04 Sierpień 2013
+wersja 1.7 z dnia 04 Sierpień 2013/*{{{*/
 dodano:
 soundcloud.com
-sndcdn.com
+sndcdn.com/*}}}*/
 ________________________________________
-wersja 1.6 z dnia 03 Sierpień 2013
+wersja 1.6 z dnia 03 Sierpień 2013/*{{{*/
 dodano:
 twitch.tv
-jtvnw.net
+jtvnw.net/*}}}*/
 ________________________________________
-wersja 1.5 z dnia 14 lipiec 2013
+wersja 1.5 z dnia 14 lipiec 2013/*{{{*/
 dodano:
 ajax.last.fm
 ermail.pl
 fastly.net
 ideabank.pl
-aliorbank.pl
+aliorbank.pl/*}}}*/
 ________________________________________
-wersja 1.4 z dnia 14 Czerwiec 2013
+wersja 1.4 z dnia 14 Czerwiec 2013/*{{{*/
 usunięto:
-vpspanel.hitme.net.pl
+vpspanel.hitme.net.pl/*}}}*/
 ________________________________________
-wersja 1.3 z dnia 31 Maja 2013
+wersja 1.3 z dnia 31 Maja 2013/*{{{*/
 dodano:
 192.168.1.1
 torrentmania.info
@@ -68,9 +79,9 @@ mbank.com.pl
 ipko.pl
 nazwa.pl
 netia.pl
-plus.pl
+plus.pl/*}}}*/
 ________________________________________
-wersja 1.2 z dnia 26 Maja 2013
+wersja 1.2 z dnia 26 Maja 2013/*{{{*/
 dodano:
 192.168.1.5
 gamecreds.com
@@ -79,9 +90,9 @@ googleapis.com
 dmcdn.net
 youtube.com
 ytimg.com
-google.com
+google.com/*}}}*/
 ________________________________________
-wersja 1.1 z dnia 25 Maja 2013
+wersja 1.1 z dnia 25 Maja 2013/*{{{*/
 dodano:
 dailymotion.com
 github.com
@@ -92,9 +103,9 @@ torrentmania.info
 google.pl
 metro2033.pl
 vpspanel.hitme.net.pl
-ps3site.pl
+ps3site.pl/*}}}*/
 ________________________________________
-wersja 1.0 z dnia 24 Maja 2013
+wersja 1.0 z dnia 24 Maja 2013/*{{{*/
 bannersbroker.com
 dotshare.it
 myanimelist.net
@@ -105,7 +116,7 @@ anime-chronicle.pl
 dobreprogramy.pl
 lastfm.pl
 pozycja.promocjastronywww.pl
-zarabianiebb.pl
+zarabianiebb.pl/*}}}*/
 
 ========================================
 Pełna lista
@@ -153,11 +164,13 @@ jtvnw.net
 aliorbank.pl
 ideabank.pl
 ipko.pl
-mbank.com.pl
+mbank.pl
 
 # Zarabianie
 bannersbroker.com
 ermail.pl
+libertagia.com
+liftago.com
 
 # Mniej ważne
 dotshare.it
@@ -168,5 +181,7 @@ evageeks.org
 emsc2.tv
 metro2033.pl
 nazwa.pl
+reddit.com
+redditstatic.com
 torrentmania.info
 wykop.pl
