@@ -29,7 +29,7 @@ static const Rule rules[] = {
 	{ "libreoffice-impress", "VCLSalFrame.DocumentWindow", NULL,       1 << 6,       False,       -1 },
 	{ "Pcmanfm", "pcmanfm", NULL,       1 << 7,       False,       -1 },
 	{ "Thunar", "thunar", NULL,       1 << 7,       False,       -1 },
-	{ "mplayer2", "xv", NULL,       1 << 7,       False,       -1 },
+	{ "mpv", "xv", NULL,       1 << 7,       False,       -1 },
 	{ "Easytag", "easytag", NULL,       1 << 7,       False,       -1 },
 	{ "GQview", "gqview", NULL,       1 << 7,       False,       -1 },
 };
