@@ -1,6 +1,6 @@
 ﻿## Połączenie
 mpd_music_dir = "$HOME/Muzyka"
-mpd_host = "localhost"
+mpd_host = "127.0.0.1"
 mpd_connection_timeout = "5"
 mpd_crossfade_time = "5"
 mpd_port = "6666"
