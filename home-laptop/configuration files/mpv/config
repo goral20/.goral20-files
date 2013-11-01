@@ -1,13 +1,29 @@
-#======
-# Wydajność
-#======
-# Wątki dekodowania
+#===========#
+# Wydajność #
+#===========#
+# Wątki dekodowania dla H264/MPEG-1/2 (0-16)
+vd-lavc-threads=2
 # nie działa pod mpv
 # lavdopts=threads=2
 
-#======
-# Wideo
-#======
+#============#
+# Cachowanie #
+#============#
+# Use 8MB input cache by default. The cache is enabled for network streams only.
+cache-default = 8192
+
+# Use 8MB input cache for everything, even local files.
+cache = 8192
+
+# Use 8MB input cache by default. Dla plików sieciowych.
+cache-default = 8192
+
+# Use 8MB input cache do wszystkiego nawet plików lokalnych.
+cache = 8192
+
+#=======#
+# Wideo #
+#=======#
 # Sterownik obrazu
 vo=xv
 
@@ -16,9 +32,9 @@ vo=xv
 # double=yes
 # dr=yes
 
-#======
-# Dźwięk
-#======
+#========#
+# Dźwięk #
+#========#
 # Audio
 alang=jpn,eng,pl
 # Sterownik dzwieku
@@ -27,19 +43,37 @@ ao=alsa
 ##mixer-channel=Master
 #channels=6
 
+# Nazwa odtwarzanego pliku w belce
+title="${filename}"
+
 #==========
 # Napisy
 #==========
 # Napisy
 slang=eng,pl
-# Kodowanie
-# Kodowanie dla filmów z txt
+
+# Kodowanie w profilach
+
+# Wielkość napisów
+sub-scale=1
+
+#=========#
+# Profile #
+#=========#
+
+[extension.avi]
+profile-desc = "avi + napisy kodowanie cp1250"
 subcp=cp1250
-# Kodowanie dla anime z ass
-#subcp=UTF-8
-#subfont-encoding=unicode
-#unicode=yes
-#utf8=yes
+
+[extension.mkv]
+profile-desc = "mkv + napisy kodowanie utf-8"
+subcp=cp1250
+# subcp=utf8
+ass=yes
+embeddedfonts=yes
+ass-use-margins=yes
+ass-use-margins
+#========
 
 #anie działa pod mpv
 # Wczytywanie napisów o tej samej nazwie
@@ -47,8 +81,8 @@ subcp=cp1250
 
 ##vf-add=ass
 # Wczytywanie czcionek ass z fontami
-ass=yes
-embeddedfonts=yes
+# ass=yes
+# embeddedfonts=yes
 #ass-use-margins=yes
 #ass-color=FFFFFF00 # RRGGBBAA - plain white (no alpha)
 #ass-border-color=00000000
@@ -56,28 +90,23 @@ embeddedfonts=yes
 #ass-hinting=1
 
 # nie działa pod mpv
-## test
 # prefer-ipv4 = yes
 
-#==========
-# Wygląd
-#==========
+#========#
+# Wygląd #
+#========#
 # Uruchamianie filmu na pełnym ekranie
 #fs=yes
 
-# nie działa jeszcze pod mpv
 # Wyłaczenie wygaszacza
-# stop-xscreensaver=yes
+stop-screensaver=yes
 
 # nie działa jeszcze pod mpv
 # Set autoscale coefficient. (default: 6)
 # subfont-osd-scale=2
 
-# Position window. (50%:50%: center of screen)
+# Ustawienie okna (50%:50%: środek ekranu)
 #geometry=50%:50%
 
-#==========
-# Inne
-#==========
-# Menu
-#menu=yes
+# Nie pozwalaj aby okno zajmowało więcej niż 90% wielkości ekranu
+# autofit-larger=90%x90%
