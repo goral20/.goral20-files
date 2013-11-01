@@ -55,8 +55,9 @@ ${font size=14}${font}Power:$alignr${acpiacadapter}
 ${font size=14}${font}Bat:	   ${battery_time BAT1} ${alignr}(${battery BAT1})
 ${font size=14}${font}ACPI: $alignr$acpitemp°
 ${font size=14}${font}LOAD: $alignr$loadavg
-${font size=14}${font}Last Update: $alignr${execi 300 grep "starting full system upgrade" /var/log/pacman.log | tail -n1| cut --bytes=2-17}
-${font size=14}${font}Packages:  $alignr${execi 100 pacman -Qu | wc -l} to update | ${execi 100 pacman -Q | wc -l} 
+${font size=14}${font}Last Update: $alignr${execi 100 grep "starting full system upgrade" /var/log/pacman.log | tail -n1| cut --bytes=2-17}
+${font size=14}${font}Packages:  $alignr${execi 100 pacman -Qu | wc -l} to update | ${execi 100 pacman -Q | wc -l}
+${font size=14}${font}${if_match ${execi 100 pacman -Qdt | wc -l}!=0}Found orphaned packages [ ${execi 100 pacman -Qdt | wc -l} ].${else}Not found orphaned packages.${endif}
 #${font size=14}${font}Core1: ${cpu cpu1}% - ${hwmon 0 temp 1}°C ${alignr}${cpubar cpu1 4,60}
 #${font size=14}${font}Core2: ${cpu cpu2}% - ${hwmon 1 temp 2}°C ${alignr}${cpubar cpu2 4,60}
 #
@@ -95,7 +96,7 @@ ${font size=14}${font}${top name 3}$alignr ${top cpu 3} ${top mem 3}
 #${font size=14}${font}${top name 4}$alignr ${top cpu 4} ${top mem 4}
 #${font size=14}${font}${top name 5}$alignr ${top cpu 5} ${top mem 5}
 
-${font size=14}${font}${execpi 300 ~/.conky/ping_sebas87.dyndns.org.py}
-${font size=14}${font}${execpi 300 ~/.conky/ping_goral20.no-ip.org.py}
-${font size=14}${font}${execpi 300 ~/.conky/ping_sebas87.no-ip.org.py}
+# ${font size=14}${font}${execpi 300 ~/.conky/ping_sebas87.dyndns.org.py}
+# ${font size=14}${font}${execpi 300 ~/.conky/ping_goral20.no-ip.org.py}
+# ${font size=14}${font}${execpi 300 ~/.conky/ping_sebas87.no-ip.org.py}
 #${rss https://www.archlinux.org/feeds/news/ 1 item_titles 3 }
