@@ -18,7 +18,8 @@ static const char *tags[] = { "tmux", "music", "im", "mutt", "rss", "www", "offi
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ NULL, NULL, "NULL",       1 << 0,       False,       -1 },
-	{ NULL, NULL, "ncmpcpp",       1 << 1,       False,       -1 },
+	// { NULL, NULL, "ncmpcpp",       1 << 1,       False,       -1 },
+	{ "URxvt", "urxvt", "ncmpcpp",       1 << 1,       False,       -1 },
 	{ NULL, NULL, "shell-ekg2",       1 << 2,       False,       -1 },
 	{ NULL, NULL, "mutt",       1 << 3,       False,       -1 },
 	{ NULL, NULL, "newsbeuter",       1 << 4,       False,       -1 },
