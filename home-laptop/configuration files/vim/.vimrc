@@ -179,6 +179,8 @@ set mat=2       " dlugosc w n*0.1s pokazywania dopasowania nawiasow
 set mls=10  " ilosc linii od koncow ktora jest sprawdzana na #vim ...
 "* z czasem można usunąć te opcje
 
+set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 set ofu=syntaxcomplete#Complete
 "Sprawdzanie pisowni
 setglobal spell spelllang=pl_pl
@@ -190,6 +192,18 @@ set termencoding=utf-8              " kodowanie terminala
 set fileencoding=utf-8              " kodowanie plików
 set encoding=utf-8                  " kodowanie·
 set fileencodings^=utf-8
+
+" Wyłączenie strzałek
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
 
 "Zmapowane klawisze-funkcje
 "Uruchom skrypt w sh F2
