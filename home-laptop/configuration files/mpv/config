@@ -75,6 +75,10 @@ ass-use-margins=yes
 ass-use-margins
 #========
 
+#=====#
+# OSD #
+#=====#
+
 #anie działa pod mpv
 # Wczytywanie napisów o tej samej nazwie
 # sub-fuzziness=1
