@@ -22,9 +22,9 @@ xmodmap -e "clear lock" -e "keycode 66 = Control_R" -e "add Control = Control_R"
 urxvt -name tmux -e tmux &
 exec mpd &
 exec mpdscribble &
+exec conky -c /home/sebastian/.conkyrc &
 exec conky -c /home/sebastian/.conkyrc2 &
 exec conky -c /home/sebastian/.conkyrc3 &
-exec conky -c /home/sebastian/.conkyrc4 &
 urxvt -name ncmpcpp -e ncmpcpp &
 urxvt -name im -e tmux -S tmuxses attach &
 urxvt -name mutt -e mutt &
