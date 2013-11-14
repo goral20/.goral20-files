@@ -15,21 +15,19 @@ xmodmap -e "keycode 133 = XF86Launch1"
 # Turn CapsLock into Control
 xmodmap -e "clear lock" -e "keycode 66 = Control_R" -e "add Control = Control_R"
 
-conky | while read -r; do xsetroot -name "$REPLY"; done &
-
 # Launch system-wide stuff first, then dwm...
 #only urxvt
 #exec /usr/bin/urxvt &
 # only tmux
-urxvt -title tmux -e tmux &
+urxvt -name tmux -e tmux &
 exec mpd &
 exec mpdscribble &
 exec conky -c /home/sebastian/.conkyrc2 &
 exec conky -c /home/sebastian/.conkyrc3 &
-urxvt -title ncmpcpp -e ncmpcpp &
-urxvt -title shell-ekg2 -e tmux -S tmuxses attach &
-urxvt -class mutt -e mutt &
-urxvt -class newsbeuter -e newsbeuter &
-sh ~/.zmienne_tapety.sh &
+exec conky -c /home/sebastian/.conkyrc4 &
+urxvt -name ncmpcpp -e ncmpcpp &
+urxvt -name im -e tmux -S tmuxses attach &
+urxvt -name mutt -e mutt &
+urxvt -name newsbeuter -e newsbeuter &
 udiskie &
-exec dwm
+exec awesome
