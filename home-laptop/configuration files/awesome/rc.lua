@@ -245,9 +245,19 @@ shifty.config.apps = {
     },
     {
         match = {
+            class = { "libreoffice-writer" },
+            class = { "libreoffice-calc" },
+            class = { "libreoffice-impress" },
+            instance = { "VCLSalFrame.DocumentWindow" },
+        },
+        tag = "office",
+    },
+    {
+        match = {
             instance = { "thunar" },
             class = { "Easytag" },
             class = { "mpv" },
+            class = { "gFTP" },
         },
         tag = "files",
     },
