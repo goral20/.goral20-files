@@ -46,6 +46,7 @@ os.setlocale(os.getenv("LANG"))
 
 -- Themes define colours, icons, and wallpapers
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+theme.awesome_icon = "/home/sebastian/.config/awesome/icons/awesome-wm-arch-menu-icon-16x16.png"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
