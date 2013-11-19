@@ -181,7 +181,7 @@ shifty.config.tags = {
         screen    = 1,
         slave     = true,
     },
-    office = {
+    skype = {
         layout    = awful.layout.suit.spiral,
         mwfact    = 0.60,
         exclusive = false,
@@ -190,11 +190,20 @@ shifty.config.tags = {
         screen    = 1,
         slave     = true,
     },
-    files = {
+    office = {
         layout    = awful.layout.suit.spiral,
         mwfact    = 0.60,
         exclusive = false,
         position  = 8,
+        init      = false,
+        screen    = 1,
+        slave     = true,
+    },
+    files = {
+        layout    = awful.layout.suit.spiral,
+        mwfact    = 0.60,
+        exclusive = false,
+        position  = 9,
         init      = false,
         screen    = 1,
         slave     = true,
@@ -227,6 +236,7 @@ shifty.config.apps = {
     {
         match = {
             "mutt",
+            class = { "Thunderbird" },
         },
         tag = "mutt",
     },
@@ -242,6 +252,12 @@ shifty.config.apps = {
             "Keepassx",
         },
         tag = "www",
+    },
+    {
+        match = {
+            class = { "Skype" },
+        },
+        tag = "skype",
     },
     {
         match = {
