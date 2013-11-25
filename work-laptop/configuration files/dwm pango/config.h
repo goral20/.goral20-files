@@ -14,7 +14,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "tmux", "music", "im", "mail", "www", "skype", "files" };
+static const char *tags[] = { "tmux", "music", "im", "mail", "www", "skype", "files", "others" };
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ NULL, NULL, "NULL",       1 << 0,       False,       -1 },
@@ -24,6 +24,7 @@ static const Rule rules[] = {
 	{ "Chromium", NULL,  NULL,       1 << 4,       False,       -1 },
 	{ "Keepassx", NULL,  NULL,       1 << 4,       False,       -1 },
 	{ "Pcmanfm", NULL, NULL,       1 << 6,       False,       -1 },
+	{ "Thunar", "thunar", NULL,       1 << 6,       False,       -1 },
 	{ "mplayer2", NULL, NULL,       1 << 6,       False,       -1 },
 	{ "Quiterss", NULL, NULL,       1 << 6,       False,       -1 },
 	{ "Easytag", NULL, NULL,       1 << 6,       False,       -1 },
