@@ -205,20 +205,37 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
-"Zmapowane klawisze-funkcje
-"Uruchom skrypt w sh F2
+" Zmapowane klawisze-funkcje
+" Uruchom skrypt w sh F2
 map <F2> :!sh %<CR>
-"Uruchom skrypt w pythonie F3
+" Uruchom skrypt w pythonie F3
 map <F3> :!python -q %<CR>
-"Odświeżanie F5
+" Odświeżanie F5
 map <F5> :edit! %<CR>
-"Zapis F6
+" Zapis F6
 map <F6> :w %<CR>
-"Zapis wymuszony F7
+" Zapis wymuszony F7
 map <F7> :w! %<CR>
-"Zapisz i wyjdź F8
+" Zapisz i wyjdź F8
 map <F8> :wq %<CR>
-"Zapisz i wyjdź wymuszony F9
+" Zapisz i wyjdź wymuszony F9
 map <F9> :wq! %<CR>
 " Wyjście
 map <F10> :q <CR>
+" Nawigacja dla zakładek
+" Nowa zakładka
+nnoremap tn :tabnew<CR>
+" Zamknięcie zakładki
+nnoremap tc :tabclose<CR>
+" Następna zakładka
+nnoremap tj :tabnext<CR>
+" Poprzednia zakładka
+nnoremap tk :tabprev<CR>
+" Pierwsza zakładka
+nnoremap th :tabfirst<CR>
+" Ostatnia zakładka
+nnoremap tl :tablast<CR>
+" Nowa zakładka + nazwa
+nnoremap tt :tabedit<Space>
+" Przesunięcie zakładki na inna pozycję
+nnoremap tm :tabm<Space>
