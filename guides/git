@@ -1,0 +1,22 @@
+Poradnik do GITa
+# komenda - znaczenie
+
+git config -l # aktualne ustawienia
+git config --global user.name "Imię Nazwisko"   # imię i nazwisko autora
+git config --global user.email "mail@mail.com"  # email autora
+git init    # tworzenie nowego repo
+git clone   # klonowanie repo
+git shortlog -s -n  # sprawdzenie uczestników projektu
+git shortlog -s -n | wc -l  # wyświetlnie tylko liczny uczestników projektu
+find . -type f -print | grep -v -E '/\.git/' | wc -l    # ustalenie liczby plików w projekcie
+git log    # sprawdzenie zmian wprowadzonych w projekcie w formie loga
+git log --pretty=oneline | wc -l    # sprawdzenie liczby rewizji
+inne formaty --pretty=
+                        oneline     # ID rewizji, krótki opis
+                        short       # format oneline + autor rewizji
+                        medium      # format short + data rewizji
+                        full        # format medium bez daty + osoba dołączająca rewizję do projektu
+                        fuller      # format full + data wykonania rewizji, data dołączenia rewizji
+                        email       # podstawowe informacje w formacie email
+                        raw         # informacje dotyczące powiązań rewizji (parent, tree)
+                        format      # formatowanie zdefiniowane przez użytkownika
