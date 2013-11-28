@@ -20,3 +20,17 @@ inne formaty --pretty=
                         email       # podstawowe informacje w formacie email
                         raw         # informacje dotyczące powiązań rewizji (parent, tree)
                         format      # formatowanie zdefiniowane przez użytkownika
+
+Do filtrowania zmian służą parametry:
+-n  # liczba interesujących nas rewizji np -7 oznacza ostatnie 7 rewizji
+--since="yyyy-mm-dd"   # data początkowa
+--until="yyyy-mm-dd"   # data końcowa
+--author=goral20    # rewizje wykonane przez wybrane autora
+gitk lub git gui    # uruchomienie GUI dla GITa
+
+git reset --hard    # przywracanie plików do stanu odpowiadającego ostatniej rewizji
+git reset --hard HEAD # to samo co wyżej
+git reset --hard [SHA1]     # przywrócenie plików na podstawie rewizji odpowiadającej kodzie SHA1 (w miejsce [SHA1] wpisujemy kod)
+git checkout -f     # kolejny sposób przywracania
+git checkout -f [SHA1]  # rozwięcie przuwracania na podstawie kodu SHA1
+git status  # wyświetlenie statusu projektu
