@@ -34,3 +34,11 @@ git reset --hard [SHA1]     # przywrócenie plików na podstawie rewizji odpowia
 git checkout -f     # kolejny sposób przywracania
 git checkout -f [SHA1]  # rozwięcie przuwracania na podstawie kodu SHA1
 git status  # wyświetlenie statusu projektu
+git add -A  # tworzenie reqwizji dla plików zmodyfikowanych, nowych oraz usuniętych
+git add -all    # to samo co wyżej
+git add .   # tworzenie rewizji tylko dla nowych oraz zmodyfikowanych plików bez usuniętych
+git add -u  # tworzenie rewizji tylko dla zmodyfikowanych oraz usuniętych plików
+git commit -a -m "komunikat ..."    # dodanie commitów
+git commit -m "komunikat ..."    # to samo co wyżej
+git branch  # sprawdzenie bieżącej gałęzi
+git checkout master     # powrót do głównej gałęzi
