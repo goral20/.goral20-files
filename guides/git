@@ -29,7 +29,7 @@ Do filtrowania zmian służą parametry:
 gitk lub git gui    # uruchomienie GUI dla GITa
 
 git reset --hard    # przywracanie plików do stanu odpowiadającego ostatniej rewizji
-git reset --hard HEAD # to samo co wyżej
+git reset --hard HEAD    # to samo co wyżej
 git reset --hard [SHA1]     # przywrócenie plików na podstawie rewizji odpowiadającej kodzie SHA1 (w miejsce [SHA1] wpisujemy kod)
 git checkout -f     # kolejny sposób przywracania
 git checkout -f [SHA1]  # rozwięcie przuwracania na podstawie kodu SHA1
