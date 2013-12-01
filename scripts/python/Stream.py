@@ -8,7 +8,7 @@ if platform.python_version() < "3.0.0":
     sys.exit()
 
 # Skrypt umożliwiający oglądanie streamów z Gamcreads oraz Twich
-# Program w wersji v1.0
+# Program w wersji v1.01
 # Autor: goral20
 # https://github.com/goral20
 print("")
@@ -16,7 +16,7 @@ print("Wybierz platformę")
 print("1. Gamecreads")
 print("2. Twitch")
 print("3. HitBox")
-platforma = input("Wubieram: ")
+platforma = input("Wybieram: ")
 if platforma == '1':
     # print("gamecreads")
     platforma = 'http://www.dailymotion.com/embed/video/xzlc83'
