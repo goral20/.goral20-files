@@ -157,6 +157,6 @@ alias sshendomedk='ssh -i /home/sebastian/.ssh/id_rsa_serwer_endomedk mareczekg@
 alias redshifton='nohup redshift -l 51.3:21.2 -t 5600:4400 -b 0.8 > /dev/null 2>&1&'
 alias redshiftoff='killall redshift &'
 #alias gitup='cd .goral20-files && git init && git add . -A && git commit -v && git push -u goral20 master && cd ..'
-alias gitcom='cd ~ && cd .goral20-files && git init && git add . -A && git commit -v && cd ..'
+alias gitcom='cd ~ && cd .goral20-files && git init && git add -A && git commit -v && cd ..'
 alias gitup='cd ~ && cd .goral20-files && git push -u goral20 master && cd ..'
 alias streamw='sh .skrypty/Inne/streamw.sh'
