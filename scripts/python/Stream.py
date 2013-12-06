@@ -8,7 +8,7 @@ if platform.python_version() < "3.0.0":
     sys.exit()
 
 # Skrypt umożliwiający oglądanie streamów z Gamcreads oraz Twich
-# Program w wersji v1.01
+# Program w wersji v1.02
 # Autor: goral20
 # https://github.com/goral20
 print("")
