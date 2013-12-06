@@ -36,7 +36,7 @@ print("1. 240p")
 print("2. 380p")
 print("3. 480p")
 print("4. 720p")
-jakosc = input("Wubieram: ")
+jakosc = input("Wybieram: ")
 if jakosc == '1':
     # print("240p")
     jakosc = '240p'
@@ -53,5 +53,8 @@ else:
     print("QUIT")
 # print(jakosc)
 
+# ilośc powtórzeń
 print("")
-subprocess.call(["livestreamer", "-p", "mpv", platforma, jakosc])
+n = int(input('Podaj ilość prób: '))
+for i in range(n):
+    subprocess.call(["livestreamer", "-p", "mpv", platforma, jakosc])
