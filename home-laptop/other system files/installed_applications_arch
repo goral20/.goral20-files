@@ -96,10 +96,8 @@ flex 2.5.37-1
 fluxbox 1.3.5-2
 fontconfig 2.11.0-1
 fontsproto 2.1.2-1
-freeglut 2.8.1-1
-freetype2 2.5.1-1
+freetype2 2.5.2-1
 fribidi 0.19.5-1
-ftl 1.03.3-1
 fuse 2.9.3-2
 gamin 0.1.10-8
 gawk 4.1.0-2
@@ -123,7 +121,6 @@ glib-networking 2.38.2-1
 glib2 2.38.2-1
 glibc 2.18-10
 glibmm 2.38.1-1
-glu 9.0.0-2
 gmp 5.1.3-2
 gnome-icon-theme 3.10.0-1
 gnome-icon-theme-symbolic 3.10.1-1
@@ -180,7 +177,7 @@ icon-naming-utils 0.8.90-2
 icu 52.1-1
 id3lib 3.8.3-13
 ilmbase 2.0.1-2
-imagemagick 6.8.7.8-1
+imagemagick 6.8.7.9-1
 imlib2 1.4.5-6
 inetutils 1.9.1.341-1
 iniparser 3.1-4
@@ -339,7 +336,7 @@ libvdpau 0.7-1
 libvisual 0.4.0-4
 libvorbis 1.3.3-1
 libvpx 1.3.0-1
-libwbclient 4.1.2-1
+libwbclient 4.1.3-1
 libwebp 0.3.1-3
 libwmf 0.2.8.4-12
 libwpd 0.9.9-1
@@ -475,7 +472,7 @@ portaudio 19_20111121-3
 postgresql-libs 9.3.2-4
 ppp 2.4.5-8
 printproto 1.0.5-2
-procps-ng 3.3.8-3
+procps-ng 3.3.9-1
 psmisc 22.20-1
 pth 2.0.7-4
 pygobject2-devel 2.28.6-9
@@ -530,7 +527,7 @@ run-parts 4.4-1
 rxvt-unicode 9.19-1
 rxvt-unicode-terminfo 9.19-1
 s-nail 14.4.5-1
-samba 4.1.2-1
+samba 4.1.3-1
 schroedinger 1.0.11-2
 scrnsaverproto 1.2.2-1
 scrot 0.8-6
@@ -545,7 +542,7 @@ sip 4.15.3-1
 slang 2.2.4-3
 slim 1.3.6-2
 slim-themes 1.2.3-6
-smbclient 4.1.2-1
+smbclient 4.1.3-1
 snappy 1.1.1-1
 sonata 1.6.2.1-11
 soprano 2.9.4-1
@@ -553,7 +550,7 @@ sound-theme-freedesktop 0.8-1
 soundtouch 1.7.1-1
 speech-dispatcher 0.8-2
 speex 1.2rc1-4
-sqlite 3.8.1-2
+sqlite 3.8.2-1
 startup-notification 0.12-4
 stfl 0.22-1
 strigi 0.7.8-4
@@ -562,7 +559,6 @@ sysfsutils 2.1.0-8
 syslog-ng 3.5.1-2
 systemd 208-2
 systemd-sysvcompat 208-2
-sysvinit-tools 2.88-12
 t1lib 5.1.2-4
 taglib 1.9.1-1
 talloc 2.0.8-2
@@ -583,7 +579,7 @@ ttf-microsoft-tahoma 5.26-1
 ttf-ms-fonts 2.0-10
 ttf-vlgothic 20130607-1
 tzdata 2013h-1
-udevil 0.4.2-1
+udevil 0.4.3-1
 udiskie 0.5.2-2
 udisks 1.0.4-8
 udisks2 2.1.1-3
@@ -649,7 +645,7 @@ xorg-xcmsdb 1.0.4-1
 xorg-xev 1.2.1-1
 xorg-xgamma 1.0.5-1
 xorg-xhost 1.0.6-1
-xorg-xinit 1.3.3-2
+xorg-xinit 1.3.3-3
 xorg-xinput 1.6.1-1
 xorg-xkbcomp 1.2.4-1
 xorg-xmessage 1.0.4-1
