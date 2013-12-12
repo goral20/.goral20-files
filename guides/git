@@ -49,3 +49,4 @@ git commit -a -m "komunikat"
 git branch  # sprawdzenie bieżącej gałęzi
 git checkout master     # powrót do głównej gałęzi
 git rm nazwa_pliku  # do usuwania zaindeksowanego pliku
+git mv stara-nazwa nowa-nazwa   # zmiana nazwy pliku
