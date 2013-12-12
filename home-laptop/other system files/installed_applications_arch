@@ -108,6 +108,7 @@ gconf 3.2.6-3
 gd 2.1.0-2
 gdbm 1.10-3
 gdk-pixbuf2 2.30.1-1
+geeqie 1.1-2
 gegl 0.2.0-10
 geoclue 0.12.99-1
 gettext 0.18.3.1-2
@@ -131,7 +132,6 @@ gnutls 3.2.7-1
 gobject-introspection 1.38.0-1
 gpgme 1.4.3-1
 gpm 1.20.7-4
-gqview 2.0.4-4
 grantlee 0.4.0-1
 graphite 1:1.2.4-1
 grep 2.15-1
