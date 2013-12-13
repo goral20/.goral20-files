@@ -401,7 +401,7 @@ mc 4.8.11-1
 mcpp 2.7.2-4
 mdadm 3.3-2
 media-player-info 19-1
-mesa 9.2.4-1
+mesa 9.2.5-1
 mime-types 9-1
 mjpegtools 2.0.0-4
 mkinitcpio 0.15.0-1
@@ -610,7 +610,7 @@ wireless_tools 29-8
 wpa_actiond 1.4-2
 wpa_supplicant 2.0-4
 wxgtk 2.8.12.1-5
-x264 20131030-1
+x264 20131030-2
 xbindkeys 1.8.5-4
 xcb-proto 1.9-1
 xcb-util 0.3.9-1
@@ -636,8 +636,8 @@ xorg-fonts-misc 1.0.1-2
 xorg-iceauth 1.0.6-1
 xorg-mkfontdir 1.0.7-1
 xorg-mkfontscale 1.1.1-1
-xorg-server 1.14.4-1
-xorg-server-common 1.14.4-1
+xorg-server 1.14.5-1
+xorg-server-common 1.14.5-1
 xorg-server-utils 7.6-3
 xorg-sessreg 1.0.8-1
 xorg-setxkbmap 1.3.0-1
