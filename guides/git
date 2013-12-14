@@ -4,8 +4,10 @@ Poradnik do GITa
 git config -l # aktualne ustawienia
 git config --global user.name "Imię Nazwisko"   # imię i nazwisko autora
 git config --global user.email "mail@mail.com"  # email autora
-git init    # tworzenie nowego repo
-git clone   # klonowanie repo
+git init    # tworzenie zwykłego nowego repo
+git init --bare    # tworzenie surowego nowego repo
+git clone   # klonowanie zwykłego repo
+git clone --bare    # klonowanie surowego repo
 git shortlog -s -n  # sprawdzenie uczestników projektu
 git shortlog -s -n | wc -l  # wyświetlnie tylko liczny uczestników projektu
 find . -type f -print | grep -v -E '/\.git/' | wc -l    # ustalenie liczby plików w projekcie
@@ -49,4 +51,18 @@ git commit -a -m "komunikat"
 git branch  # sprawdzenie bieżącej gałęzi
 git checkout master     # powrót do głównej gałęzi
 git rm nazwa_pliku  # do usuwania zaindeksowanego pliku
+git rn --cache nazwa-pliku  # usunięcie pliku z indexu
 git mv stara-nazwa nowa-nazwa   # zmiana nazwy pliku
+git status  # sprawdzenie stanu repozytorium
+git status -s   # parametr -s pokaże wyłącznie informację o wykonanych zmianach
+.gitignore      # aby ignorować pliki wystarczy stworzyć taki plik i dodać w treści reguły ścieżki
+git tag -a nazwa -m komentarz   # tworzenie tagów/znaczników opisanych z komentarzem do ostatniej rewizji/commitu
+git tag -a v1.2.3 -m "Wydanie v1.2.3" SHA1  # tworzenie tagów/znaczników opisanych z komentarzem do konkretnej rewizji/commita na podstawie SHA-1
+git tag nazwa   # tworzenie tagów/znaczników lekkich
+git tag nazwa SHA-1    # tworzenie tagów/znaczników lekkich do konkretnej rewizji/comiita na podstawie SHA-1
+git tag -d nazwa    # usuwanie taga/znacznika
+git tag    # wyśwuetla listę wszystkich tagów/znaczników
+git log --tags --simplify-by-decoration --pretty="format:%ai - %d" | sort   # sprawdzenie wszystkich tagów/znaczników (lekkich oraz oznaczonych) wraz z posortowaniem wg daty
+git describe    # służy do wyszukania ostatniego znacznika opisanego
+git describe --tags     # słuzy do wyszukiwania ostatniego znacznika opisanego oraz lekkiego
+git show -s v1.0.0  # szczegołowe dane znacznika
