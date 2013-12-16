@@ -66,3 +66,4 @@ git log --tags --simplify-by-decoration --pretty="format:%ai - %d" | sort   # sp
 git describe    # służy do wyszukania ostatniego znacznika opisanego
 git describe --tags     # słuzy do wyszukiwania ostatniego znacznika opisanego oraz lekkiego
 git show -s v1.0.0  # szczegołowe dane znacznika
+echo $(git log --pretty=format:'%h' -n 1 | tee)     # pokazuje w terminalu ostatni kod SHA1
