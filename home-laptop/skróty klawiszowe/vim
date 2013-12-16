@@ -169,3 +169,5 @@ zd deletes the fold at the cursor.
 zE deletes all folds.
 [z move to start of open fold.
 ]z move to end of open fold.
+
+:%s/^.\{5}//gic    # usuwa 5 pierwszych znaków z każdej linii
