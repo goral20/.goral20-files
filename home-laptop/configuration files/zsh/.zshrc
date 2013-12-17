@@ -133,14 +133,14 @@ alias v='vim'
 
 # Hibernacja
 alias hibernate='pm-hibernate'
- 
+
 # Inne
 #alias ls='ls -hF --color=auto'
 #alias la='ll -A'
 #alias lx='ll -BX'                   # sort by extension
 #alias lz='ll -rS'                   # sort by size
 #alias lt='ll -rt'                   # sort by date
- 
+
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias la='ls -lha --color=auto'
@@ -156,7 +156,7 @@ alias sshmydevil='ssh -i /home/sebastian/.ssh/id_rsa_shell_mydevil sebas87@ssh.m
 alias sshendomedk='ssh -i /home/sebastian/.ssh/id_rsa_serwer_endomedk mareczekg@IP -p 10025'
 alias redshifton='nohup redshift -l 51.3:21.2 -t 5600:4400 -b 0.8 > /dev/null 2>&1&'
 alias redshiftoff='killall redshift &'
-alias gitcom='cd ~ && cd .goral20-files && git init && git add -A && git commit -a --amend --no-edit && cd ..'
+alias gitcom='cd ~ && cd .goral20-files && git init && git add -A && git commit --amend --no-edit && cd ..'
 alias gitcomn='cd ~ && cd .goral20-files && git init && git add -A && git commit -v && cd ..'
 alias gitup='cd ~ && cd .goral20-files && git push -u goral20 master && cd ..'
 alias streamw='sh .skrypty/Inne/streamw.sh'
