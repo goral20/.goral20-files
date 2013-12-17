@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^\/index.php$
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)$ http://www.domena.pl/ [L,R=301]
