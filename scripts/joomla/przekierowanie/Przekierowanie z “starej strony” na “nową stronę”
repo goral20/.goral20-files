@@ -1,0 +1,3 @@
+RewriteEngine On
+Rewritecond %{http_host} ^<span class="linkification-ext">www.staradomena.com.pl</span> [nc]
+Rewriterule ^(.*)$ <span class="linkification-ext">http://www.nowadomena.pl/$1</span> [r=301,nc]
