@@ -32,7 +32,7 @@ ca-certificates 20130906-1
 ca-certificates-java 20130815-1
 cairo 1.12.16-1
 cairomm 1.10.0-3
-calibre 1.15.0-1
+calibre 1.15.0-2
 cantarell-fonts 0.0.15-1
 cdparanoia 10.2-5
 celt 0.11.3-2
@@ -400,7 +400,7 @@ mc 4.8.11-1
 mcpp 2.7.2-4
 mdadm 3.3-2
 media-player-info 19-1
-mesa 9.2.5-1
+mesa 10.0.1-1
 mime-types 9-1
 mjpegtools 2.0.0-4
 mkinitcpio 0.15.0-1
@@ -490,7 +490,7 @@ python2-beautifulsoup3 3.2.1-2
 python2-cairo 1.10.0-1
 python2-cherrypy 3.2.4-1
 python2-cssselect 0.9.1-1
-python2-cssutils 0.9.10-5
+python2-cssutils 1.0-1
 python2-dateutil 2.2-1
 python2-dbus 1.2.0-1
 python2-dnspython 1.11.1-1

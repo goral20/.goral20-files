@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^domena.eu(.*) [NC]
+RewriteRule ^(.*)$ <span class="linkification-ext">http://www.domena.eu/$1</span> [R=301,L]
