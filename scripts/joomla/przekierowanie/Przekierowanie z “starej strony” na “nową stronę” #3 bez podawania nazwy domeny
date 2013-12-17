@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ http://nowadomena.pl/$1 [R=301,L]
