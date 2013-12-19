@@ -403,7 +403,7 @@ media-player-info 19-1
 mesa 10.0.1-1
 mime-types 9-1
 mjpegtools 2.0.0-4
-mkinitcpio 0.15.0-1
+mkinitcpio 16-1
 mkinitcpio-busybox 1.21.1-2
 mozilla-common 1.4-3
 mpd 0.18.5-1
@@ -451,7 +451,7 @@ patch 2.7.1-2
 pavucontrol 2.0-2
 pciutils 3.2.0-4
 pcmciautils 018-7
-pcre 8.33-2
+pcre 8.34-1
 perl 5.18.1-1
 perl-error 0.17021-1
 perl-xml-parser 2.41-4
@@ -512,7 +512,7 @@ qca 2.0.3-4
 qt4 4.8.5-7
 qtwebkit 2.3.3-1
 randrproto 1.4.0-1
-raptor 2.0.10-3
+raptor 2.0.12-1
 rasqal 1:0.9.30-1
 readline 6.2.004-2
 recode 3.6-8
@@ -558,8 +558,8 @@ strigi 0.7.8-4
 sudo 1.8.8-1
 sysfsutils 2.1.0-8
 syslog-ng 3.5.2-1
-systemd 208-2
-systemd-sysvcompat 208-2
+systemd 208-3
+systemd-sysvcompat 208-3
 t1lib 5.1.2-4
 taglib 1.9.1-1
 talloc 2.0.8-2
