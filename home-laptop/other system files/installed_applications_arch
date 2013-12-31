@@ -116,7 +116,7 @@ gftp 2.0.19-4
 ghostscript 9.10-1
 giblib 1.2.4-6
 giflib 5.0.5-1
-gimp 2.8.8-1
+gimp 2.8.10-1
 git 1.8.5.2-1
 glib-networking 2.38.2-1
 glib2 2.38.2-1
@@ -403,7 +403,7 @@ media-player-info 19-1
 mesa 10.0.1-1
 mime-types 9-1
 mjpegtools 2.0.0-4
-mkinitcpio 16-1
+mkinitcpio 16-2
 mkinitcpio-busybox 1.21.1-2
 mozilla-common 1.4-3
 mpd 0.18.6-1
