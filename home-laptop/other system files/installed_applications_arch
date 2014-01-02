@@ -50,7 +50,7 @@ cracklib 2.9.0-2
 cronie 1.4.11-1
 cryptsetup 1.6.3-1
 ctags 5.8-3
-curl 7.34.0-1
+curl 7.34.0-2
 damageproto 1.2.1-2
 db 5.3.28-1
 dbus 1.6.18-1
@@ -200,7 +200,7 @@ kbproto 1.0.6-1
 kdelibs 4.12.0-1
 keepassx 0.4.3-5
 keyutils 1.5.8-1
-kmod 15-1
+kmod 16-1
 krb5 1.11.4-1
 ladspa 1.13-4
 lame 3.99.5-2
@@ -410,7 +410,7 @@ mpd 0.18.6-1
 mpdscribble 0.22-6
 mpfr 3.1.2.p5-1
 mpg123 1.16.0-1
-mpv 0.3.0-1
+mpv 0.3.1-2
 mtdev 1.1.4-1
 musicbrainz 2.1.5-6
 mutt-sidebar 1.5.21-11
@@ -439,7 +439,7 @@ orc 0.4.18-1
 otf-takao 003.02.01-1
 p11-kit 0.20.1-1
 p7zip 9.20.1-8
-pacman 4.1.2-4
+pacman 4.1.2-5
 pacman-mirrorlist 20130830-1
 pam 1.1.8-2
 pambase 20130928-1
