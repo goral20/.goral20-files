@@ -125,7 +125,7 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey '\e[A' history-substring-search-up
 bindkey '\e[B' history-substring-search-down
 
-# Edytor:
+# Edytor
 alias vi='vim'
 alias v='vim'
 
