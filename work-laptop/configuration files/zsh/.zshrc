@@ -12,8 +12,8 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="frisk" dobre ale trzeba przerobic
 #ZSH_THEME="xiong-chiamiov"
 #ZSH_THEME="af-magic v4 by zse1"
-#ZSH_THEME="steeefv6b"
-ZSH_THEME="steeefv6a"
+ZSH_THEME="steeefv6b"
+# ZSH_THEME="steeefv6a"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -125,22 +125,20 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey '\e[A' history-substring-search-up
 bindkey '\e[B' history-substring-search-down
 
-## Aliasy
-
 # Edytor:
 alias vi='vim'
 alias v='vim'
 
 # Hibernacja
 alias hibernate='pm-hibernate'
- 
-# Inne
+
+# Aliasy
 #alias ls='ls -hF --color=auto'
 #alias la='ll -A'
 #alias lx='ll -BX'                   # sort by extension
 #alias lz='ll -rS'                   # sort by size
 #alias lt='ll -rt'                   # sort by date
- 
+
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 alias la='ls -lha --color=auto'
@@ -156,7 +154,7 @@ alias sshmydevil='ssh -i /home/sebastian/.ssh/id_rsa_shell_mydevil sebas87@ssh.m
 alias sshendomedk='ssh -i /home/sebastian/.ssh/id_rsa_serwer_endomedk mareczekg@IP -p 10025'
 alias redshifton='nohup redshift -l 51.3:21.2 -t 5600:4400 -b 0.8 > /dev/null 2>&1&'
 alias redshiftoff='killall redshift &'
-#alias gitup='cd .goral20-files && git init && git add . -A && git commit -v && git push -u goral20 master && cd ..'
-alias gitcom='cd ~ && cd .goral20-files && git init && git add . -A && git commit -v && cd ..'
-alias gitup='cd ~ && cd .goral20-files && git push -u goral20 master && cd ..'
+alias gitpull='cd $HOME/.goral20-files && git pull https://github.com/goral20/.goral20-files.git && cd $HOME'
+alias gitcom='cd $HOME/.goral20-files && git init && git add -A && git commit -v && cd $HOME'
+alias gitup='cd $HOME/.goral20-files && git push -u goral20 master && cd $HOME'
 alias streamw='sh .skrypty/Inne/streamw.sh'
