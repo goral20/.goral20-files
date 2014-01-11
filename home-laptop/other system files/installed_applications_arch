@@ -7,7 +7,7 @@ alsa-firmware 1.0.27-2
 alsa-lib 1.0.27.2-1
 alsa-plugins 1.0.27-2
 alsa-utils 1.0.27.2-1
-archlinux-keyring 20131027-1
+archlinux-keyring 20140108-1
 archlinux-themes-slim 1.2-3
 aspell 0.60.6.1-1
 at-spi2-atk 2.10.2-1
@@ -136,7 +136,7 @@ grantlee 0.4.0-1
 graphite 1:1.2.4-1
 grep 2.16-1
 groff 1.22.2-5
-grub 1:2.00.1282.g5ae5c54-1
+grub 1:2.02.beta2-1
 gsettings-desktop-schemas 3.10.1-1
 gsfonts 1.0.7pre44-4
 gsm 1.0.13-7
