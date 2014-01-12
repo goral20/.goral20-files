@@ -2,3 +2,4 @@ plik - opis
 przekierowanie-html-index.html    # przykładowe przekierowanie w html
 przekierowanie-na-panel-poczty-index.html    # przekierowanie na panel poczty w superhost z adresu domena.pl/poczta (na serwerze zakładamy folder poczta a w nim umieszczamy plik index.html)
 przekierowanie-php-index.php    # przykładowe przekierwanie w php
+Przekierowanie z “bez www” na “www” #1    # .htaccess przekierowanie z “bez www” na “www” #1
