@@ -8,7 +8,7 @@ if platform.python_version() < "3.0.0":
     sys.exit()
 
 # Skrypt umożliwiający oglądanie streamów z Gamcreads oraz Twich
-# Program w wersji v1.03
+# Program w wersji v1.04
 # Autor: goral20
 # https://github.com/goral20
 print("")
@@ -40,19 +40,14 @@ print("4. 720p")
 print("5. bez wyboru jakości")
 jakosc = input("Wybieram: ")
 if jakosc == '1':
-    # print("240p")
     jakosc = '240p'
 elif jakosc == '2':
-    # print("380p")
     jakosc = '380p'
 elif jakosc == '3':
-    # print("480p")
     jakosc = '480p'
 elif jakosc == '4':
-    # print("720p")
     jakosc = '720p'
 elif jakosc == '5':
-    # print("720p")
     jakosc = ''
 else:
     print("QUIT")
