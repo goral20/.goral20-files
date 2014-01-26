@@ -87,16 +87,27 @@ ${font size=14}${font}AP Mode: ${alignr}${wireless_mode wlan0}
 ${font size=14}${font}AP MAC: ${alignr}${wireless_ap wlan0}
 ${font size=14}${font}IP PUBLIC: ${alignr}${execi 600 ~/.conky/ip.sh}
 ${font size=14}${font}IP Router: ${alignr}${gw_ip}
-
-${font size=14}${font}PROCESSES: $processes ${alignr}Running: $running_processes
-${font size=14}${font}Highest $alignr   CPU   MEM
-${font size=14}${font}${top name 1}$alignr ${top cpu 1} ${top mem 1}
-${font size=14}${font}${top name 2}$alignr ${top cpu 2} ${top mem 2}
-${font size=14}${font}${top name 3}$alignr ${top cpu 3} ${top mem 3}
-#${font size=14}${font}${top name 4}$alignr ${top cpu 4} ${top mem 4}
-#${font size=14}${font}${top name 5}$alignr ${top cpu 5} ${top mem 5}
-
+#
+# Procesy
+# ${font size=14}${font}PROCESSES: $processes ${alignr}Running: $running_processes
+# ${font size=14}${font}Highest $alignr   CPU   MEM
+# ${font size=14}${font}${top name 1}$alignr ${top cpu 1} ${top mem 1}
+# ${font size=14}${font}${top name 2}$alignr ${top cpu 2} ${top mem 2}
+# ${font size=14}${font}${top name 3}$alignr ${top cpu 3} ${top mem 3}
+# ${font size=14}${font}${top name 4}$alignr ${top cpu 4} ${top mem 4}
+# ${font size=14}${font}${top name 5}$alignr ${top cpu 5} ${top mem 5}
+#
+# Statusy No-IP oraz DynDns
 # ${font size=14}${font}${execpi 300 ~/.conky/ping_sebas87.dyndns.org.py}
 # ${font size=14}${font}${execpi 300 ~/.conky/ping_goral20.no-ip.org.py}
 # ${font size=14}${font}${execpi 300 ~/.conky/ping_sebas87.no-ip.org.py}
-#${rss https://www.archlinux.org/feeds/news/ 1 item_titles 3 }
+
+# RSS
+# MyDevil
+# ${rss http://www.status.mydevil.net/rss,pl.html 1 item_titles 3 }
+#
+# Archlinux
+${rss https://www.archlinux.org/feeds/news/ 1 item_titles 3 }
+
+# TokyoTosho
+${rss https://www.tokyotosho.info/rss.php?filter=1,11&entries=450 1 item_titles 7 }
