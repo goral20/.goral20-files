@@ -23,7 +23,7 @@ avahi 0.6.31-11
 awesome 3.5.2-1
 babl 0.1.10-1
 bash 4.2.045-5
-bc 1.06-8
+bc 1.06.95-1
 binutils 2.24-1
 bison 3.0.2-1
 boost-libs 1.55.0-4
@@ -101,7 +101,7 @@ fribidi 0.19.6-1
 fuse 2.9.3-2
 gamin 0.1.10-8
 gawk 4.1.0-2
-gc 7.2.d-2
+gc 7.4.0-1
 gcc 4.8.2-7
 gcc-libs 4.8.2-7
 gconf 3.2.6-3
@@ -180,7 +180,7 @@ icu 52.1-1
 id3lib 3.8.3-13
 ilmbase 2.0.1-2
 imagemagick 6.8.8.2-1
-imlib2 1.4.5-6
+imlib2 1.4.6-1
 inetutils 1.9.2-1
 iniparser 3.1-4
 inputproto 2.3-1
@@ -203,7 +203,7 @@ kdelibs 4.12.1-1
 keepassx 0.4.3-6
 keyutils 1.5.8-1
 kmod 16-1
-krb5 1.11.4-1
+krb5 1.12.1-1
 ladspa 1.13-4
 lame 3.99.5-2
 lcms 1.19-5
@@ -218,6 +218,7 @@ libass 0.10.2-2
 libassuan 2.1.1-1
 libasyncns 0.8-5
 libatasmart 0.19-2
+libatomic_ops 7.2.e-1
 libavc1394 0.5.4-2
 libbluray 0.5.0-1
 libbsd 0.6.0-2
@@ -241,8 +242,8 @@ libdc1394 2.2.1-2
 libdca 0.0.5-4
 libdrm 2.4.52-1
 libdv 1.0.0-5
-libdvdnav 4.2.0-2
-libdvdread 4.2.0-1
+libdvdnav 4.2.1-1
+libdvdread 4.2.1-1
 libedit 20130601_3.1-1
 libevent 2.0.21-3
 libexif 0.6.21-2
@@ -254,7 +255,7 @@ libgcrypt 1.6.0-2
 libglade 2.6.4-5
 libgme 0.6.0-2
 libgpg-error 1.12-1
-libgphoto2 2.5.2-2
+libgphoto2 2.5.3.1-1
 libgssglue 0.4-2
 libgusb 0.1.6-1
 libgxps 0.2.2-3
@@ -277,7 +278,7 @@ libmms 0.6.2-1
 libmng 2.0.2-3
 libmodplug 0.8.8.4-2
 libmp4v2 2.0.0-3
-libmpc 1.0.1-2
+libmpc 1.0.2-2
 libmpcdec 1.2.6-3
 libmpdclient 2.9-1
 libmpeg2 0.5.1-4
@@ -426,10 +427,10 @@ neon 0.30.0-1
 net-snmp 5.7.2-8
 netcfg 3.0-2
 nettle 2.7.1-1
-newsbeuter 2.7-1
+newsbeuter 2.8-1
 nmap 6.40-1
 nspr 4.10.2-1
-nss 3.15.3.1-1
+nss 3.15.4-1
 ntfs-3g 2013.1.13-4
 nvidia 331.38-2
 nvidia-libgl 331.38-1
@@ -453,7 +454,7 @@ pangomm 2.34.0-1
 pangox-compat 0.0.2-1
 parted 3.1-3
 patch 2.7.1-2
-pciutils 3.2.0-4
+pciutils 3.2.1-1
 pcmciautils 018-7
 pcre 8.34-2
 perl 5.18.2-2
