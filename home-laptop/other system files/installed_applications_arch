@@ -50,7 +50,7 @@ cracklib 2.9.0-2
 cronie 1.4.11-1
 cryptsetup 1.6.3-2
 ctags 5.8-3
-curl 7.34.0-3
+curl 7.35.0-1
 damageproto 1.2.1-2
 db 5.3.28-1
 dbus 1.8.0-1
@@ -415,7 +415,7 @@ mozilla-common 1.4-3
 mpd 0.18.7-1
 mpdscribble 0.22-6
 mpfr 3.1.2.p5-1
-mpg123 1.17.0-1
+mpg123 1.18.0-1
 mpv 0.3.3-2
 mtdev 1.1.4-1
 musicbrainz 2.1.5-6
@@ -473,7 +473,7 @@ poppler 0.24.5-1
 poppler-glib 0.24.5-1
 poppler-qt4 0.24.5-1
 popt 1.16-7
-portaudio 19_20111121-3
+portaudio 19_20140130-1
 postgresql-libs 9.3.2-4
 ppp 2.4.5-8
 printproto 1.0.5-2
