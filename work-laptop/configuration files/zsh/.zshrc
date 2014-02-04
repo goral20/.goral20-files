@@ -5,15 +5,16 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="candy-mod-v1_by_zse1"
-#ZSH_THEME="steeefv5"
-#ZSH_THEME="aussiegeek"
-#ZSH_THEME="candy"
-#ZSH_THEME="frisk" dobre ale trzeba przerobic
-#ZSH_THEME="xiong-chiamiov"
-#ZSH_THEME="af-magic v4 by zse1"
-ZSH_THEME="steeefv6b"
+# ZSH_THEME="candy-mod-v1_by_zse1"
+# ZSH_THEME="steeefv5"
+# ZSH_THEME="aussiegeek"
+# ZSH_THEME="candy"
+# ZSH_THEME="frisk" dobre ale trzeba przerobic
+# ZSH_THEME="xiong-chiamiov"
+# ZSH_THEME="af-magic v4 by zse1"
+# ZSH_THEME="steeefv6b"
 # ZSH_THEME="steeefv6a"
+ZSH_THEME="steeefv6"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
