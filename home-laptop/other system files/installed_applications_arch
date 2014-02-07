@@ -38,7 +38,7 @@ cdparanoia 10.2-5
 celt 0.11.3-2
 chmlib 0.40-4
 chromium 32.0.1700.107-1
-chromium-pepper-flash 12.0.0.41-2
+chromium-pepper-flash 12.0.0.44-1
 cifs-utils 6.2-1
 cloog 0.18.1-2
 clucene 2.3.3.4-8
@@ -619,7 +619,7 @@ xcb-util-image 0.3.9-1
 xcb-util-keysyms 0.3.9-1
 xcb-util-renderutil 0.3.8-1
 xcb-util-wm 0.4.0-1
-xdg-utils 1.1.0.git20140109-1
+xdg-utils 1.1.0.git20140207-1
 xextproto 7.3.0-1
 xf86-input-evdev 2.8.2-2
 xf86vidmodeproto 2.3.1-2
