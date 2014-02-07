@@ -33,7 +33,7 @@ cairo 1.12.16-1
 cdparanoia 10.2-5
 celt 0.11.3-2
 chromium 32.0.1700.107-1
-chromium-pepper-flash 12.0.0.41-2
+chromium-pepper-flash 12.0.0.44-1
 cifs-utils 6.2-1
 cloog 0.18.1-2
 clucene 2.3.3.4-8
@@ -54,7 +54,7 @@ dbus-glib 0.100.2-1
 dconf 0.18.0-1
 desktop-file-utils 0.22-1
 device-mapper 2.02.105-1
-dhcpcd 6.1.0-1
+dhcpcd 6.2.1-1
 dialog 1:1.2_20140112-1
 diffutils 3.3-1
 dirmngr 1.1.1-2
@@ -110,7 +110,7 @@ ghostscript 9.10-3
 giblib 1.2.4-6
 giflib 5.0.5-1
 gimp 2.8.10-1
-git 1.8.5.3-1
+git 1.8.5.4-1
 glamor-egl 0.6.0-1
 glib-networking 2.38.2-1
 glib2 2.38.2-1
@@ -389,7 +389,7 @@ mjpegtools 2.0.0-4
 mkinitcpio 16-2
 mkinitcpio-busybox 1.21.1-2
 mozilla-common 1.4-3
-mpd 0.18.7-1
+mpd 0.18.8-1
 mpdscribble 0.22-6
 mpfr 3.1.2.p5-1
 mpg123 1.18.0-1
@@ -483,7 +483,7 @@ rtmpdump 20131205-1
 run-parts 4.4-1
 rxvt-unicode 9.19-1
 rxvt-unicode-terminfo 9.19-1
-s-nail 14.5.2-2
+s-nail 14.5.2-3
 samba 4.1.4-1
 schroedinger 1.0.11-2
 screen 4.0.3-15
