@@ -312,7 +312,7 @@ libreoffice-sdk-doc 4.1.4-3
 libreoffice-writer 4.1.4-3
 librsvg 1:2.40.1-3
 libsamplerate 0.1.8-3
-libsasl 2.1.26-6
+libsasl 2.1.26-7
 libsecret 0.16-2
 libshout 1:2.3.1-2
 libsidplay 1.36.59-6
@@ -444,7 +444,7 @@ p11-kit 0.20.1-1
 p7zip 9.20.1-9
 pacman 4.1.2-5
 pacman-mirrorlist 20140107-1
-pam 1.1.8-2
+pam 1.1.8-3
 pambase 20130928-1
 pango 1.36.2-1
 pangomm 2.34.0-1
@@ -519,7 +519,7 @@ rasqal 1:0.9.30-4
 readline 6.2.004-2
 recode 3.6-8
 recordproto 1.14.2-1
-redland 1:1.0.17-1
+redland 1:1.0.17-2
 redshift 1.8-1
 reiserfsprogs 3.6.24-1
 renderproto 0.11.1-2
@@ -539,7 +539,7 @@ sg3_utils 1.37-1
 shadow 4.1.5.1-7
 shared-color-profiles 0.1.5-1
 shared-desktop-ontologies 0.11.0-1
-shared-mime-info 1.2-1
+shared-mime-info 1.2-2
 sip 4.15.4-1
 slang 2.2.4-3
 slim 1.3.6-3
@@ -557,7 +557,7 @@ sqlite 3.8.3-1
 startup-notification 0.12-4
 stfl 0.22-2
 strigi 0.7.8-5
-sudo 1.8.9.p4-1
+sudo 1.8.9.p5-1
 sysfsutils 2.1.0-8
 syslog-ng 3.5.3-1
 systemd 208-10
