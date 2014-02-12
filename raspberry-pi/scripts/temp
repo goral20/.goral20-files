@@ -1,0 +1,30 @@
+#!/bin/bash
+# cpu temp
+cpuTemp0=$(cat /sys/class/thermal/thermal_zone0/temp)
+cpuTemp1=$(($cpuTemp0/1000))
+cpuTemp2=$(($cpuTemp0/100))
+cpuTempM=$(($cpuTemp2 % $cpuTemp1))
+
+# cpu speed
+cpuSpeed0=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq)
+cpuSpeed1=$(($cpuSpeed0/1000))
+cpuSpeed2=$(($cpuSpeed0/100))
+cpuSpeedM=$(($cpuSpeed2 % $cpuSpeed1))
+
+# gpu temp
+gpuTemp0=$(/opt/vc/bin/vcgencmd measure_temp | cut -d '=' -f2 | sed 's/..$//')
+
+# room temp from DS18B20
+# show number 
+w1Temp=$(cat /sys/bus/w1/devices/w1_bus_master1/w1_master_slave_count)
+roomTemp0=$(cat /sys/bus/w1/devices/28-0000058e9541/w1_slave | sed -n 's/^.*\(t=[^ ]*\).*/\1/p' | sed 's/t=//')
+roomTemp1=$(($roomTemp0/1000))
+roomTemp2=$(($roomTemp0/100))
+roomTempM=$(($roomTemp2 % $roomTemp1))
+
+# show cpu temp $ speed, gpu temp and room temp
+echo CPU Temp: $cpuTemp1"."$cpuTempM"°C"
+echo CPU Speed: $cpuSpeed1"."$cpuSpeedM"Mhz"
+echo GPU Temp: $gpuTemp0"°C"
+echo Liczba czujników: $w1Temp
+echo Temperatura pokojowa: $roomTemp1"."$roomTempM"°C"
