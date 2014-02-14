@@ -32,7 +32,7 @@ ca-certificates 20130906-1
 ca-certificates-java 20130815-1
 cairo 1.12.16-1
 cairomm 1.10.0-3
-calibre 1.23.0-1
+calibre 1.24.0-1
 cantarell-fonts 0.0.15-1
 cdparanoia 10.2-5
 celt 0.11.3-2
@@ -84,13 +84,13 @@ fakeroot 1.20-1
 feh 2.9.3-1
 ffmpeg 1:2.1.3-1
 fftw 3.3.3-2
-file 5.16-1
+file 5.17-1
 filesystem 2013.05-2
 filezilla 3.7.4.1-1
 findutils 4.4.2-5
 fixesproto 5.0-2
 flac 1.3.0-1
-flex 2.5.37-1
+flex 2.5.38-1
 fluxbox 1.3.5-2
 fontconfig 2.11.0-1
 fontsproto 2.1.2-1
@@ -115,10 +115,10 @@ ghostscript 9.10-3
 giblib 1.2.4-6
 giflib 5.0.5-1
 gimp 2.8.10-1
-git 1.8.5.4-1
+git 1.8.5.5-1
 glib-networking 2.38.2-1
 glib2 2.38.2-1
-glibc 2.19-1
+glibc 2.19-2
 glibmm 2.38.1-1
 gmp 5.1.3-2
 gnome-icon-theme 3.10.0-1
@@ -177,7 +177,7 @@ icon-naming-utils 0.8.90-2
 icu 52.1-1
 id3lib 3.8.3-15
 ilmbase 2.0.1-2
-imagemagick 6.8.8.4-2
+imagemagick 6.8.8.5-1
 imlib2 1.4.6-1
 inetutils 1.9.2-1
 iniparser 3.1-4
@@ -248,7 +248,7 @@ libexif 0.6.21-2
 libffi 3.0.13-4
 libfontenc 1.1.2-1
 libftdi-compat 0.20-1
-libgadu 1.11.2-1
+libgadu 1.11.3-1
 libgcrypt 1.6.1-1
 libglade 2.6.4-5
 libgme 0.6.0-2
@@ -399,7 +399,7 @@ lzo2 2.06-3
 m4 1.4.17-1
 make 4.0-2
 man-db 2.6.6-1
-man-pages 3.57-1
+man-pages 3.58-1
 mc 4.8.11-1
 mcpp 2.7.2-4
 mdadm 3.3-2
@@ -455,7 +455,7 @@ pciutils 3.2.1-1
 pcmciautils 018-7
 pcre 8.34-2
 perl 5.18.2-2
-perl-error 0.17021-1
+perl-error 0.17022-1
 perl-xml-parser 2.41-4
 perl-xml-simple 2.20-1
 phonon-gstreamer 4.7.1-1
@@ -480,7 +480,7 @@ pth 2.0.7-5
 pygobject2-devel 2.28.6-9
 pygtk 2.24.0-3
 pyqt4-common 4.10.3-1
-python 3.3.3-1
+python 3.3.4-1
 python-dbus-common 1.2.0-2
 python-requests 2.2.1-1
 python-setuptools 2.2-1
@@ -553,7 +553,7 @@ soundtouch 1.7.1-1
 spandsp 0.0.6pre21-2
 speech-dispatcher 0.8-2
 speex 1.2rc1-4
-sqlite 3.8.3-1
+sqlite 3.8.3.1-1
 startup-notification 0.12-4
 stfl 0.22-2
 strigi 0.7.8-5
