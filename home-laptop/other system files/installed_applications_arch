@@ -177,7 +177,7 @@ icon-naming-utils 0.8.90-2
 icu 52.1-1
 id3lib 3.8.3-15
 ilmbase 2.0.1-2
-imagemagick 6.8.8.6-1
+imagemagick 6.8.8.7-1
 imlib2 1.4.6-1
 inetutils 1.9.2-1
 iniparser 3.1-4
@@ -212,7 +212,7 @@ less 458-1
 libaio 0.3.109-7
 libao 1.2.0-1
 libarchive 3.1.2-4
-libass 0.10.2-2
+libass 0.11.1-1
 libassuan 2.1.1-1
 libasyncns 0.8-5
 libatasmart 0.19-2
@@ -394,7 +394,7 @@ lua-lgi 0.7.2-1
 lua-socket 3.0rc1-3
 lua51 5.1.5-4
 lvm2 2.02.105-1
-lynx 2.8.7-7
+lynx 2.8.8-1
 lzo2 2.06-3
 m4 1.4.17-1
 make 4.0-2
