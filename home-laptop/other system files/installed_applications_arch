@@ -37,7 +37,7 @@ cantarell-fonts 0.0.15-1
 cdparanoia 10.2-5
 celt 0.11.3-2
 chmlib 0.40-4
-chromium 32.0.1700.107-1
+chromium 33.0.1750.115-1
 chromium-pepper-flash 12.0.0.44-1
 cifs-utils 6.2-1
 cloog 0.18.1-2
@@ -68,7 +68,7 @@ docbook-xml 4.5-5
 docbook-xsl 1.78.1-1
 dotconf 1.3-4
 e2fsprogs 1.42.9-1
-easytag 2.1.9-1
+easytag 2.1.10-1
 ekg2 0.3.1-8
 elfutils 0.158-1
 enca 1.15-1
@@ -128,7 +128,7 @@ gnome-themes-standard 3.10.0-1
 gnupg 2.0.22-2
 gnutls 3.2.11-1
 gobject-introspection 1.38.0-1
-gparted 0.17.0-2
+gparted 0.18.0-1
 gpgme 1.4.3-1
 gpm 1.20.7-4
 grantlee 0.4.0-1
@@ -471,7 +471,7 @@ poppler-glib 0.24.5-1
 poppler-qt4 0.24.5-1
 popt 1.16-7
 portaudio 19_20140130-1
-postgresql-libs 9.3.2-4
+postgresql-libs 9.3.3-1
 ppp 2.4.5-8
 printproto 1.0.5-2
 procps-ng 3.3.9-2
