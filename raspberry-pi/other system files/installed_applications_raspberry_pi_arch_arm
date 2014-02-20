@@ -19,7 +19,6 @@ curl 7.35.0-1
 damageproto 1.2.1-2
 db 5.3.28-1
 dbus 1.8.0-1
-dbus-glib 0.102-1
 device-mapper 2.02.105-1
 dhcpcd 6.2.1-1
 dialog 1:1.2_20140112-1
@@ -32,7 +31,6 @@ enca 1.15-1
 expac 3-1
 expat 2.1.0-3
 fakeroot 1.20-1
-fcgi 2.4.0-9
 ffmpeg 1:2.1.3-1
 file 5.17-1
 filesystem 2013.05-2
@@ -75,7 +73,6 @@ iptables 1.4.21-1
 iputils 20121221-3
 jansson 2.5-2
 jfsutils 1.1.15-4
-js 17.0.0-1
 jshon 20131105-1
 json-c 0.11-1
 kbd 2.0.1-1
@@ -89,10 +86,9 @@ ldns 1.6.17-1
 less 458-1
 libaio 0.3.109-7
 libarchive 3.1.2-4
-libass 0.10.2-2
+libass 0.11.1-1
 libassuan 2.1.1-1
 libasyncns 0.8-5
-libatasmart 0.19-2
 libbluray 0.5.0-1
 libbsd 0.6.0-2
 libcap 2.24-1
@@ -158,7 +154,6 @@ linux-firmware 20140123.418320b-1
 linux-raspberrypi 3.10.30-1
 llvm-libs 3.4-1
 logrotate 3.8.7-1
-lsof 4.87-2
 lvm2 2.02.105-1
 lzo2 2.06-3
 man-db 2.6.6-1
@@ -175,7 +170,6 @@ ncurses 5.9-6
 net-tools 1.60.20130531git-1
 netctl 1.4-2
 nettle 2.7.1-1
-nspr 4.10.3-1
 ntfs-3g 2013.1.13-4
 ntp 4.2.6.p5-18
 opencore-amr 0.1.3-1
@@ -192,7 +186,6 @@ pacman 4.1.2-5.1
 pacman-mirrorlist 20140129-1
 pam 1.1.8-3
 pambase 20130928-1
-parted 3.1-3
 pciutils 3.2.1-1
 pcre 8.34-2
 perl 5.18.2-2
@@ -200,7 +193,6 @@ perl-error 0.17022-1
 php 5.5.9-1
 php-cgi 5.5.9-1
 pinentry 0.8.3-1
-polkit 0.112-1
 popt 1.16-7
 procps-ng 3.3.9-2
 psmisc 22.20-1
@@ -224,11 +216,9 @@ rutorrent-plugins 3.6-1
 s-nail 14.5.2-4
 samba 4.1.4-1.1
 schroedinger 1.0.11-2
-screen 4.0.3-15
 sdl 1.2.15-5
 sed 4.2.2-3
 serf 1.3.2-1
-sg3_utils 1.37-1
 shadow 4.1.5.1-7
 slang 2.2.4-3
 smbclient 4.1.4-1.1
@@ -246,7 +236,6 @@ tevent 0.9.19-1
 texinfo 5.2-2
 tmux 1.8-1
 tzdata 2013i-1
-udisks 1.0.4-8
 unixodbc 2.3.2-1
 unrar 1:5.0.14-1
 unzip 6.0-6
