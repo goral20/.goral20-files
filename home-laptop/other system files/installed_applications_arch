@@ -37,7 +37,7 @@ cantarell-fonts 0.0.15-1
 cdparanoia 10.2-5
 celt 0.11.3-2
 chmlib 0.40-4
-chromium 33.0.1750.115-1
+chromium 33.0.1750.117-1
 chromium-pepper-flash 12.0.0.70-2
 cifs-utils 6.2-1
 cloog 0.18.1-2
@@ -59,7 +59,7 @@ dconf 0.18.0-1
 desktop-file-utils 0.22-1
 device-mapper 2.02.105-1
 dhcpcd 6.2.1-1
-dialog 1:1.2_20140112-1
+dialog 1:1.2_20140219-1
 diffutils 3.3-1
 dirmngr 1.1.1-2
 djvulibre 3.5.25.3-1
@@ -399,7 +399,7 @@ lzo2 2.06-3
 m4 1.4.17-1
 make 4.0-2
 man-db 2.6.6-1
-man-pages 3.58-1
+man-pages 3.59-1
 mc 4.8.11-1
 mcpp 2.7.2-4
 mdadm 3.3-2
@@ -618,7 +618,7 @@ xcb-util-cursor 0.1.1-1
 xcb-util-image 0.3.9-1
 xcb-util-keysyms 0.3.9-1
 xcb-util-renderutil 0.3.8-1
-xcb-util-wm 0.4.0-1
+xcb-util-wm 0.4.1-1
 xdg-utils 1.1.0.git20140207-1
 xextproto 7.3.0-1
 xf86-input-evdev 2.8.2-2
