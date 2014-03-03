@@ -126,7 +126,7 @@ gnome-icon-theme-symbolic 3.10.1-1
 gnome-menus 3.10.1-1
 gnome-themes-standard 3.10.0-1
 gnupg 2.0.22-2
-gnutls 3.2.11-1
+gnutls 3.2.12-1
 gobject-introspection 1.38.0-1
 gparted 0.18.0-1
 gpgme 1.4.3-1
@@ -254,7 +254,6 @@ libglade 2.6.4-5
 libgme 0.6.0-2
 libgpg-error 1.12-1
 libgphoto2 2.5.3.1-2
-libgssglue 0.4-2
 libgusb 0.1.6-1
 libgxps 0.2.2-3
 libice 1.0.8-2
@@ -381,7 +380,7 @@ linux 3.13.5-1
 linux-api-headers 3.13.2-1
 linux-firmware 20140217.343e460-1
 lirc-utils 1:0.9.0-70
-livestreamer 1.7.3-1
+livestreamer 1.7.4-1
 llvm-libs 3.4-1
 lm_sensors 3.3.5-1
 logrotate 3.8.7-1
