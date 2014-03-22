@@ -32,7 +32,7 @@ ca-certificates 20130906-1
 ca-certificates-java 20130815-1
 cairo 1.12.16-1
 cairomm 1.10.0-3
-calibre 1.28.0-1
+calibre 1.29.0-1
 cantarell-fonts 0.0.15-1
 cdparanoia 10.2-5
 celt 0.11.3-2
@@ -115,7 +115,7 @@ ghostscript 9.10-3
 giblib 1.2.4-6
 giflib 5.0.5-1
 gimp 2.8.10-1
-git 1.9.0-1
+git 1.9.1-1
 glib-networking 2.38.2-1
 glib2 2.38.2-1
 glibc 2.19-3
@@ -178,7 +178,7 @@ icon-naming-utils 0.8.90-2
 icu 52.1-1
 id3lib 3.8.3-15
 ilmbase 2.0.1-2
-imagemagick 6.8.8.8-1
+imagemagick 6.8.8.9-1
 imlib2 1.4.6-1
 inetutils 1.9.2-1
 iniparser 3.1-4
@@ -243,7 +243,7 @@ libdrm 2.4.52-1
 libdv 1.0.0-5
 libdvdnav 4.2.1-1
 libdvdread 4.2.1-1
-libedit 20130601_3.1-1
+libedit 20140213_3.1-1
 libetonyek 0.0.3-1
 libevent 2.0.21-3
 libexif 0.6.21-2
@@ -406,7 +406,7 @@ lzo2 2.06-3
 m4 1.4.17-1
 make 4.0-2
 man-db 2.6.6-1
-man-pages 3.62-1
+man-pages 3.63-1
 mc 4.8.11-1
 mcpp 2.7.2-4
 mdadm 3.3-2
@@ -478,7 +478,7 @@ poppler-glib 0.24.5-1
 poppler-qt4 0.24.5-1
 popt 1.16-7
 portaudio 19_20140130-1
-postgresql-libs 9.3.3-1
+postgresql-libs 9.3.4-1
 ppp 2.4.6-2
 printproto 1.0.5-2
 procps-ng 3.3.9-2
