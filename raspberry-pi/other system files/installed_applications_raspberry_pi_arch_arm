@@ -161,7 +161,7 @@ licenses 20130203-1
 lighttpd 1.4.35-1
 linux-api-headers 3.13.2-1
 linux-firmware 20140316.dec41bc-1
-linux-raspberrypi 3.10.33-1
+linux-raspberrypi 3.10.34-1
 llvm-libs 3.4-1
 logrotate 3.8.7-1
 lvm2 2.02.105-2
