@@ -20,7 +20,7 @@ audiofile 0.3.6-2
 autoconf 2.69-1
 automake 1.14.1-1
 avahi 0.6.31-11
-awesome 3.5.2-1
+awesome 3.5.3-1
 babl 0.1.10-1
 bash 4.3-3
 bc 1.06.95-1
@@ -602,9 +602,9 @@ util-linux 2.24.1-4
 v4l-utils 1.0.1-1
 vi 1:050325-3
 videoproto 2.3.2-1
-vim 7.4.135-2
+vim 7.4.214-1
 vim-omnicppcomplete 0.4.1-6
-vim-runtime 7.4.135-2
+vim-runtime 7.4.214-1
 vim-spell-pl 20120802-1
 virtuoso-base 1:6.1.8-1
 wavpack 4.70.0-2
