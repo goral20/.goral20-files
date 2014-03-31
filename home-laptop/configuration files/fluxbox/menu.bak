@@ -1,0 +1,173 @@
+[begin] (F L U X B O X) {} <>
+    [exec] (Terminal) {urxvt}
+    [separator] (--------) {}
+    [exec] (Opera) {opera}
+    [exec] (Chromium) {chromium}
+    [submenu] (PcManFM) {}
+	[exec] (PcManFM) {pcmanfm}
+	[separator] (--------) {}
+	[exec] (Dokumenty) {pcmanfm /home/sebastian/Dokumenty}
+	[exec] (Dropbox) {pcmanfm /home/sebastian/Dokumenty/Dropbox}
+	[exec] (Pobrane) {pcmanfm /media/Dane/Pobrane}
+	[exec] (Muzyka) {pcmanfm /home/sebastian/Muzyka}
+	[exec] (Wideo) {pcmanfm /home/sebastian/Wideo}
+	[exec] (Obrazy) {pcmanfm /home/sebastian/Obrazy}
+	[exec] (Dane) {pcmanfm /media/Dane/}
+	[separator] (--------) {}
+	[exec] (Serwer) {pcmanfm /media/Serwer}
+	[exec] (Anime) {pcmanfm /media/Serwer/Multimedia/Anime}
+	[exec] (Filmy) {pcmanfm /media/Serwer/Multimedia/Filmy}
+	[exec] (Downloads) {pcmanfm /media/Serwer/downloads}
+	[exec] (Wymiana) {pcmanfm /media/Serwer/Wymiana}
+	[end]
+    [exec] (TmuX) {urxvt -geometry 227x56+0+0 -e tmux -S tmuxses attach}
+    [exec] (Przydatne Narzędzia) {urxvt -e "/home/sebastian/.skrypty/Inne/Przydatne narzędzia 2.0.sh"}
+    [separator] (--------) {}
+        [submenu] (Redshift) {}
+	[exec] (Redshift) {redshift -l 51.4027236:21.1471333}
+    	[exec] (Wyłącz Redshift) {killall redshift}
+	[end]
+    [separator] (--------) {}
+    [submenu] (Internet) {}
+        [submenu] (Przeglądarki) {}
+            	[exec] (Opera) {opera}
+        [end]
+        [submenu] (Komunikatory) {}
+            	[exec] (EKG2) {urxvt -e ekg2}
+	    	[exec] (EKG2 przez serwer) {ssh zse1@192.168.1.5 "ekg2"}
+            	[exec] (Irssi) {urxvt -e irssi}
+        [end]
+        [submenu] (Udostępnianie Plików) {}
+        	[submenu] (Dropbox) {}
+            		[exec] (Dropbox - Start) {/usr/bin/dropboxd start -i}
+            		[exec] (Dropbox - Stop) {urxvt -e killall dropbox}
+            		[exec] (Dropbox - Folder) {pcmanfm /home/sebastian/Dokumenty/Dropbox}
+            		[exec] (Truecrypt- Zamontuj wymiana-laptop-praca) {truecrypt --protect-hidden=no --explore --keyfiles="/home/sebastian/Dokumenty/Hasła/Truecrypt/praca_dom" "/home/sebastian/Dokumenty/Dropbox/wymiana-laptop-praca/praca_dom" "/media/dropbox_praca_dom"}
+            		[exec] (Truecrypt- Odmontuj praca_dom) {urxvt -e truecrypt -d}
+            		[exec] (Truecrypt- Zamontuj wymiana-laptop-praca) {truecrypt --protect-hidden=no --explore --keyfiles="/home/sebastian/Dokumenty/Hasła/Truecrypt/praca_dom" "/home/sebastian/Dokumenty/Dropbox/wymiana-laptop-praca/praca_dom" "/media/dropbox_praca_dom"}
+            		[exec] (Truecrypt- Odmontuj praca_dom) {urxvt -e truecrypt -d}
+		[end]
+        	[submenu] (Ftp) {}
+            		[exec] (MC - Xterm) {xterm -e mc}
+            		[exec] (MC - Urxvt) {urxvt -e mc}
+            		[exec] (Filezilla) {urxvt -e filezilla}
+            		[exec] (Gftp) {urxvt -e gftp}
+        	[end]
+	[end]
+        [submenu] (Wifi) {}
+            	[exec] (Skaner Wifi) {urxvt -e sudo wifi-select wlan0}
+            	[exec] (Połącz z siecią domową) {sudo netcfg up wifi_dom}
+            	[exec] (Rozłącz z siecią domową) {sudo netcfg down wifi_dom}
+        [end]
+    [end]
+    [submenu] (Multimedia) {}
+        [submenu] (Grafika) {}
+            	[exec] (Gqview) {gqview}
+            	[exec] (Gimp) {gimp}
+            	[exec] (Feh) {feh /media/Dane/Obrazy}
+        [end]
+        [submenu] (Audio) {}
+            	[exec] (Ncmpcpp) {urxvt -e ncmpcpp}
+            	[exec] (Easytag) {easytag}
+            	[exec] (Alsamixer) {urxvt -e alsamixer}
+        [end]
+    [end]
+    [submenu] (Biurowe) {}
+        [submenu] (LibreOffice) {}
+            	[exec] (Calc) {localc}
+            	[exec] (Draw) {lodraw}
+            	[exec] (Impress) {loimpress}
+            	[exec] (Math) {lomath}
+            	[exec] (Web) {loweb}
+            	[exec] (Writer) {lowriter}
+        [end]
+        [submenu] (Edytory) {}
+        	[exec] (Nvu) {nvu}
+        	[exec] (Nano) {urxvt -e  nano}
+    	[end]
+	[submenu] (Inne) {} <system-search.png>
+		[exec] (Keepassx) {keepassx} <>
+		[exec] (Evince) {evince} <>
+	[end]
+    [end]
+    [submenu] (Narzędzia) {}
+	[submenu] (Monitory systemu) {}
+             	[exec] (Htop) {urxvt -e  htop}
+             	[exec] (Top) {urxvt -e  top}
+    	[end]
+ 	[submenu] (Terminale) {}
+        	[exec] (Xterm) {xterm}
+        	[exec] (Urxvt) {urxvt}
+    	[end]       
+        [submenu] (Przeglądarki plików) {}
+        	[exec] (MC) {urxvt -e mc -b}
+        	[exec] (PcManFM) {pcmanfm}
+        [end]
+        [submenu] (Zrzut ekranu) {}
+        	[exec] (Zrzut 5 sekund) {urxvt -e scrot -d 5 zrzut_ekranu.png}
+        	[exec] (Zrzut 10 sekund) {urxvt -e scrot -d 10 zrzut_ekranu.png}
+        	[exec] (Zaznacz i zrób zrzut) {import screenshot.png && qiv -W 50 screenshot.png}
+        [end]
+	[submenu] (Narzędzia do CD/DVD) {}
+            	[exec] (gnomebaker) {gnomebaker}
+            	[exec] (graveman) {graveman}
+            	[exec] (brasero) {brasero}
+            	[exec] (k3b) {k3b}
+        [end]
+ 	[submenu] (Bezpieczeństwo) {}
+        	[exec] (Clamav Update) {urxvt -e sudo freshclam}
+		[separator] (--------) {}
+        	[exec] (Clamav skanowanie ~) {urxvt -e clamscan -r -i /home}
+        	[exec] (Clamav skanowanie i oczyszcanie ~) {urxvt -e clamscan --remove -r -i /home}
+        	[exec] (Clamav skanowanie ~/Pobrane) {urxvt -e clamscan -r -i ~/Pobrane}
+        	[exec] (Clamav skanowanie i oczyszcanie ~/Pobrane) {urxvt -e clamscan --remove -r -i ~/Pobrane}
+		[separator] (--------) {}
+    	[end] 
+    [end]
+    	[submenu] (Ustawienia Fluxbox) {}
+        	[config] (Konfiguracja) {}
+        	[submenu] (Wygląd) {Select a Style}
+            		[submenu] (Style użytkownika) {}
+                		[stylesdir] (~/.fluxbox/styles) {}
+            		[end]
+            		[submenu] (Fluxmod style) {}
+                		[stylesdir] (~/.fluxbox/styles_fluxmod) {}
+            		[end]
+        	[end]
+        	[submenu] (Wybierz tapetę) {}
+            		[wallpapers] (/home/sebastian/Obrazy/# Wybrane Tapety pod system #) {fbsetbg -f}
+        	[end]
+        	[workspaces] (Workspace List) {}
+        	[submenu] (Fluxbox tools) {}
+            		[exec] (fluxconf) {fluxconf}
+           		[exec] (fluxkeys) {vim ~/.fluxbox/keys}
+            		[exec] (fluxmenu) {vim ~/.fluxbox/menu}
+	    		[exec] (fluxstyle) {vim ~/.fluxbox/overlay}
+	    		[exec] (fluxedit) {urxvt -e ~/Skrypty/fluxedit.sh}
+            		[exec] (window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+            		[exec] (screenshot) {import screenshot.png && qiv -W 50 screenshot.png}
+        	[end]
+		[submenu] (ThemeTools) {}
+            	[exec] (gcolor2) {gcolor2}
+            	[exec] (gcursor) {gcursor}
+            	[exec] (gtk2-theme-switch) {switch2}
+            	[exec] (gkt1-theme-switch) {switch}
+            	[exec] (qtconfig) {qtconfig}
+	    	[exec] (xfontsel) {xfontsel}
+	    	[exec] (gtk-chtheme) {gtk-chtheme}
+     		[end]
+        	[reconfig] (Przeładuj ustawienia) {}
+        	[restart] (Restart wm) {}
+	[end]
+	[separator] (--------) {}
+    [submenu] (Zakończ) {}
+	[exit] (Wyloguj się) {}
+	[exec] (Zablokuj ekran) {xlock}
+ 	[separator] (--------) {}
+	[exec] (Zahibernuj system) {sudo pm-hibernate}
+	[exec] (Wstrzymaj system) {sudo pm-suspend}
+ 	[separator] (--------) {}
+    	[exec] (Zrestartuj system) {sudo /sbin/shutdown -r now}
+    	[exec] (Wyłącz system) {sudo shutdown -h now}
+   [end]		
+[end]
