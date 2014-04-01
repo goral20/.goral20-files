@@ -29,7 +29,6 @@
 [end]
 [submenu] (Mail)
     [exec]  (Mutt) {urxvt -e mutt}
-    [exec]  (Thunderbird) {thunderbird}
 [end]
 [submenu] (News)
     [exec]  (Newsbeuter) {urxvt -e newsbeuter}
@@ -57,7 +56,6 @@
 [submenu] (Audio)
     [exec]  (Easytag) {easytag}
     [exec]  (Alsamixer) {urxvt -e alsamixer}
-    [exec]  (Skype) {skype}
 [end]
 [submenu] (X-utils)
     [exec]  (Reload .Xdefaults) {xrdb -load $HOME/.Xdefaults}
