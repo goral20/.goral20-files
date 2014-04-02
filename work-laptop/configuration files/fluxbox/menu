@@ -26,6 +26,7 @@
 [submenu] (Net)
 [submenu] (Browsers)
       [exec]  (Chromium) {chromium}
+      [exec]  (Keepassx) {keepassx}
 [end]
 [submenu] (Mail)
     [exec]  (Mutt) {urxvt -e mutt}
@@ -47,6 +48,7 @@
     [exec]  (Vi) {urxvt -e vi}
 [end]
 [submenu] (File utils)
+    [exec]  (Thunar) {thunar}
     [exec]  (Mc) {urxvt -e mc}
 [end]
 [submenu] (Multimedia)
