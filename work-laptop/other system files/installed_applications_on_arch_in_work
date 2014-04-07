@@ -17,7 +17,7 @@ audiofile 0.3.6-2
 autoconf 2.69-1
 automake 1.14.1-1
 avahi 0.6.31-11
-awesome 3.5.3-1
+awesome 3.5.4-1
 babl 0.1.10-1
 bash 4.3-3
 bc 1.06.95-1
@@ -45,7 +45,7 @@ cracklib 2.9.0-2
 cronie 1.4.11-1
 cryptsetup 1.6.4-1
 cups 1.7.1-4
-cups-filters 1.0.50-1
+cups-filters 1.0.51-1
 curl 7.36.0-1
 damageproto 1.2.1-2
 db 5.3.28-1
@@ -108,7 +108,7 @@ gegl 0.2.0-10
 geoclue 0.12.99-1
 gettext 0.18.3.2-1
 gftp 2.0.19-4
-ghostscript 9.10-3
+ghostscript 9.14-1
 giblib 1.2.4-6
 giflib 5.0.5-1
 gimp 2.8.10-1
@@ -132,7 +132,7 @@ gpm 1.20.7-4
 grantlee 0.4.0-1
 graphite 1:1.2.4-1
 grep 2.18-1
-groff 1.22.2-5
+groff 1.22.2-6
 grub 1:2.02.beta2-2
 gsettings-desktop-schemas 3.10.1-1
 gsfonts 1.0.7pre44-4
@@ -367,7 +367,7 @@ libxv 1.0.10-1
 libxvmc 1.0.8-1
 libxxf86vm 1.1.3-1
 licenses 20130203-1
-linux 3.13.7-1
+linux 3.13.8-1
 linux-api-headers 3.13.2-1
 linux-firmware 20140316.dec41bc-1
 lirc-utils 1:0.9.0-70
@@ -379,7 +379,7 @@ lpsolve 5.5.2.0-2
 lsof 4.87-2
 lua 5.2.3-1
 lua-bitop 1.0.2-2
-lua-expat 1.2.0-4
+lua-expat 1.3.0-1
 lua-lgi 0.7.2-1
 lua-socket 3.0rc1-3
 lvm2 2.02.105-2
@@ -388,7 +388,7 @@ m4 1.4.17-1
 make 4.0-2
 man-db 2.6.6-1
 man-pages 3.63-1
-mc 4.8.11-1
+mc 4.8.12-1
 mcpp 2.7.2-4
 mdadm 3.3-2
 media-player-info 19-1
@@ -428,7 +428,7 @@ orc 0.4.18-1
 p11-kit 0.20.2-1
 p7zip 9.20.1-9
 pacman 4.1.2-5
-pacman-mirrorlist 20140107-1
+pacman-mirrorlist 20140405-1
 pam 1.1.8-3
 pambase 20130928-1
 pango 1.36.3-1
@@ -463,7 +463,7 @@ pygtk 2.24.0-3
 python 3.4.0-2
 python-dbus-common 1.2.0-3
 python-requests 2.2.1-2
-python-setuptools 3.3-3
+python-setuptools 3.4.2-1
 python-xdg 0.25-2
 python2 2.7.6-3
 python2-beaker 1.6.4-2
@@ -473,7 +473,7 @@ python2-gobject2 2.28.6-10
 python2-mako 0.9.1-2
 python2-markupsafe 0.19-2
 python2-notify 0.1.1-12
-python2-setuptools 3.3-3
+python2-setuptools 3.4.2-1
 qca 2.0.3-4
 qpdf 5.1.1-1
 qt4 4.8.5-8
@@ -517,7 +517,7 @@ soundtouch 1.8.0-1
 spandsp 0.0.6pre21-2
 speech-dispatcher 0.8-3
 speex 1.2rc1-4
-sqlite 3.8.4.2-1
+sqlite 3.8.4.3-1
 startup-notification 0.12-4
 stfl 0.22-2
 strigi 0.7.8-5
@@ -589,7 +589,7 @@ xdg-utils 1.1.0.git20140207-1
 xextproto 7.3.0-1
 xf86-input-evdev 2.8.2-2
 xf86-video-fbdev 0.4.4-2
-xf86-video-intel 2.99.911-1
+xf86-video-intel 2.99.911-2
 xf86-video-vesa 2.3.2-4
 xf86vidmodeproto 2.3.1-2
 xfconf 4.10.0-3
@@ -611,7 +611,7 @@ xorg-server-common 1.15.0-5
 xorg-server-utils 7.6-3
 xorg-sessreg 1.0.8-1
 xorg-setxkbmap 1.3.0-1
-xorg-xauth 1.0.8-1
+xorg-xauth 1.0.9-1
 xorg-xbacklight 1.2.0-1
 xorg-xcmsdb 1.0.4-1
 xorg-xfd 1.1.2-1
