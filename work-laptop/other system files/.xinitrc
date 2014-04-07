@@ -25,24 +25,24 @@ conky | while read -r; do xsetroot -name "$REPLY"; done &
 #	    sleep 1m    # Update time every minute
 #			done &
 
-#while :; do
-#    feh --bg-fill "$(find "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/nge_zmienne_tapety/" -type f | shuf -n1)"
-#		sleep 1m
-#done &
+while :; do
+    feh --bg-fill "$(find "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/zmienne_tapety/" -type f | shuf -n1)"
+		sleep 15m
+done &
 
 # Launch system-wide stuff first, then dwm...
 #exec /usr/bin/urxvt &
-urxvt -title tmux -e tmux &
+urxvt -name tmux -e tmux &
 exec mpd &
 exec mpdscribble &
+exec conky -c /home/sebastian/.conkyrc &
 exec conky -c /home/sebastian/.conkyrc2 &
-exec conky -c /home/sebastian/.conkyrc3 &
-exec conky -c /home/sebastian/.conkyrc4 &
-urxvt -title ncmpcpp -e ncmpcpp &
-urxvt -title shell-ekg2 -e tmux -S tmuxses attach &
+urxvt -name ncmpcpp -e ncmpcpp &
+urxvt -name im -e tmux -S tmuxses attach &
 #urxvt -class mutt -e mutt &
-sh ~/.zmienne_tapety.sh &
+# sh ~/.zmienne_tapety.sh &
 #feh --bg-fill "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/AKTUALNA TAPETA.png"
 #exec ck-launch-sesion dbus-launch dwm
 udiskie &
-exec dwm
+# exec dwm
+exec fluxbox
