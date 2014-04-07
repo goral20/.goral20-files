@@ -19,13 +19,11 @@
     [exec]  (Urxvt) {urxvt}
     [exec]  (Chromium) {chromium}
     [exec]  (Run) {fbrun}
-[submenu] (Terminals)
-    [exec]  (Urxvt) {urxvt}
-    [exec]  (Urxvtc) {urxvtc}
-[end]
-[submenu] (Net)
+[separator]
+[submenu] (Internet)
 [submenu] (Browsers)
       [exec]  (Chromium) {chromium}
+      [exec]  (Keepassx) {keepassx}
 [end]
 [submenu] (Mail)
     [exec]  (Mutt) {urxvt -e mutt}
@@ -41,14 +39,15 @@
     [exec]  (Filezilla) {filezilla}
 [end]
 [end]
+[submenu] (File utils)
+    [exec]  (Thunar) {thunar}
+    [exec]  (Mc) {urxvt -e mc}
+[end]
+[submenu] (Multimedia)
 [submenu] (Editors)
     [exec]  (Vim) {urxvt -e vim}
     [exec]  (Vi) {urxvt -e vi}
 [end]
-[submenu] (File utils)
-    [exec]  (Mc) {urxvt -e mc}
-[end]
-[submenu] (Multimedia)
 [submenu] (Graphics)
     [exec]  (Gimp) {gimp}
     [exec]  (Geeqie) {geeqie}
@@ -65,8 +64,14 @@
     [exec]  (LibreOffice) {libreoffice}
 [end]
 [submenu] (System Tools)
+[submenu] (Process)
     [exec]  (Top) {urxvt -e top}
     [exec]  (Htop) {urxvt -e htop}
+[end]
+[submenu] (Terminals)
+    [exec]  (Urxvt) {urxvt}
+    [exec]  (Urxvtc) {urxvtc}
+[end]
 [end]
 [submenu] (Fluxbox menu)
     [config] (Configure)
