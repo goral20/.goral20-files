@@ -73,6 +73,7 @@
     [exec]  (Urxvtc) {urxvtc}
 [end]
 [end]
+[separator]
 [submenu] (Fluxbox menu)
     [config] (Configure)
 [submenu] (System Styles) {Choose a style...}
