@@ -336,7 +336,7 @@ libtiff 4.0.3-4
 libtirpc 0.2.4-1
 libtool 2.4.2-12
 libunistring 0.9.3-6
-libunrar 1:5.0.14-1
+libunrar 1:5.1.2-1
 libusb 1.0.18-1
 libusb-compat 0.1.5-1
 libusbmuxd 1.0.9-1
@@ -599,7 +599,7 @@ udevil 0.4.3-1
 udiskie 0.6.4-1
 udisks 1.0.5-1
 udisks2 2.1.3-1
-unrar 1:5.0.14-1
+unrar 1:5.1.2-1
 unzip 6.0-6
 upower 0.99.0-2
 urxvt-perls 2.1-1
