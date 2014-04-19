@@ -32,7 +32,7 @@ ca-certificates 20140325-1
 ca-certificates-java 20130815-1
 cairo 1.12.16-1
 cairomm 1.10.0-3
-calibre 1.31.0-2
+calibre 1.33.0-2
 cantarell-fonts 0.0.15-1
 cdparanoia 10.2-5
 celt 0.11.3-2
@@ -415,7 +415,7 @@ mcpp 2.7.2-4
 mdadm 3.3-2
 media-player-info 19-1
 menu-cache 0.5.1-1
-mesa 10.1.0-5
+mesa 10.1.1-1
 mime-types 9-1
 mjpegtools 2.1.0-1
 mkinitcpio 17-1
@@ -436,7 +436,7 @@ net-snmp 5.7.2.1-2
 netcfg 3.0-2
 nettle 2.7.1-1
 newsbeuter 2.8-1
-nmap 6.45-1
+nmap 6.46-1
 nspr 4.10.4-1
 nss 3.16-1
 ntfs-3g 2014.2.15-1
