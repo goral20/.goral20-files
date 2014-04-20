@@ -243,7 +243,7 @@ libdca 0.0.5-4
 libdrm 2.4.53-1
 libdv 1.0.0-5
 libdvdnav 4.2.1-1
-libdvdread 4.2.1-1
+libdvdread 4.9.9-1
 libedit 20140213_3.1-1
 libetonyek 0.0.4-1
 libevent 2.0.21-3
@@ -257,7 +257,7 @@ libgcrypt 1.6.1-1
 libglade 2.6.4-5
 libgme 0.6.0-2
 libgpg-error 1.12-1
-libgphoto2 2.5.3.1-2
+libgphoto2 2.5.4-1
 libgusb 0.1.6-1
 libgxps 0.2.2-3
 libice 1.0.8-2
@@ -424,7 +424,7 @@ mpd 0.18.10-1
 mpdscribble 0.22-6
 mpfr 3.1.2.p5-1
 mpg123 1.19.0-1
-mpv 0.3.7-1
+mpv 0.3.8-1
 mtdev 1.1.4-1
 musicbrainz 2.1.5-6
 mutt-sidebar 1.5.22-1
@@ -613,7 +613,7 @@ wavpack 4.70.0-2
 wayland 1.4.0-1
 wget 1.15-1
 which 2.20-6
-wildmidi 0.3.2-1
+wildmidi 0.3.6-1
 wipe 2.3.1-2
 wireless_tools 30.pre9-1
 wpa_actiond 1.4-2
