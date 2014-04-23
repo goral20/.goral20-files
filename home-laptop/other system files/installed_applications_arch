@@ -22,7 +22,7 @@ automake 1.14.1-1
 avahi 0.6.31-11
 awesome 3.5.5-1
 babl 0.1.10-1
-bash 4.3.008-2
+bash 4.3.011-1
 bc 1.06.95-1
 binutils 2.24-2
 bison 3.0.2-1
@@ -529,7 +529,7 @@ qtwebkit 2.3.3-1
 randrproto 1.4.0-1
 raptor 2.0.13-2
 rasqal 1:0.9.32-1
-readline 6.3.003-2
+readline 6.3.005-1
 recode 3.6-8
 recordproto 1.14.2-1
 redland 1:1.0.17-2
