@@ -630,7 +630,7 @@ xcb-util-renderutil 0.3.8-1
 xcb-util-wm 0.4.1-1
 xdg-utils 1.1.0.git20140207-1
 xextproto 7.3.0-1
-xf86-input-evdev 2.8.2-2
+xf86-input-evdev 2.8.3-1
 xf86vidmodeproto 2.3.1-2
 xfconf 4.10.0-3
 xfsprogs 3.1.11-2
