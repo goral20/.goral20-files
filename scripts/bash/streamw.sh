@@ -15,11 +15,10 @@ showMenu () {
         echo "2) Ogladaj stream Wonzia w jakości 380p z gamecreads"
         echo "3) Ogladaj stream Wonzia w jakości 480p z gamecreads"
         echo "4) Ogladaj stream Wonzia w jakości 720p z gamecreads"
-        echo "5) Ogladaj stream Wonzia w jakości 240p z twitch"
-        echo "6) Ogladaj stream Wonzia w jakości 360p z twitch"
-        echo "7) Ogladaj stream Wonzia w jakości 480p z twitch"
-        echo "8) Ogladaj stream Wonzia w jakości 720p z twitch"
-        echo "9) Ogladaj stream Wonzia w jakości 1080p z twitch"
+        echo "5) Ogladaj stream Wonzia w jakości worst z twitch"
+        echo "6) Ogladaj stream Wonzia w jakości best z twitch"
+        echo "7) Ogladaj stream pvtpyle w jakości worst z twitch"
+        echo "8) Ogladaj stream pvtpyle w jakości best z twitch"
         echo "Q) Wyjście"
 
         echo -n "Opcja streamu: "
@@ -36,7 +35,7 @@ while [ 1 ]
                      n=1;
                      while [ $n -lt "$prob" ]
                       do
-                      livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 240p
+                      livestreamer -p mpv http://www.dailymotion.com/embed/video/xzlc83 240p
                       n=$[n + 1]
                      done
                      continue
@@ -47,7 +46,7 @@ while [ 1 ]
                      n=1;
                      while [ $n -lt "$prob" ]
                       do
-                      livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 380p
+                      livestreamer -p mpv http://www.dailymotion.com/embed/video/xzlc83 380p
                       n=$[n + 1]
                      done
                      continue
@@ -58,7 +57,7 @@ while [ 1 ]
                      n=1;
                      while [ $n -lt "$prob" ]
                       do
-                      livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 480p
+                      livestreamer -p mpv http://www.dailymotion.com/embed/video/xzlc83 480p
                       n=$[n + 1]
                      done
                      continue
@@ -69,66 +68,55 @@ while [ 1 ]
                      n=1;
                      while [ $n -lt "$prob" ]
                       do
-                      livestreamer -p mplayer http://www.dailymotion.com/embed/video/xzlc83 720p
+                      livestreamer -p mpv http://www.dailymotion.com/embed/video/xzlc83 720p
                       n=$[n + 1]
                      done
                      continue
                      ;;
                 "5")
                      echo -e
-                     echo "Wybrałeś: Ogladaj stream Wonzia w jakości 240p z twitch"
+                     echo "Wybrałeś: Ogladaj stream Wonzia w jakości worst z twitch"
                      n=1;
                      while [ $n -lt "$prob" ]
                       do
-                      livestreamer -p mplayer http://www.twitch.tv/wonziu 240p
-                      n=$[n + 1]
-                     done
-                     continue
-                     ;;
-                "6")
-                     echo -e
-                     echo "Wybrałeś: Ogladaj stream Wonzia w jakości 360p z twitch"
-                     n=1;
-                     while [ $n -lt "$prob" ]
-                      do
-                      livestreamer -p mplayer http://www.twitch.tv/wonziu 360p
+                      livestreamer -p mpv http://www.twitch.tv/wonziu worst
                       n=$[n + 1]
                      done
                      continue
                      ;;
                 "7")
                      echo -e
-                     echo "Wybrałeś: Ogladaj stream Wonzia w jakości 480p z twitch"
+                     echo "Wybrałeś: Ogladaj stream pvtpyle w jakości best z twitch"
                      n=1;
                      while [ $n -lt "$prob" ]
                       do
-                      livestreamer -p mplayer http://www.twitch.tv/wonziu 480p
+                      livestreamer -p mpv http://www.twitch.tv/theprivatepyle best
                       n=$[n + 1]
                      done
                      continue
                      ;;
                 "8")
                      echo -e
-                     echo "Wybrałeś: Ogladaj stream Wonzia w jakości 720p z twitch"
+                     echo "Wybrałeś: Ogladaj stream pvtpyle w jakości best z twitch"
                      n=1;
                      while [ $n -lt "$prob" ]
                       do
-                      livestreamer -p mplayer http://www.twitch.tv/wonziu 720p
+                      livestreamer -p mpv http://www.twitch.tv/theprivatepyle best
                       n=$[n + 1]
                      done
                      continue
-                    ;;
-                "9")
+                     ;;
+                "6")
                      echo -e
-                     echo "Wybrałeś: Ogladaj stream Wonzia w jakości 1080p z twitch"
+                     echo "Wybrałeś: Ogladaj stream Wonzia w jakości best z twitch"
                      n=1;
                      while [ $n -lt "$prob" ]
                       do
-                      livestreamer -p mplayer http://www.twitch.tv/wonziu 1080p
+                      livestreamer -p mpv http://www.twitch.tv/wonziu best
                       n=$[n + 1]
                      done
                      continue
-                    ;;
+                     ;;
                 "Q")
                         echo -e
                         echo "Wybrałeś: Wyjście"
