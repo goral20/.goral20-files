@@ -1,3 +1,9 @@
+# Skrypt do oglądania streamów z Gamecreads oraz Twitch
+# Program w wersji v1.05
+# Autor: goral20
+# https://github.com/goral2
+# vim ts=4 sw=4 sts=4 et0
+
 #!/bin/bash
         echo -e "\\033[1;31mSkrypt do oglądania streamów wonzia z gamecreads oraz twitch\\033[0m"
         echo "Podaj liczbę powtórzeń i wybierz stream z podanych jakości"
