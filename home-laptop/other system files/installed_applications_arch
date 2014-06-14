@@ -24,7 +24,7 @@ awesome 3.5.5-1
 babl 0.1.10-1
 bash 4.3.018-1
 bc 1.06.95-1
-binutils 2.24-5
+binutils 2.24-6
 bison 3.0.2-1
 boost-libs 1.55.0-6
 bzip2 1.0.6-5
@@ -32,7 +32,7 @@ ca-certificates 20140325-1
 ca-certificates-java 20140324-2
 cairo 1.12.16-2
 cairomm 1.10.0-3
-calibre 1.39.0-1
+calibre 1.40.0-1
 cantarell-fonts 0.0.15-1
 cdparanoia 10.2-5
 celt 0.11.3-2
@@ -130,7 +130,6 @@ gnupg 2.0.23-1
 gnutls 3.3.4-1
 gobject-introspection 1.40.0-1
 gpart 0.2.1-1
-gparted 0.19.0-1
 gperf 3.0.4-4
 gpgme 1.5.0-1
 gpm 1.20.7-4
@@ -159,7 +158,6 @@ gstreamer0.10-vaapi 0.5.8-1
 gtk-update-icon-cache 2.24.23-1
 gtk2 2.24.23-1
 gtk3 3.12.2-1
-gtkmm 2.24.4-1
 gtkmm3 3.12.0-1
 guile 2.0.11-1
 gvfs 1.20.2-1
