@@ -17,7 +17,7 @@ atkmm 2.22.7-1
 attica 0.4.2-1
 attr 2.4.47-1
 audiofile 0.3.6-2
-autoconf 2.69-1
+autoconf 2.69-2
 automake 1.14.1-1
 avahi 0.6.31-12
 awesome 3.5.5-1
@@ -245,7 +245,7 @@ libedit 20140213_3.1-1
 libevdev 1.2.2-1
 libevent 2.0.21-3
 libexif 0.6.21-2
-libffi 3.1-1
+libffi 3.1-2
 libfontenc 1.1.2-1
 libftdi-compat 0.20-1
 libgadu 1.12.0-1
@@ -322,7 +322,7 @@ libsm 1.2.2-2
 libsndfile 1.0.25-3
 libsoup 2.46.0-1
 libspectre 0.2.7-2
-libspiro 20071029-3
+libspiro 1:0.2-1
 libssh2 1.4.3-2
 libsystemd 214-2
 libtasn1 3.6-1
@@ -466,7 +466,7 @@ phonon-qt4-gstreamer 4.7.2-1
 phonon-qt5-gstreamer 4.7.2-1
 pinentry 0.8.3-1
 pixman 0.32.4-1
-pkg-config 0.28-1
+pkg-config 0.28-2
 podofo 0.9.2-2
 polkit 0.112-2
 polkit-qt 0.103.0-3
