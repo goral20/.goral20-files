@@ -26,7 +26,7 @@ dhcpcd 6.4.0-1
 dialog 1:1.2_20140219-1
 diffutils 3.3-1.1
 dirmngr 1.1.1-2.1
-dnssec-anchors 20130320-1
+dnssec-anchors 20140629-1
 e2fsprogs 1.42.10-1
 elfutils 0.158-3
 enca 1.15-1
@@ -236,7 +236,7 @@ speex 1.2rc1-4
 sqlite 3.8.5-1
 subversion 1.8.9-2
 sudo 1.8.10.p3-1
-sysfsutils 2.1.0-8
+sysfsutils 2.1.0-9
 syslog-ng 3.5.3-1
 systemd 214-2.1
 systemd-sysvcompat 214-2.1
@@ -252,7 +252,7 @@ unzip 6.0-7
 usbutils 007-1
 util-linux 2.24.2-1
 v4l-utils 1.0.1-1
-vi 1:050325-3
+vi 1:050325-4
 vim 7.4.335-4
 vim-runtime 7.4.335-4
 watchdog 5.13-2
