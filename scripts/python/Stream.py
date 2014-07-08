@@ -22,7 +22,7 @@ print("5. Hayuto")
 platforma = input("Wybieram: ")
 if platforma == '1':
     # print("dailymotion")
-    platforma = 'http://www.dailymotion.com/embed/video/xzlc83'
+    platforma = 'http://www.dailymotion.com/embed/video/x1b1nt1'
 elif platforma == '2':
     # print("twitch")
     platforma = 'http://www.twitch.tv/wonziu'
