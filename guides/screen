@@ -1,3 +1,5 @@
 screen -ls - wyświetla odpalone sesje
 screen -dr - jeśli mamy tylko jedną sesję to ją uruchamia
 screen -r numer - przechodzi do danej sesji o wybranym numerze
+screen -S nazwa - jeżeli chcemy nazwać screen jakoś sensownie, przydaje się gdy mamy kilka screenów)
+screen -r nazwa - przechodzimy do wybranej sesji po nazwie
