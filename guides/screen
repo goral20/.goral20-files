@@ -1,0 +1,3 @@
+screen -ls - wyświetla odpalone sesje
+screen -dr - jeśli mamy tylko jedną sesję to ją uruchamia
+screen -r numer - przechodzi do danej sesji o wybranym numerze
