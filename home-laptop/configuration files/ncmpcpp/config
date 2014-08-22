@@ -1,5 +1,5 @@
 ﻿## Połączenie
-mpd_music_dir = "$HOME/Muzyka"
+mpd_music_dir = "~/.mpd/music/"
 mpd_host = "127.0.0.1"
 mpd_connection_timeout = "5"
 mpd_crossfade_time = "5"
@@ -52,3 +52,17 @@ active_column_color = "white""
 active_window_border = "white"
 window_border_color = "white"
 mouse_support = "yes"
+system_encoding = "utf-8"
+external_editor = "/usr/share/vim"
+
+# pod wizualizacje
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_output_name = "My FIFO"
+visualizer_sync_interval = "30" 
+# visualizer_in_stereo = "yes"
+visualizer_type = "wave" (spectrum/wave)
+# visualizer_type = "spectrum" (spectrum/wave)
+visualizer_look = "+|"
+# visualizer_look = "◆│"
+# visualizer_look = "=="
+visualizer_color = "white"
