@@ -215,6 +215,7 @@ shifty.config.apps = {
     {
         match = {
             "ncmpcpp",
+            instance = { "ncmpcpp" },
         },
         tag = "music",
     },
@@ -249,7 +250,7 @@ shifty.config.apps = {
             class = { "libreoffice-writer" },
             class = { "libreoffice-calc" },
             class = { "libreoffice-impress" },
-            instance = { "VCLSalFrame.DocumentWindow" },
+            instance = { "libreoffice" },
         },
         tag = "office",
     },
