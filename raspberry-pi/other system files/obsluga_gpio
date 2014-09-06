@@ -1,0 +1,3 @@
+Wystarczy zainstalować:
+sudo pacman -S python python-pip base-devel
+sudo pip install RPi.GPIO
