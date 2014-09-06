@@ -1,0 +1,14 @@
+w lokalizacji /etc/systemd/system/
+tworzymy plik nazwa_skryptu.service
+o treści
+[Unit]
+Description=Nasz opis
+
+[Service]
+ExecStart=/path/to/script.py
+
+[Install]
+WantedBy=multi-user.target
+
+a następnie w konsoli
+systemctl enable nazwa_skryptu.service
