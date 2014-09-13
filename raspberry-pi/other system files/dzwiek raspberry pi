@@ -1,0 +1,1 @@
+aby wyłączyć domyślną kartę w raspberry należy w pliku /etc/modprobe.d/alsa-base-blacklist dodać blacklist snd-bcm2835
