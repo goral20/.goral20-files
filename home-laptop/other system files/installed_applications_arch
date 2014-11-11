@@ -12,7 +12,7 @@ archlinux-keyring 20140908-1
 archlinux-themes-slim 1.2-4
 aspell 0.60.6.1-2
 at-spi2-atk 2.14.1-1
-at-spi2-core 2.14.0-1
+at-spi2-core 2.14.1-1
 atk 2.14.0-1
 atkmm 2.22.7-1
 attica-qt4 0.4.2-1
@@ -20,7 +20,7 @@ attr 2.4.47-1
 audiofile 0.3.6-2
 autoconf 2.69-2
 automake 1.14.1-1
-avahi 0.6.31-13
+avahi 0.6.31-14
 awesome 3.5.5-1
 babl 0.1.10-2
 bash 4.3.030-1
@@ -45,7 +45,7 @@ chromium 38.0.2125.111-1
 chromium-pepper-flash 1:15.0.0.189-1
 cifs-utils 6.3-2
 clucene 2.3.3.4-8
-colord 1.2.3-1
+colord 1.2.5-1
 compositeproto 0.4.2-3
 conky 1.9.0-4
 coreutils 8.23-1
@@ -145,9 +145,9 @@ grub 1:2.02.beta2-5
 gsettings-desktop-schemas 3.14.1-1
 gsfonts 20130917-1
 gsm 1.0.13-8
-gst-plugins-base 1.4.3-1
-gst-plugins-base-libs 1.4.3-1
-gstreamer 1.4.3-1
+gst-plugins-base 1.4.4-1
+gst-plugins-base-libs 1.4.4-1
+gstreamer 1.4.4-1
 gstreamer0.10 0.10.36-4
 gstreamer0.10-bad 0.10.23-8
 gstreamer0.10-bad-plugins 0.10.23-8
