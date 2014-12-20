@@ -125,7 +125,7 @@ add-zsh-hook precmd steeef_precmd
 
 # primary prompt
 PROMPT='$FG[237]------------------------------------------------------------%{$reset_color%}
-$FG[032]┌─ '$' %{$purple%}%n%{$reset_color%} @ %{$orange%}%m%{$reset_color%} [%h] in %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_ \
+$FG[032]┌─ '$' %{$purple%}%n%{$reset_color%} @ %{$orange%}%m%{$reset_color%} in %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_ \
 $FG[032]%(!.#.└─$(virtualenv_info)»)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
@@ -138,7 +138,7 @@ eval my_white='$FG[white]'
 # right prompt
 #RPROMPT='$my_gray%D{%A %d %B, %H:%M} %n@%m%{$reset_color%}%'
 #RPROMPT='$my_gray%D{%A %d %B, %H:%M}%{$reset_color%}%'
-RPROMPT='$my_gray%D{%A %d %B}%{$reset_color%} %D{%H:%M} '
+RPROMPT='$my_gray%D{%A %d %B}%{$reset_color%} %D{%H:%M} [L %h]'
 
 # git settings
 ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075] (branch:"
