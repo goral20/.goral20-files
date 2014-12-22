@@ -26,7 +26,7 @@ xmodmap -e "clear lock" -e "keycode 66 = Control_R" -e "add Control = Control_R"
 #exec /usr/bin/urxvt &
 # only tmux
 urxvt -name tmux -e tmux &
-exec mpd &
+# exec mpd & #comment out mpd and start it in systemd
 exec mpdscribble &
 exec conky -c /home/sebastian/.conkyrc &
 exec conky -c /home/sebastian/.conkyrc2 &
@@ -37,3 +37,4 @@ urxvt -name newsbeuter -e newsbeuter &
 udiskie &
 exec awesome
 # exec fluxbox
+# exec startxfce4
