@@ -35,6 +35,4 @@ urxvt -name im -e tmux -S tmuxses attach &
 urxvt -name mutt -e mutt &
 urxvt -name newsbeuter -e newsbeuter &
 udiskie &
-exec awesome
-# exec fluxbox
-# exec startxfce4
+exec fluxbox
