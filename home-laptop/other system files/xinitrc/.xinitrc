@@ -15,12 +15,6 @@ xmodmap -e "keycode 133 = XF86Launch1"
 # Turn CapsLock into Control
 xmodmap -e "clear lock" -e "keycode 66 = Control_R" -e "add Control = Control_R"
 
-# # random wallpapers in fluxbox
-# while :; do
-#     feh --bg-fill "$(find "/home/sebastian/Obrazy/# Wybrane Tapety pod system #/zmienne_tapety/" -type f | shuf -n1)"
-# 		sleep 15m
-# done &
-
 # Launch system-wide stuff first, then dwm...
 #only urxvt
 #exec /usr/bin/urxvt &
@@ -36,5 +30,3 @@ urxvt -name mutt -e mutt &
 urxvt -name newsbeuter -e newsbeuter &
 udiskie &
 exec awesome
-# exec fluxbox
-# exec startxfce4
