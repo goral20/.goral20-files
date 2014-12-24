@@ -60,7 +60,7 @@ dbus-glib 0.102-2
 dconf 0.22.0-1
 desktop-file-utils 0.22-1
 device-mapper 2.02.114-1
-dhcpcd 6.6.4-1
+dhcpcd 6.6.7-1
 dialog 1:1.2_20140911-1
 diffutils 3.3-2
 djvulibre 3.5.25.3-2
@@ -83,7 +83,7 @@ faac 1.28-5
 faad2 2.7-4
 fakeroot 1.20.2-1
 feh 2.12-1
-ffmpeg 1:2.5.1-1
+ffmpeg 1:2.5.2-1
 fftw 3.3.4-1
 file 5.21-3
 filesystem 2014.10-3
@@ -397,7 +397,7 @@ linux-api-headers 3.16.2-1
 linux-firmware 20141201.38e5405-1
 lirc-utils 1:0.9.1.a-9
 livestreamer 1.11.1-1
-llvm-libs 3.5.0-2.1
+llvm-libs 3.5.0-3
 lm_sensors 3.3.5-1
 logrotate 3.8.8-2
 lpsolve 5.5.2.0-3
