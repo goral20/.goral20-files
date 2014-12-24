@@ -163,8 +163,8 @@ gtk3 3.14.6-1
 gtkmm 2.24.4-1
 gtkmm3 3.14.0-1
 guile 2.0.11-2
-gvfs 1.22.2-3
-gvfs-smb 1.22.2-3
+gvfs 1.22.2-4
+gvfs-smb 1.22.2-4
 gzip 1.6-1
 harfbuzz 0.9.37-1
 harfbuzz-icu 0.9.37-1
@@ -263,7 +263,7 @@ libgcrypt 1.6.2-1
 libglade 2.6.4-5
 libgme 0.6.0-3
 libgpg-error 1.17-1
-libgphoto2 2.5.5.1-1
+libgphoto2 2.5.6-1
 libguess 1.2-1
 libgusb 0.1.6-1
 libgxps 0.2.2-3
@@ -300,7 +300,7 @@ libpcap 1.6.2-1
 libpciaccess 0.13.2-2
 libpipeline 1.4.0-1
 libplist 1.11-1
-libpng 1.6.15-1
+libpng 1.6.16-1
 libproxy 0.4.11-4
 libpulse 5.0-1
 libqzeitgeist 0.8.0-4
@@ -318,7 +318,7 @@ libreoffice-still-postgresql-connector 4.2.8-2
 libreoffice-still-sdk 4.2.8-2
 libreoffice-still-sdk-doc 4.2.8-2
 libreoffice-still-writer 4.2.8-2
-librsvg 1:2.40.5-1
+librsvg 1:2.40.6-1
 libsamplerate 0.1.8-3
 libsasl 2.1.26-7
 libseccomp 2.1.1-1
@@ -328,7 +328,7 @@ libsidplay 1.36.59-6
 libsigc++ 2.4.0-1
 libsm 1.2.2-2
 libsndfile 1.0.25-3
-libsoup 2.48.0-1
+libsoup 2.48.1-1
 libspectre 0.2.7-2
 libspiro 1:0.2-2
 libssh2 1.4.3-2
