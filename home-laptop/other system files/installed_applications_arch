@@ -181,7 +181,7 @@ iana-etc 2.30-4
 icu 54.1-1
 id3lib 3.8.3-15
 ilmbase 2.1.0-1
-imagemagick 6.9.0.0-1
+imagemagick 6.9.0.2-1
 imlib2 1.4.6-3
 inetutils 1.9.2-2
 iniparser 3.1-4
@@ -407,7 +407,7 @@ lua-lgi 0.8.0-1
 lua51 5.1.5-4
 lvm2 2.02.114-1
 lynx 2.8.8-1
-lz4 125-1
+lz4 127-1
 lzo 2.08-3
 m4 1.4.17-1
 make 4.1-1
