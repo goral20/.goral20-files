@@ -155,6 +155,15 @@ shifty.config.tags = {
         screen    = 1,
         slave     = true,
     },
+    eclipse = {
+        layout    = awful.layout.suit.max,
+        mwfact    = 0.60,
+        exclusive = false,
+        position  = 3,
+        init      = true,
+        screen    = 1,
+        slave     = true,
+    },
     mutt = {
         layout    = awful.layout.suit.max,
         mwfact    = 0.60,
@@ -225,6 +234,13 @@ shifty.config.apps = {
             title = { "shell-ekg2 arch" },
         },
         tag = "im",
+    },
+    {
+        match = {
+            instance = { "Eclipse" },
+            title = { "Java - Eclipse" },
+        },
+        tag = "eclipse",
     },
     {
         match = {
