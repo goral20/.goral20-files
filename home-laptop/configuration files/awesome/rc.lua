@@ -159,21 +159,12 @@ shifty.config.tags = {
         layout    = awful.layout.suit.max,
         mwfact    = 0.60,
         exclusive = false,
-        position  = 3,
-        init      = true,
-        screen    = 1,
-        slave     = true,
-    },
-    mutt = {
-        layout    = awful.layout.suit.max,
-        mwfact    = 0.60,
-        exclusive = false,
         position  = 4,
         init      = false,
         screen    = 1,
         slave     = true,
     },
-    rss = {
+    mutt = {
         layout    = awful.layout.suit.max,
         mwfact    = 0.60,
         exclusive = false,
@@ -182,8 +173,8 @@ shifty.config.tags = {
         screen    = 1,
         slave     = true,
     },
-    www = {
-        layout    = awful.layout.suit.spiral,
+    rss = {
+        layout    = awful.layout.suit.max,
         mwfact    = 0.60,
         exclusive = false,
         position  = 6,
@@ -191,7 +182,7 @@ shifty.config.tags = {
         screen    = 1,
         slave     = true,
     },
-    office = {
+    www = {
         layout    = awful.layout.suit.spiral,
         mwfact    = 0.60,
         exclusive = false,
@@ -200,11 +191,20 @@ shifty.config.tags = {
         screen    = 1,
         slave     = true,
     },
-    files = {
+    office = {
         layout    = awful.layout.suit.spiral,
         mwfact    = 0.60,
         exclusive = false,
         position  = 8,
+        init      = false,
+        screen    = 1,
+        slave     = true,
+    },
+    files = {
+        layout    = awful.layout.suit.spiral,
+        mwfact    = 0.60,
+        exclusive = false,
+        position  = 9,
         init      = false,
         screen    = 1,
         slave     = true,
