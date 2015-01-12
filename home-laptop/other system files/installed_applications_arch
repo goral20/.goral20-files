@@ -23,7 +23,7 @@ automake 1.14.1-1
 avahi 0.6.31-14
 awesome 3.5.6-1
 babl 0.1.10-2
-bash 4.3.030-1
+bash 4.3.033-1
 bc 1.06.95-1
 binutils 2.25-1
 bison 3.0.2-1
@@ -421,7 +421,7 @@ mc 4.8.13-1
 mcpp 2.7.2-5
 mdadm 3.3.2-1
 media-player-info 19-1
-mesa 10.4.1-1
+mesa 10.4.2-1
 mime-types 9-1
 mjpegtools 2.1.0-1
 mkinitcpio 18-2
@@ -503,7 +503,7 @@ pygobject-devel 3.14.0-2
 pygobject2-devel 2.28.6-11
 pygtk 2.24.0-5
 pyqt5-common 5.4.0-2
-python 3.4.2-1
+python 3.4.2-2
 python-dbus-common 1.2.0-4
 python-docopt 0.6.2-2
 python-gobject 3.14.0-2
