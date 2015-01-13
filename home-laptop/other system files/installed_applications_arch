@@ -42,7 +42,7 @@ celt 0.11.3-2
 chmlib 0.40-4
 chromium 39.0.2171.95-1
 chromium-pepper-flash 1:16.0.0.235-3
-cifs-utils 6.3-2
+cifs-utils 6.4-1
 clucene 2.3.3.4-8
 colord 1.2.7-2
 compositeproto 0.4.2-3
@@ -63,7 +63,7 @@ device-mapper 2.02.114-1
 dhcpcd 6.6.7-1
 dialog 1:1.2_20140911-1
 diffutils 3.3-2
-djvulibre 3.5.25.3-2
+djvulibre 3.5.26-1
 dnssec-anchors 20140629-1
 docbook-xml 4.5-6
 docbook-xsl 1.78.1-1
@@ -118,7 +118,7 @@ ghostscript 9.15-1
 giblib 1.2.4-6
 giflib 5.1.0-1
 gimp 2.8.14-1
-git 2.2.1-1
+git 2.2.2-1
 glib-networking 2.42.0-1
 glib2 2.42.1-1
 glibc 2.20-6
@@ -215,7 +215,7 @@ ladspa 1.13-5
 lame 3.99.5-2
 lcms 1.19-5
 lcms2 2.6-1
-ldb 1.1.18-1
+ldb 1.1.19-1
 ldns 1.6.17-2
 less 471-1
 libaio 0.3.110-1
@@ -255,7 +255,7 @@ libdvdread 5.0.0-1
 libedit 20141030_3.1-1
 libepoxy 1.2-2
 libevdev 1.3.2-1
-libevent 2.0.21-3
+libevent 2.0.22-1
 libexif 0.6.21-2
 libffi 3.2.1-1
 libfontenc 1.1.2-1
@@ -356,7 +356,7 @@ libvdpau 0.8-1
 libvisual 0.4.0-5
 libvorbis 1.3.4-1
 libvpx 1.3.0-1
-libwbclient 4.1.14-2
+libwbclient 4.1.15-1
 libwebp 0.4.2-1
 libwmf 0.2.8.4-12
 libx11 1.6.2-2
@@ -564,7 +564,7 @@ run-parts 4.4-1
 rxvt-unicode 9.21-1
 rxvt-unicode-terminfo 9.21-1
 s-nail 14.7.11-1
-samba 4.1.14-2
+samba 4.1.15-1
 schroedinger 1.0.11-2
 screen 4.2.1-3
 scrnsaverproto 1.2.2-2
@@ -578,12 +578,12 @@ sip 4.16.5-1
 slang 2.2.4-3
 slim 1.3.6-5
 slim-themes 1.2.3-7
-smbclient 4.1.14-2
+smbclient 4.1.15-1
 snappy 1.1.1-1
 sonata 1.6.2.1-12
 sound-theme-freedesktop 0.8-2
 soundtouch 1.8.0-1
-spandsp 0.0.6pre21-2
+spandsp 0.0.6-1
 speech-dispatcher 0.8.1-1
 speex 1.2rc1-4
 sqlite 3.8.7.4-1
@@ -600,7 +600,7 @@ taglib 1.9.1-1
 talloc 2.1.1-1
 tar 1.28-1
 task 2.4.0-1
-tdb 1.3.2-1
+tdb 1.3.4-1
 tevent 0.9.22-1
 texinfo 5.2-3
 thin-provisioning-tools 0.4.1-1
@@ -627,9 +627,9 @@ util-linux 2.25.2-1
 v4l-utils 1.6.0-1
 vi 1:050325-4
 videoproto 2.3.2-1
-vim 7.4.560-1
+vim 7.4.567-1
 vim-omnicppcomplete 0.4.1-7
-vim-runtime 7.4.560-1
+vim-runtime 7.4.567-1
 vim-spell-pl 20120802-1
 wavpack 4.70.0-2
 wayland 1.6.0-1
