@@ -131,7 +131,7 @@ gnome-icon-theme-symbolic 3.12.0-2
 gnome-menus 3.10.1-2
 gnome-themes-standard 3.14.2.3-1
 gnupg 2.1.1-1
-gnutls 3.3.11-1
+gnutls 3.3.12-1
 gobject-introspection 1.42.0-1
 gpart 0.2.1-1
 gparted 0.20.0-1
@@ -415,7 +415,7 @@ lzo 2.08-3
 m4 1.4.17-1
 make 4.1-1
 man-db 2.7.1-1
-man-pages 3.76-1
+man-pages 3.77-1
 mc 4.8.13-1
 mcpp 2.7.2-5
 mdadm 3.3.2-1
@@ -455,7 +455,7 @@ openjdk7-doc 7.u71_2.5.3-3
 openjdk7-src 7.u71_2.5.3-3
 openjpeg 1.5.2-1
 openssh 6.7p1-1
-openssl 1.0.1.k-1
+openssl 1.0.1.l-1
 opus 1.1-1
 opusfile 0.6-1
 orc 0.4.23-1
@@ -527,7 +527,7 @@ python2-mpd 0.3.0-5
 python2-netifaces 0.10.4-1
 python2-pillow 2.6.2-1
 python2-psutil 2.2.0-1
-python2-pygments 2.0.1-1
+python2-pygments 2.0.2-1
 python2-pyqt5 5.4.0-2
 python2-setuptools 1:12.0.3-1
 python2-sip 4.16.5-1
@@ -584,7 +584,7 @@ soundtouch 1.8.0-1
 spandsp 0.0.6-1
 speech-dispatcher 0.8.1-1
 speex 1.2rc1-4
-sqlite 3.8.7.4-1
+sqlite 3.8.8-1
 startup-notification 0.12-4
 stfl 0.22-2
 strigi 0.7.8-5
