@@ -35,7 +35,7 @@ ca-certificates-mozilla 3.17.3-2
 ca-certificates-utils 20140923-9
 cairo 1.14.0-2
 cairomm 1.10.0-3
-calibre 2.16.0-1
+calibre 2.17.0-1
 cantarell-fonts 0.0.16-2
 cdparanoia 10.2-5
 celt 0.11.3-2
@@ -183,7 +183,7 @@ iana-etc 2.30-4
 icu 54.1-1
 id3lib 3.8.3-15
 ilmbase 2.1.0-1
-imagemagick 6.9.0.3-1
+imagemagick 6.9.0.4-1
 imlib2 1.4.6-3
 inetutils 1.9.2-2
 iniparser 3.1-4
@@ -197,10 +197,10 @@ jack 0.124.1-3
 jasper 1.900.1-12
 java-environment-common 2-2
 java-runtime-common 2-2
-jdk7-openjdk 7.u71_2.5.3-3
+jdk7-openjdk 7.u75_2.5.4-1
 jfsutils 1.1.15-4
-jre7-openjdk 7.u71_2.5.3-3
-jre7-openjdk-headless 7.u71_2.5.3-3
+jre7-openjdk 7.u75_2.5.4-1
+jre7-openjdk-headless 7.u75_2.5.4-1
 js17 17.0.0-1
 json-c 0.12-2
 json-glib 1.0.2-1
@@ -451,8 +451,8 @@ nvidia-304xx-libgl 304.125-1
 nvidia-304xx-utils 304.125-1
 opencore-amr 0.1.3-2
 openexr 2.1.0-1
-openjdk7-doc 7.u71_2.5.3-3
-openjdk7-src 7.u71_2.5.3-3
+openjdk7-doc 7.u75_2.5.4-1
+openjdk7-src 7.u75_2.5.4-1
 openjpeg 1.5.2-1
 openssh 6.7p1-1
 openssl 1.0.1.l-1
