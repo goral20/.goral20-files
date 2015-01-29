@@ -415,7 +415,7 @@ lzo 2.08-3
 m4 1.4.17-1
 make 4.1-1
 man-db 2.7.1-1
-man-pages 3.77-1
+man-pages 3.78-1
 mc 4.8.13-1
 mcpp 2.7.2-5
 mdadm 3.3.2-1
@@ -655,7 +655,7 @@ xf86vidmodeproto 2.3.1-3
 xfconf 4.10.0-4
 xfsprogs 3.2.2-1
 xineramaproto 1.2.1-3
-xkeyboard-config 2.13-1
+xkeyboard-config 2.14-1
 xorg-bdftopcf 1.0.5-1
 xorg-font-util 1.3.0-2
 xorg-font-utils 7.6-4
